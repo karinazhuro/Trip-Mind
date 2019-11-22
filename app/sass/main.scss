@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+$colTextFirstScreen: #FFFBFB;
+$colBtm: #FFC806;
+$colInBtm: #2D0000;
+header {
+    height: 115vh;
+    background: url(../img/Irelandmain.png) no-repeat bottom center;
+    .header_logo {
+        position: absolute;
+        width: 160px;
+        height: 35px;
+        left: 219px;
+        top: 102px;
+    }
+    .header_nav-links {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        width: 359px;
+        height: 16px;
+        left: 798px;
+        top: 109px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        .header_nav-links_nav-link {
+            .header_nav-links_link {
+                text-decoration: none;
+                color: $colTextFirstScreen;
+                // margin: .2rem;
+                // padding: 1rem .5rem;
+            }
+        }
+    }
+    .header_burger-menu {
+        position: absolute;
+        width: 30px;
+        height: 24px;
+        left: 1705px;
+        top: 112px;
+    }
+}
+
+main {
+    .text_slogan {
+        position: absolute;
+        width: 806px;
+        height: 179px;
+        left: 216px;
+        top: 302px;
+        font-family: 'Playfair Display', serif;
+        font-size: 70px;
+        line-height: 95px;
+        color: $colTextFirstScreen;
+    }
+    .text_desc {
+        position: absolute;
+        width: 493px;
+        height: 90px;
+        left: 219px;
+        top: 531px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 45px;
+        color: $colTextFirstScreen;
+    }
+    .container_btn-submit {
+        position: absolute;
+        width: 309px;
+        height: 75px;
+        left: 219px;
+        top: 691px;
+        background: $colBtm;
+        border-radius: 75px;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        color: $colInBtm;
+    }
+    .container_play-video_img {
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        left: 589px;
+        top: 691px;
+        opacity: 0.75;
+        border: 2px solid $colTextFirstScreen;
+        box-sizing: border-box;
+    }
+    .container_play-video_text {
+        position: absolute;
+        width: 108px;
+        height: 75px;
+        left: 684px;
+        top: 691px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        color: $colTextFirstScreen;
+        opacity: 0.75;
+    }
+    .container_social_text {
+        position: absolute;
+        width: 206px;
+        height: 14px;
+        left: 218px;
+        top: 886px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        color: $colTextFirstScreen;
+    }
+}
