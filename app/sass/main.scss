@@ -3,9 +3,21 @@
 $colTextFirstScreen: #FFFBFB;
 $colBtm: #FFC806;
 $colInBtm: #2D0000;
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     height: 115vh;
+    position: absolute;
     background: url(../img/Irelandmain.png) no-repeat bottom center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    // width: 100%;
     .header_logo {
         position: absolute;
         width: 160px;
@@ -32,12 +44,10 @@ header {
             .header_nav-links_link {
                 text-decoration: none;
                 color: $colTextFirstScreen;
-                // margin: .2rem;
-                // padding: 1rem .5rem;
             }
         }
     }
-    .header_burger-menu {
+    .header_btn {
         position: absolute;
         width: 30px;
         height: 24px;
