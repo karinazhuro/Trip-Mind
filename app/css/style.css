@@ -2,25 +2,97 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
 html,
 body {
-  height: 100%; }
-
-header {
-  background-position: center;
   height: 100%;
-  background: url(../img/Irelandmain.png) no-repeat bottom center;
-  background-size: cover; }
-  header .navbar {
-    padding-top: 102px;
+  background: url(../img/Irelandmain.png); }
+
+header .navbar {
+  padding-top: 102px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  header .navbar .nav_logo {
+    padding-left: 219px; }
+  header .navbar .nav {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
     display: flex;
-    justify-content: space-around; }
-    header .navbar .nav-lists {
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 16px; }
-      header .navbar .nav-lists .nav-list {
-        list-style: none; }
-        header .navbar .nav-lists .nav-list .nav-item {
-          text-decoration: none;
-          color: #FFFBFB; }
+    justify-content: space-around;
+    align-items: center; }
+    header .navbar .nav .nav-item {
+      color: #FFFBFB; }
+  header .navbar .btn-burger {
+    padding-right: 219px;
+    display: flex;
+    flex-direction: row-reverse; }
+
+main .text_slogan {
+  position: absolute;
+  left: 219px;
+  padding-top: 170px;
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  line-height: 95px;
+  color: #FFFBFB; }
+
+main .text_desc {
+  position: absolute;
+  left: 219px;
+  padding-top: 400px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 45px;
+  color: #FFFBFB; }
+
+main .btn-submit {
+  position: absolute;
+  width: 309px;
+  height: 75px;
+  left: 219px;
+  top: 560px;
+  background: #FFC806;
+  border-radius: 75px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #2D0000; }
+
+main .container_play-video_img {
+  position: absolute;
+  top: 560px;
+  left: 589px;
+  opacity: 0.75; }
+
+main .container_play-video_text {
+  position: absolute;
+  top: 560px;
+  width: 108px;
+  height: 75px;
+  left: 684px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFBFB;
+  opacity: 0.75; }
+
+main .container_social_text {
+  position: absolute;
+  width: 206px;
+  height: 14px;
+  left: 218px;
+  padding-top: 754px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFBFB; }
