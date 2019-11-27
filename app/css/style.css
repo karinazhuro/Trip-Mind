@@ -3,10 +3,11 @@
 html,
 body {
   height: 100%;
-  background: url(../img/Irelandmain.png); }
+  background: url(../img/Irelandmain.png) no-repeat bottom;
+  background-size: cover; }
 
 header .navbar {
-  padding-top: 102px;
+  top: 102px;
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -26,12 +27,12 @@ header .navbar {
   header .navbar .btn-burger {
     padding-right: 219px;
     display: flex;
-    flex-direction: row-reverse; }
+    justify-content: flex-end; }
 
 main .text_slogan {
   position: absolute;
   left: 219px;
-  padding-top: 170px;
+  top: 250px;
   font-family: 'Playfair Display', serif;
   font-size: 70px;
   line-height: 95px;
@@ -40,7 +41,7 @@ main .text_slogan {
 main .text_desc {
   position: absolute;
   left: 219px;
-  padding-top: 400px;
+  top: 480px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -84,10 +85,8 @@ main .container_play-video_text {
   color: #FFFBFB;
   opacity: 0.75; }
 
-main .container_social_text {
+main .social_text {
   position: absolute;
-  width: 206px;
-  height: 14px;
   left: 218px;
   padding-top: 754px;
   font-family: 'Montserrat', sans-serif;
@@ -96,3 +95,22 @@ main .container_social_text {
   font-size: 14px;
   line-height: 14px;
   color: #FFFBFB; }
+
+main .cosial-icon {
+  position: absolute;
+  width: 215px;
+  padding-top: 792px;
+  left: 218px; }
+  main .cosial-icon .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+main .cards {
+  position: absolute;
+  display: inline-flex;
+  justify-content: flex-end; }
+  main .cards #rectangle03 {
+    margin: 0 32px; }
+  main .cards .rectangle {
+    padding-top: 754px; }

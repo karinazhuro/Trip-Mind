@@ -6,12 +6,13 @@ $colInBtm: #2D0000;
 html,
 body {
     height: 100%;
-    background: url(../img/Irelandmain.png);
+    background: url(../img/Irelandmain.png) no-repeat bottom;
+    background-size: cover;
 }
 
 header {
     .navbar {
-        padding-top: 102px;
+        top: 102px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -34,7 +35,7 @@ header {
         .btn-burger {
             padding-right: 219px;
             display: flex;
-            flex-direction: row-reverse;
+            justify-content: flex-end;
         }
     }
 }
@@ -42,9 +43,8 @@ header {
 main {
     .text_slogan {
         position: absolute;
-        // height: 179px;
         left: 219px;
-        padding-top: 170px;
+        top: 250px;
         font-family: 'Playfair Display', serif;
         font-size: 70px;
         line-height: 95px;
@@ -52,9 +52,8 @@ main {
     }
     .text_desc {
         position: absolute;
-        // width: 493px;
         left: 219px;
-        padding-top: 400px;
+        top: 480px;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
@@ -98,10 +97,9 @@ main {
         color: $colTextFirstScreen;
         opacity: 0.75;
     }
-    .container_social_text {
+    .social_text {
         position: absolute;
-        width: 206px;
-        height: 14px;
+        // width: 206px;
         left: 218px;
         padding-top: 754px;
         font-family: 'Montserrat', sans-serif;
@@ -110,5 +108,27 @@ main {
         font-size: 14px;
         line-height: 14px;
         color: $colTextFirstScreen;
+    }
+    .cosial-icon {
+        position: absolute;
+        width: 215px;
+        padding-top: 792px;
+        left: 218px;
+        .icon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .cards {
+        position: absolute;
+        display: inline-flex;
+        justify-content: flex-end;
+        #rectangle03 {
+            margin: 0 32px;
+        }
+        .rectangle {
+            padding-top: 754px;
+        }
     }
 }
