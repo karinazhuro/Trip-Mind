@@ -43,89 +43,110 @@ header {
 }
 
 main {
-    .text_slogan {
+    position: relative;
+    .container-subject {
         position: absolute;
         left: 190px;
-        top: 250px;
-        font-family: $fontPlayfairDisplay;
-        font-size: 70px;
-        line-height: 95px;
-        color: $colTextFirstScreen;
+        top: 170px;
+        .subject_slogan {
+            position: absolute;
+            width: 781px;
+            height: 179px;
+            top: 0;
+            .text_slogan {
+                font-family: $fontPlayfairDisplay;
+                font-size: 70px;
+                line-height: 95px;
+                color: $colTextFirstScreen;
+            }
+        }
+        .subject_desc {
+            position: absolute;
+            width: 493px;
+            height: 90px;
+            top: 229px;
+            .text_desc {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 45px;
+                color: $colTextFirstScreen;
+            }
+        }
     }
-    .text_desc {
+    .container-btn {
         position: absolute;
-        height: 90px;
-        width: 493px;
         left: 190px;
-        top: 470px;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 45px;
-        color: $colTextFirstScreen;
+        top: 557px;
+        padding-left: 0;
+        .btn-submit {
+            width: 309px;
+            height: 75px;
+            background: $colBtm;
+            border-radius: 75px;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            color: $colInBtm;
+        }
     }
-    .btn-submit {
+    .container-play_video {
         position: absolute;
-        width: 309px;
         height: 75px;
-        left: 190px;
+        width: 203px;
         top: 557px;
-        background: $colBtm;
-        border-radius: 75px;
-        border: none;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 20px;
-        color: $colInBtm;
-    }
-    .container_play-video_img {
-        position: absolute;
-        top: 557px;
-        left: 589px;
-        opacity: 0.75;
-    }
-    .container_play-video_text {
-        position: absolute;
-        top: 557px;
-        width: 108px;
-        height: 75px;
-        left: 684px;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
-        color: $colTextFirstScreen;
-        opacity: 0.75;
+        left: 61px;
+        .container-play_video-img {
+            left: 0;
+            opacity: 0.75;
+        }
+        .container-play_video-text {
+            right: 0;
+            width: 108px;
+            height: 75px;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            color: $colTextFirstScreen;
+            opacity: 0.75;
+        }
     }
     .social {
+        position: relative;
         height: 55px;
         width: 206px;
-    }
-    .social_text {
-        position: absolute;
-        // width: 206px;
-        left: 190px;
+        left: 218px;
         top: 820px;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 14px;
-        color: $colTextFirstScreen;
-    }
-    .cosial-icon {
-        position: absolute;
-        width: 215px;
-        top: 844px;
-        left: 190px;
-        .icon {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .social_text {
+            position: absolute;
+            // width: 206px;
+            // left: 190px;
+            // top: 820px;
+            top: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            color: $colTextFirstScreen;
+            // color: black;
+        }
+        .cosial-icon {
+            position: absolute;
+            width: 215px;
+            top: 844px;
+            left: 190px;
+            .icon {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
     }
     .cards {
