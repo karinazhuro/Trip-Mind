@@ -6,35 +6,48 @@ body {
   background: url(../img/Irelandmain.png) no-repeat;
   background-size: cover; }
 
-header .navbar {
-  top: 102px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  header .navbar .nav_logo {
-    left: 190px; }
-  header .navbar .nav {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
+header {
+  position: relative; }
+  header .navbar {
+    position: absolute;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
-    header .navbar .nav .nav-item {
-      color: #FFFBFB; }
-  header .navbar .btn-burger {
-    right: 170px;
-    display: flex;
-    justify-content: flex-end; }
+    align-items: center;
+    top: 102px;
+    left: 190px;
+    right: 190px; }
+    header .navbar .nav_logo {
+      display: flex;
+      justify-content: flex-start;
+      position: absolute;
+      left: 0; }
+    header .navbar .nav_links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      text-decoration: none;
+      width: 359px;
+      height: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px; }
+      header .navbar .nav_links .nav_item {
+        color: #FFFBFB; }
+    header .navbar .btn_burger {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      right: 0; }
 
 main {
   position: relative; }
   main .container-subject {
     position: absolute;
     left: 190px;
-    top: 170px; }
+    top: 250px; }
     main .container-subject .subject_slogan {
       position: absolute;
       width: 781px;
@@ -61,7 +74,7 @@ main {
     position: absolute;
     left: 190px;
     top: 557px;
-    padding-left: 0; }
+    padding: 0; }
     main .container-btn .btn-submit {
       width: 309px;
       height: 75px;
@@ -75,18 +88,21 @@ main {
       line-height: 20px;
       color: #2D0000; }
   main .container-play_video {
-    position: absolute;
-    height: 75px;
+    position: relative;
     width: 203px;
+    height: 75px;
     top: 557px;
-    left: 61px; }
+    left: 560px;
+    padding: 0; }
     main .container-play_video .container-play_video-img {
-      left: 0;
+      position: absolute;
+      height: 75px;
+      width: 75px;
       opacity: 0.75; }
     main .container-play_video .container-play_video-text {
       right: 0;
+      position: absolute;
       width: 108px;
-      height: 75px;
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 500;

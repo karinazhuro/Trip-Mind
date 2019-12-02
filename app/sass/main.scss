@@ -5,6 +5,8 @@ $colBtm: #FFC806;
 $colInBtm: #2D0000;
 $fontPlayfairDisplay: 'Playfair Display',
 serif;
+$fontMontserrat: 'Montserrat',
+sans-serif;
 html,
 body {
     height: 100%;
@@ -13,31 +15,43 @@ body {
 }
 
 header {
+    position: relative;
     .navbar {
-        top: 102px;
+        position: absolute;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        top: 102px;
+        left: 190px;
+        right: 190px;
         .nav_logo {
-            left: 190px;
+            display: flex;
+            justify-content: flex-start;
+            position: absolute;
+            left: 0;
         }
-        .nav {
-            font-family: 'Montserrat', sans-serif;
+        .nav_links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            text-decoration: none;
+            width: 359px;
+            height: 16px;
+            font-family: $fontMontserrat;
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
             line-height: 16px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            .nav-item {
+            .nav_item {
                 color: $colTextFirstScreen;
             }
         }
-        .btn-burger {
-            right: 170px;
+        .btn_burger {
             display: flex;
             justify-content: flex-end;
+            position: absolute;
+            right: 0;
         }
     }
 }
@@ -47,7 +61,7 @@ main {
     .container-subject {
         position: absolute;
         left: 190px;
-        top: 170px;
+        top: 250px;
         .subject_slogan {
             position: absolute;
             width: 781px;
@@ -79,7 +93,7 @@ main {
         position: absolute;
         left: 190px;
         top: 557px;
-        padding-left: 0;
+        padding: 0;
         .btn-submit {
             width: 309px;
             height: 75px;
@@ -95,19 +109,22 @@ main {
         }
     }
     .container-play_video {
-        position: absolute;
-        height: 75px;
+        position: relative;
         width: 203px;
+        height: 75px;
         top: 557px;
-        left: 61px;
+        left: 560px;
+        padding: 0;
         .container-play_video-img {
-            left: 0;
+            position: absolute;
+            height: 75px;
+            width: 75px;
             opacity: 0.75;
         }
         .container-play_video-text {
             right: 0;
+            position: absolute;
             width: 108px;
-            height: 75px;
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 500;
