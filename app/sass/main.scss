@@ -1,198 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
-$colTextFirstScreen: #FFFBFB !default;
-$colBtm: #FFC806;
-$colInBtm: #2D0000;
-$fontPlayfairDisplay: 'Playfair Display',
-serif;
-$fontMontserrat: 'Montserrat',
-sans-serif;
-html,
-body {
-    height: 100%;
-    background: url(../img/Irelandmain.png) no-repeat;
-    background-size: cover;
-}
-
-header {
-    position: relative;
-    .navbar {
-        position: absolute;
+$colorA: #FFFBFB;
+.wrapper {
+    header {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        top: 102px;
-        left: 190px;
-        right: 190px;
-        .nav_logo {
-            display: flex;
-            justify-content: flex-start;
-            position: absolute;
-            left: 0;
+        background-image: url('../img/Irelandmain.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        background-size: cover;
+        min-height: 1184px;
+        padding: 102px 0 0 190px;
+        .logo {
+            // display: inline-block;
         }
-        .nav_links {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            list-style: none;
-            text-decoration: none;
-            width: 359px;
-            height: 16px;
-            font-family: $fontMontserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 16px;
-            .nav_item {
-                color: $colTextFirstScreen;
-            }
-        }
-        .btn_burger {
-            display: flex;
-            justify-content: flex-end;
-            position: absolute;
-            right: 0;
-        }
-    }
-}
-
-main {
-    position: relative;
-    .container-subject {
-        position: absolute;
-        left: 190px;
-        top: 250px;
-        .subject_slogan {
-            position: absolute;
-            width: 781px;
-            height: 179px;
-            top: 0;
-            .text_slogan {
-                font-family: $fontPlayfairDisplay;
-                font-size: 70px;
-                line-height: 95px;
-                color: $colTextFirstScreen;
-            }
-        }
-        .subject_desc {
-            position: absolute;
-            width: 493px;
-            height: 90px;
-            top: 229px;
-            .text_desc {
-                font-family: 'Montserrat', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 25px;
-                line-height: 45px;
-                color: $colTextFirstScreen;
-            }
-        }
-    }
-    .container-btn {
-        position: absolute;
-        left: 190px;
-        top: 557px;
-        padding: 0;
-        .btn-submit {
-            width: 309px;
-            height: 75px;
-            background: $colBtm;
-            border-radius: 75px;
-            border: none;
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 20px;
-            color: $colInBtm;
-        }
-    }
-    .container-play_video {
-        position: relative;
-        width: 203px;
-        height: 75px;
-        top: 557px;
-        left: 560px;
-        padding: 0;
-        .container-play_video-img {
-            position: absolute;
-            height: 75px;
-            width: 75px;
-            opacity: 0.75;
-        }
-        .container-play_video-text {
-            right: 0;
-            position: absolute;
-            width: 108px;
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 25px;
-            color: $colTextFirstScreen;
-            opacity: 0.75;
-        }
-    }
-    .social {
-        position: relative;
-        height: 55px;
-        width: 206px;
-        left: 218px;
-        top: 820px;
-        .social_text {
-            position: absolute;
-            // width: 206px;
-            // left: 190px;
-            // top: 820px;
-            top: 0;
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 14px;
-            color: $colTextFirstScreen;
-            // color: black;
-        }
-        .cosial-icon {
-            position: absolute;
-            width: 215px;
-            top: 844px;
-            left: 190px;
-            .icon {
+        .navbar {
+            // display: inline-block;
+            ul {
+                padding: 0;
+                margin: 0;
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
+                li {
+                    list-style: none;
+                    &:not(:last-child) {
+                        margin-right: 40px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $colorA;
+                    }
+                }
             }
         }
-    }
-    .cards {
-        position: absolute;
-        display: inline-flex;
-        justify-content: flex-end;
-        top: 820px;
-        right: 170px;
-        #rectangle02 {
-            margin: 0 16px;
-        }
-        #rectangle03 {
-            margin: 0 16px;
-        }
-        #rectangle04 {
-            margin: 0 16px;
-        }
-        .number {
-            position: absolute;
-            // width: 27px;
-            // height: 25px;
-            left: 863px;
-            top: 890px;
-            font-family: $fontPlayfairDisplay;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 25px;
-            line-height: 25px;
-            color: $colTextFirstScreen;
+        .menu {
+            // display: inline-block;
         }
     }
 }

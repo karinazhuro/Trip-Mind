@@ -1,158 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
-html,
-body {
+.wrapper header {
+  display: flex;
+  background-image: url("../img/Irelandmain.png");
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100%;
-  background: url(../img/Irelandmain.png) no-repeat;
-  background-size: cover; }
-
-header {
-  position: relative; }
-  header .navbar {
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    top: 102px;
-    left: 190px;
-    right: 190px; }
-    header .navbar .nav_logo {
-      display: flex;
-      justify-content: flex-start;
-      position: absolute;
-      left: 0; }
-    header .navbar .nav_links {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      list-style: none;
-      text-decoration: none;
-      width: 359px;
-      height: 16px;
-      font-family: "Montserrat", sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 16px; }
-      header .navbar .nav_links .nav_item {
+  background-size: cover;
+  min-height: 1184px;
+  padding: 102px 0 0 190px; }
+  .wrapper header .navbar ul {
+    padding: 0;
+    margin: 0;
+    display: flex; }
+    .wrapper header .navbar ul li {
+      list-style: none; }
+      .wrapper header .navbar ul li:not(:last-child) {
+        margin-right: 40px; }
+      .wrapper header .navbar ul li a {
+        text-decoration: none;
         color: #FFFBFB; }
-    header .navbar .btn_burger {
-      display: flex;
-      justify-content: flex-end;
-      position: absolute;
-      right: 0; }
-
-main {
-  position: relative; }
-  main .container-subject {
-    position: absolute;
-    left: 190px;
-    top: 250px; }
-    main .container-subject .subject_slogan {
-      position: absolute;
-      width: 781px;
-      height: 179px;
-      top: 0; }
-      main .container-subject .subject_slogan .text_slogan {
-        font-family: "Playfair Display", serif;
-        font-size: 70px;
-        line-height: 95px;
-        color: #FFFBFB; }
-    main .container-subject .subject_desc {
-      position: absolute;
-      width: 493px;
-      height: 90px;
-      top: 229px; }
-      main .container-subject .subject_desc .text_desc {
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 45px;
-        color: #FFFBFB; }
-  main .container-btn {
-    position: absolute;
-    left: 190px;
-    top: 557px;
-    padding: 0; }
-    main .container-btn .btn-submit {
-      width: 309px;
-      height: 75px;
-      background: #FFC806;
-      border-radius: 75px;
-      border: none;
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 20px;
-      color: #2D0000; }
-  main .container-play_video {
-    position: relative;
-    width: 203px;
-    height: 75px;
-    top: 557px;
-    left: 560px;
-    padding: 0; }
-    main .container-play_video .container-play_video-img {
-      position: absolute;
-      height: 75px;
-      width: 75px;
-      opacity: 0.75; }
-    main .container-play_video .container-play_video-text {
-      right: 0;
-      position: absolute;
-      width: 108px;
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 25px;
-      color: #FFFBFB;
-      opacity: 0.75; }
-  main .social {
-    position: relative;
-    height: 55px;
-    width: 206px;
-    left: 218px;
-    top: 820px; }
-    main .social .social_text {
-      position: absolute;
-      top: 0;
-      font-family: 'Montserrat', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 14px;
-      color: #FFFBFB; }
-    main .social .cosial-icon {
-      position: absolute;
-      width: 215px;
-      top: 844px;
-      left: 190px; }
-      main .social .cosial-icon .icon {
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
-  main .cards {
-    position: absolute;
-    display: inline-flex;
-    justify-content: flex-end;
-    top: 820px;
-    right: 170px; }
-    main .cards #rectangle02 {
-      margin: 0 16px; }
-    main .cards #rectangle03 {
-      margin: 0 16px; }
-    main .cards #rectangle04 {
-      margin: 0 16px; }
-    main .cards .number {
-      position: absolute;
-      left: 863px;
-      top: 890px;
-      font-family: "Playfair Display", serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 25px;
-      line-height: 25px;
-      color: #FFFBFB; }
