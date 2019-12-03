@@ -1,20 +1,58 @@
-.wrapper header {
-  display: flex;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
+.wrapper {
   background-image: url("../img/Irelandmain.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   background-size: cover;
   min-height: 1184px;
-  padding: 102px 0 0 190px; }
-  .wrapper header .navbar ul {
-    padding: 0;
-    margin: 0;
-    display: flex; }
-    .wrapper header .navbar ul li {
-      list-style: none; }
-      .wrapper header .navbar ul li:not(:last-child) {
-        margin-right: 40px; }
-      .wrapper header .navbar ul li a {
-        text-decoration: none;
-        color: #FFFBFB; }
+  padding: 102px 190px 0 190px; }
+  .wrapper header {
+    display: flex;
+    justify-content: space-between; }
+    .wrapper header .logo {
+      height: 100%; }
+    .wrapper header nav {
+      height: 100%;
+      padding-top: 8px; }
+      .wrapper header nav ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        font-family: "Montserrat", serif;
+        font-weight: 500;
+        font-size: 16px; }
+        .wrapper header nav ul li {
+          list-style: none; }
+          .wrapper header nav ul li:not(:last-child) {
+            margin-right: 40px; }
+          .wrapper header nav ul li a {
+            text-decoration: none;
+            color: #FFFBFB; }
+            .wrapper header nav ul li a:hover {
+              text-decoration: underline; }
+    .wrapper header .menu {
+      height: 100%;
+      padding-top: 5px; }
+  .wrapper article {
+    width: 806px;
+    padding-top: 130px; }
+    .wrapper article h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 70px;
+      line-height: 95px;
+      color: #FFFBFB;
+      margin: 0;
+      top: 0;
+      height: 179px; }
+    .wrapper article p {
+      font-family: "Montserrat", serif;
+      color: #FFFBFB;
+      font-weight: 500;
+      height: 90px;
+      width: 493px;
+      font-size: 25px;
+      line-height: 45px;
+      padding-top: 50px;
+      margin: 0; }

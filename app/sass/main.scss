@@ -1,23 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 $colorA: #FFFBFB;
+$fontMontserrat: 'Montserrat',
+serif;
+$fontPlayfairDisplay: 'Playfair Display',
+serif;
 .wrapper {
+    background-image: url('../img/Irelandmain.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+    min-height: 1184px;
+    padding: 102px 190px 0 190px;
     header {
         display: flex;
-        background-image: url('../img/Irelandmain.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100%;
-        background-size: cover;
-        min-height: 1184px;
-        padding: 102px 0 0 190px;
+        justify-content: space-between;
         .logo {
-            // display: inline-block;
+            height: 100%;
         }
-        .navbar {
-            // display: inline-block;
+        nav {
+            height: 100%;
+            padding-top: 8px;
             ul {
                 padding: 0;
                 margin: 0;
                 display: flex;
+                font-family: $fontMontserrat;
+                font-weight: 500;
+                font-size: 16px;
                 li {
                     list-style: none;
                     &:not(:last-child) {
@@ -26,12 +37,40 @@ $colorA: #FFFBFB;
                     a {
                         text-decoration: none;
                         color: $colorA;
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
         }
         .menu {
-            // display: inline-block;
+            height: 100%;
+            padding-top: 5px;
+        }
+    }
+    article {
+        width: 806px;
+        padding-top: 130px;
+        h1 {
+            font-family: $fontPlayfairDisplay;
+            font-size: 70px;
+            line-height: 95px;
+            color: $colorA;
+            margin: 0;
+            top: 0;
+            height: 179px;
+        }
+        p {
+            font-family: $fontMontserrat;
+            color: $colorA;
+            font-weight: 500;
+            height: 90px;
+            width: 493px;
+            font-size: 25px;
+            line-height: 45px;
+            padding-top: 50px;
+            margin: 0;
         }
     }
 }
