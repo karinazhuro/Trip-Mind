@@ -56,3 +56,10 @@
       line-height: 45px;
       padding-top: 50px;
       margin: 0; }
+  .wrapper button {
+    width: 309px;
+    height: 75px;
+    border-radius: 75px;
+    background-color: #FFC806;
+    color: #2D0000;
+    border: none; }
