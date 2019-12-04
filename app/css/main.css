@@ -1,48 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
-.wrapper {
+.wrapper header {
   background-image: url("../img/Irelandmain.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   background-size: cover;
   min-height: 1184px;
-  padding: 102px 190px 0 190px; }
-  .wrapper header {
-    display: flex;
-    justify-content: space-between; }
-    .wrapper header .logo {
-      height: 100%; }
-    .wrapper header nav {
-      height: 100%;
-      padding-top: 8px; }
-      .wrapper header nav ul {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        font: 500 16px "Montserrat", serif; }
-        .wrapper header nav ul li {
-          list-style: none; }
-          .wrapper header nav ul li:not(:last-child) {
-            margin-right: 40px; }
-          .wrapper header nav ul li a {
-            text-decoration: none;
-            color: #FFFBFB; }
-            .wrapper header nav ul li a:hover {
-              text-decoration: underline; }
-    .wrapper header .menu {
-      height: 100%;
-      padding-top: 5px; }
-  .wrapper article {
+  padding: 102px 190px 0 190px;
+  display: flex;
+  justify-content: space-between; }
+  .wrapper header .logo {
+    height: 100%; }
+  .wrapper header nav {
+    height: 100%;
+    padding-top: 8px; }
+    .wrapper header nav ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      font: 500 16px "Montserrat", serif; }
+      .wrapper header nav ul li {
+        list-style: none; }
+        .wrapper header nav ul li:not(:last-child) {
+          margin-right: 40px; }
+        .wrapper header nav ul li a {
+          text-decoration: none;
+          color: #FFFBFB; }
+          .wrapper header nav ul li a:hover {
+            text-decoration: underline; }
+  .wrapper header .menu {
+    height: 100%;
+    padding-top: 5px; }
+  .wrapper header .content .title {
     width: 806px;
     padding: 170px 0 70px 0; }
-    .wrapper article h1 {
+    .wrapper header .content .title h1 {
       font: bold 70px/95px "Playfair Display", serif;
       color: #FFFBFB;
       margin: 0;
       top: 0;
       height: 179px; }
-    .wrapper article p {
+    .wrapper header .content .title p {
       font-family: "Montserrat", serif;
       font-style: normal;
       font-weight: 500;
@@ -52,57 +51,59 @@
       width: 493px;
       padding-top: 50px;
       margin: 0; }
-  .wrapper .container-btn {
-    width: 573px;
-    height: 75px; }
-    .wrapper .container-btn button {
-      width: 309px;
-      height: 75px;
-      border-radius: 75px;
-      background-color: #FFC806;
-      color: #2D0000;
-      border: none;
-      font: 600 20px "Montserrat", serif;
-      cursor: pointer;
-      float: left; }
-      .wrapper .container-btn button:hover {
-        background-color: rgba(255, 201, 6, 0.89); }
-    .wrapper .container-btn .btn_play {
-      width: 203px;
-      height: 75px;
-      margin-left: 61px;
-      float: left;
-      padding: 0;
-      list-style: none; }
-      .wrapper .container-btn .btn_play .play_video-img {
-        opacity: 0.75; }
-      .wrapper .container-btn .btn_play .play_video-text {
-        text-decoration: none;
-        float: right; }
-        .wrapper .container-btn .btn_play .play_video-text p {
-          width: 108px;
-          height: 75px;
-          font-family: "Montserrat", serif;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 25px;
-          color: #FFFBFB;
-          margin: 0; }
-  .wrapper .container_social {
-    width: 206px;
-    height: 55px;
-    margin-top: 120px; }
-    .wrapper .container_social p {
-      font-family: "Montserrat", serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 14px;
-      color: #FFFBFB;
-      margin: 0; }
-    .wrapper .container_social .cosial_icon {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 22px;
-      align-items: center; }
+
+.wrapper .container-btn {
+  width: 573px;
+  height: 75px; }
+  .wrapper .container-btn button {
+    width: 309px;
+    height: 75px;
+    border-radius: 75px;
+    background-color: #FFC806;
+    color: #2D0000;
+    border: none;
+    font: 600 20px "Montserrat", serif;
+    cursor: pointer;
+    float: left; }
+    .wrapper .container-btn button:hover {
+      background-color: rgba(255, 201, 6, 0.89); }
+  .wrapper .container-btn .btn_play {
+    width: 203px;
+    height: 75px;
+    margin-left: 61px;
+    float: left;
+    padding: 0;
+    list-style: none; }
+    .wrapper .container-btn .btn_play .play_video-img {
+      opacity: 0.75; }
+    .wrapper .container-btn .btn_play .play_video-text {
+      text-decoration: none;
+      float: right; }
+      .wrapper .container-btn .btn_play .play_video-text p {
+        width: 108px;
+        height: 75px;
+        font-family: "Montserrat", serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        color: #FFFBFB;
+        margin: 0; }
+
+.wrapper .container_social {
+  width: 206px;
+  height: 55px;
+  margin-top: 120px; }
+  .wrapper .container_social p {
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFBFB;
+    margin: 0; }
+  .wrapper .container_social .cosial_icon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    align-items: center; }

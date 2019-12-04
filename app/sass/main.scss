@@ -1,3 +1,4 @@
+// creat var min-width 1920 and 100%
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 $colorPrimary: #FFFBFB;
@@ -12,14 +13,14 @@ serif;
 $fontPlayfairDisplay: 'Playfair Display',
 serif;
 .wrapper {
-    background-image: url('../img/Irelandmain.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    background-size: cover;
-    min-height: 1184px;
-    padding: 102px 190px 0 190px;
     header {
+        background-image: url('../img/Irelandmain.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        background-size: cover;
+        min-height: 1184px;
+        padding: 102px 190px 0 190px;
         display: flex;
         justify-content: space-between;
         .logo {
@@ -52,27 +53,29 @@ serif;
             height: 100%;
             padding-top: 5px;
         }
-    }
-    article {
-        width: 806px;
-        padding: 170px 0 70px 0;
-        h1 {
-            font: bold 70px/95px $fontPlayfairDisplay;
-            color: $colorPrimary;
-            margin: 0;
-            top: 0;
-            height: 179px;
-        }
-        p {
-            font-family: $fontMontserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 45px;
-            color: $colorPrimary;
-            width: 493px;
-            padding-top: 50px;
-            margin: 0;
+        .content {
+            .title {
+                width: 806px;
+                padding: 170px 0 70px 0;
+                h1 {
+                    font: bold 70px/95px $fontPlayfairDisplay;
+                    color: $colorPrimary;
+                    margin: 0;
+                    top: 0;
+                    height: 179px;
+                }
+                p {
+                    font-family: $fontMontserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 45px;
+                    color: $colorPrimary;
+                    width: 493px;
+                    padding-top: 50px;
+                    margin: 0;
+                }
+            }
         }
     }
     .container-btn {
