@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 $colorPrimary: #FFFBFB;
 $colorButton: #FFC806;
+$colorButtonHover: rgba(255,
+201,
+6,
+0.89);
 $colorTextBtn: #2D0000;
 $fontMontserrat: 'Montserrat',
 serif;
@@ -28,9 +32,7 @@ serif;
                 padding: 0;
                 margin: 0;
                 display: flex;
-                font-family: $fontMontserrat;
-                font-weight: 500;
-                font-size: 16px;
+                font: 500 16px $fontMontserrat;
                 li {
                     list-style: none;
                     &:not(:last-child) {
@@ -53,11 +55,9 @@ serif;
     }
     article {
         width: 806px;
-        padding-top: 130px;
+        padding: 170px 0 70px 0;
         h1 {
-            font-family: $fontPlayfairDisplay;
-            font-size: 70px;
-            line-height: 95px;
+            font: bold 70px/95px $fontPlayfairDisplay;
             color: $colorPrimary;
             margin: 0;
             top: 0;
@@ -65,22 +65,79 @@ serif;
         }
         p {
             font-family: $fontMontserrat;
-            color: $colorPrimary;
+            font-style: normal;
             font-weight: 500;
-            height: 90px;
-            width: 493px;
             font-size: 25px;
             line-height: 45px;
+            color: $colorPrimary;
+            width: 493px;
             padding-top: 50px;
             margin: 0;
         }
     }
-    button {
-        width: 309px;
+    .container-btn {
+        width: 573px;
         height: 75px;
-        border-radius: 75px;
-        background-color: $colorButton;
-        color: $colorTextBtn;
-        border: none;
+        button {
+            width: 309px;
+            height: 75px;
+            // margin: 70px 0;
+            border-radius: 75px;
+            background-color: $colorButton;
+            color: $colorTextBtn;
+            border: none;
+            font: 600 20px $fontMontserrat;
+            cursor: pointer;
+            float: left;
+            &:hover {
+                background-color: $colorButtonHover;
+            }
+        }
+        .btn_play {
+            width: 203px;
+            height: 75px;
+            margin-left: 61px;
+            float: left;
+            padding: 0;
+            list-style: none;
+            .play_video-img {
+                opacity: 0.75;
+            }
+            .play_video-text {
+                text-decoration: none;
+                float: right;
+                p {
+                    width: 108px;
+                    height: 75px;
+                    font-family: $fontMontserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: $colorPrimary;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .container_social {
+        width: 206px;
+        height: 55px;
+        margin-top: 120px;
+        p {
+            font-family: $fontMontserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            color: $colorPrimary;
+            margin: 0;
+        }
+        .cosial_icon {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 22px;
+            align-items: center;
+        }
     }
 }
