@@ -1,48 +1,59 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
-.wrapper header {
+.wrapper .main_screen .content .container_cards #island .number, .wrapper .main_screen .content .container_cards #dolomit .number, .wrapper .main_screen .content .container_cards #norway .number {
+  padding: 18px 0 0 25px;
+  margin: 0;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  position: absolute; }
+
+.wrapper .main_screen {
   background-image: url("../img/Irelandmain.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
   background-size: cover;
   min-height: 1184px;
-  padding: 102px 190px 0 190px;
-  display: flex;
-  justify-content: space-between; }
-  .wrapper header .logo {
-    height: 100%; }
-  .wrapper header nav {
-    height: 100%;
-    padding-top: 8px; }
-    .wrapper header nav ul {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      font: 500 16px "Montserrat", serif; }
-      .wrapper header nav ul li {
-        list-style: none; }
-        .wrapper header nav ul li:not(:last-child) {
-          margin-right: 40px; }
-        .wrapper header nav ul li a {
-          text-decoration: none;
-          color: #FFFBFB; }
-          .wrapper header nav ul li a:hover {
-            text-decoration: underline; }
-  .wrapper header .menu {
-    height: 100%;
-    padding-top: 5px; }
-  .wrapper header .content .title {
+  padding: 102px 190px 0 190px; }
+  .wrapper .main_screen header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .wrapper .main_screen header .logo {
+      height: 100%; }
+    .wrapper .main_screen header nav {
+      height: 100%;
+      padding-top: 8px; }
+      .wrapper .main_screen header nav ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        font: 500 16px "Montserrat"; }
+        .wrapper .main_screen header nav ul li {
+          list-style: none; }
+          .wrapper .main_screen header nav ul li:not(:last-child) {
+            margin-right: 40px; }
+          .wrapper .main_screen header nav ul li a {
+            text-decoration: none;
+            color: #FFFBFB; }
+            .wrapper .main_screen header nav ul li a:hover {
+              text-decoration: underline; }
+    .wrapper .main_screen header .menu {
+      height: 100%;
+      padding-top: 5px; }
+  .wrapper .main_screen .content .title {
     width: 806px;
     padding: 170px 0 70px 0; }
-    .wrapper header .content .title h1 {
-      font: bold 70px/95px "Playfair Display", serif;
+    .wrapper .main_screen .content .title h1 {
+      font: bold 70px/95px "Playfair Display";
       color: #FFFBFB;
       margin: 0;
       top: 0;
       height: 179px; }
-    .wrapper header .content .title p {
-      font-family: "Montserrat", serif;
+    .wrapper .main_screen .content .title p {
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
       font-size: 25px;
@@ -51,59 +62,69 @@
       width: 493px;
       padding-top: 50px;
       margin: 0; }
-
-.wrapper .container-btn {
-  width: 573px;
-  height: 75px; }
-  .wrapper .container-btn button {
-    width: 309px;
-    height: 75px;
-    border-radius: 75px;
-    background-color: #FFC806;
-    color: #2D0000;
-    border: none;
-    font: 600 20px "Montserrat", serif;
-    cursor: pointer;
-    float: left; }
-    .wrapper .container-btn button:hover {
-      background-color: rgba(255, 201, 6, 0.89); }
-  .wrapper .container-btn .btn_play {
-    width: 203px;
-    height: 75px;
-    margin-left: 61px;
-    float: left;
-    padding: 0;
-    list-style: none; }
-    .wrapper .container-btn .btn_play .play_video-img {
-      opacity: 0.75; }
-    .wrapper .container-btn .btn_play .play_video-text {
-      text-decoration: none;
-      float: right; }
-      .wrapper .container-btn .btn_play .play_video-text p {
-        width: 108px;
-        height: 75px;
-        font-family: "Montserrat", serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
-        color: #FFFBFB;
-        margin: 0; }
-
-.wrapper .container_social {
-  width: 206px;
-  height: 55px;
-  margin-top: 120px; }
-  .wrapper .container_social p {
-    font-family: "Montserrat", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    color: #FFFBFB;
-    margin: 0; }
-  .wrapper .container_social .cosial_icon {
+  .wrapper .main_screen .content .btn_user {
+    width: 573px;
+    height: 75px; }
+    .wrapper .main_screen .content .btn_user button {
+      width: 309px;
+      height: 75px;
+      border-radius: 75px;
+      background-color: #FFC806;
+      color: #2D0000;
+      border: none;
+      font: 600 20px "Montserrat";
+      cursor: pointer;
+      float: left; }
+      .wrapper .main_screen .content .btn_user button:hover {
+        border: 3px solid #b48e05; }
+    .wrapper .main_screen .content .btn_user .btn_play {
+      width: 203px;
+      height: 75px;
+      margin-left: 61px;
+      float: left;
+      padding: 0;
+      list-style: none; }
+      .wrapper .main_screen .content .btn_user .btn_play .play_video-img {
+        opacity: 0.75; }
+      .wrapper .main_screen .content .btn_user .btn_play .play_video-text {
+        text-decoration: none;
+        float: right; }
+        .wrapper .main_screen .content .btn_user .btn_play .play_video-text p {
+          width: 108px;
+          height: 75px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 25px;
+          color: #FFFBFB;
+          margin: 0; }
+  .wrapper .main_screen .content .social {
+    width: 206px;
+    height: 55px;
+    margin-top: 120px; }
+    .wrapper .main_screen .content .social p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: #FFFBFB;
+      margin: 0; }
+    .wrapper .main_screen .content .social .cosial_icon {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 22px;
+      align-items: center; }
+  .wrapper .main_screen .content .container_cards {
     display: flex;
-    justify-content: space-between;
-    padding-top: 22px;
-    align-items: center; }
+    justify-content: flex-end;
+    color: #FFFBFB; }
+    .wrapper .main_screen .content .container_cards #island {
+      margin-right: 16px;
+      width: 278px;
+      height: 200px; }
+    .wrapper .main_screen .content .container_cards #dolomit {
+      margin: 0 16px; }
+    .wrapper .main_screen .content .container_cards #norway {
+      margin-left: 16px; }

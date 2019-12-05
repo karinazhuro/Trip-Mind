@@ -1,19 +1,27 @@
-// creat var min-width 1920 and 100%
+// import font
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+// variable of color
 $colorPrimary: #FFFBFB;
 $colorButton: #FFC806;
-$colorButtonHover: rgba(255,
-201,
-6,
-0.89);
+$colorButtonBorder: #b48e05;
 $colorTextBtn: #2D0000;
-$fontMontserrat: 'Montserrat',
-serif;
-$fontPlayfairDisplay: 'Playfair Display',
-serif;
+// variable of font
+$fontMontserrat: 'Montserrat';
+$fontPlayfairDisplay: 'Playfair Display';
+// rules for numbers in cards
+%style_for_numbers {
+    padding: 18px 0 0 25px;
+    margin: 0;
+    font-family: $fontPlayfairDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    position: absolute;
+}
+
 .wrapper {
-    header {
+    .main_screen {
         background-image: url('../img/Irelandmain.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -21,37 +29,40 @@ serif;
         background-size: cover;
         min-height: 1184px;
         padding: 102px 190px 0 190px;
-        display: flex;
-        justify-content: space-between;
-        .logo {
-            height: 100%;
-        }
-        nav {
-            height: 100%;
-            padding-top: 8px;
-            ul {
-                padding: 0;
-                margin: 0;
-                display: flex;
-                font: 500 16px $fontMontserrat;
-                li {
-                    list-style: none;
-                    &:not(:last-child) {
-                        margin-right: 40px;
-                    }
-                    a {
-                        text-decoration: none;
-                        color: $colorPrimary;
-                        &:hover {
-                            text-decoration: underline;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                height: 100%;
+            }
+            nav {
+                height: 100%;
+                padding-top: 8px;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    font: 500 16px $fontMontserrat;
+                    li {
+                        list-style: none;
+                        &:not(:last-child) {
+                            margin-right: 40px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $colorPrimary;
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
             }
-        }
-        .menu {
-            height: 100%;
-            padding-top: 5px;
+            .menu {
+                height: 100%;
+                padding-top: 5px;
+            }
         }
         .content {
             .title {
@@ -76,71 +87,96 @@ serif;
                     margin: 0;
                 }
             }
-        }
-    }
-    .container-btn {
-        width: 573px;
-        height: 75px;
-        button {
-            width: 309px;
-            height: 75px;
-            // margin: 70px 0;
-            border-radius: 75px;
-            background-color: $colorButton;
-            color: $colorTextBtn;
-            border: none;
-            font: 600 20px $fontMontserrat;
-            cursor: pointer;
-            float: left;
-            &:hover {
-                background-color: $colorButtonHover;
-            }
-        }
-        .btn_play {
-            width: 203px;
-            height: 75px;
-            margin-left: 61px;
-            float: left;
-            padding: 0;
-            list-style: none;
-            .play_video-img {
-                opacity: 0.75;
-            }
-            .play_video-text {
-                text-decoration: none;
-                float: right;
-                p {
-                    width: 108px;
+            .btn_user {
+                width: 573px;
+                height: 75px;
+                button {
+                    width: 309px;
                     height: 75px;
+                    // margin: 70px 0;
+                    border-radius: 75px;
+                    background-color: $colorButton;
+                    color: $colorTextBtn;
+                    border: none;
+                    font: 600 20px $fontMontserrat;
+                    cursor: pointer;
+                    float: left;
+                    &:hover {
+                        border: 3px solid $colorButtonBorder;
+                    }
+                }
+                .btn_play {
+                    width: 203px;
+                    height: 75px;
+                    margin-left: 61px;
+                    float: left;
+                    padding: 0;
+                    list-style: none;
+                    .play_video-img {
+                        opacity: 0.75;
+                    }
+                    .play_video-text {
+                        text-decoration: none;
+                        float: right;
+                        p {
+                            width: 108px;
+                            height: 75px;
+                            font-family: $fontMontserrat;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 25px;
+                            color: $colorPrimary;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .social {
+                width: 206px;
+                height: 55px;
+                margin-top: 120px;
+                p {
                     font-family: $fontMontserrat;
                     font-style: normal;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 25px;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 14px;
                     color: $colorPrimary;
                     margin: 0;
                 }
+                .cosial_icon {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 22px;
+                    align-items: center;
+                }
             }
-        }
-    }
-    .container_social {
-        width: 206px;
-        height: 55px;
-        margin-top: 120px;
-        p {
-            font-family: $fontMontserrat;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 14px;
-            color: $colorPrimary;
-            margin: 0;
-        }
-        .cosial_icon {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 22px;
-            align-items: center;
+            .container_cards {
+                display: flex;
+                justify-content: flex-end;
+                color: $colorPrimary;
+                #island {
+                    margin-right: 16px;
+                    width: 278px;
+                    height: 200px;
+                    .number {
+                        @extend %style_for_numbers;
+                    }
+                }
+                #dolomit {
+                    margin: 0 16px;
+                    .number {
+                        @extend %style_for_numbers;
+                    }
+                }
+                #norway {
+                    margin-left: 16px;
+                    .number {
+                        @extend %style_for_numbers;
+                    }
+                }
+            }
         }
     }
 }
