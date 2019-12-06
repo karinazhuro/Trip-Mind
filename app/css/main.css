@@ -1,13 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
-.wrapper .main_screen .content .container_cards #island .number, .wrapper .main_screen .content .container_cards #dolomit .number, .wrapper .main_screen .content .container_cards #norway .number {
-  padding: 18px 0 0 25px;
+.wrapper .main_screen .content .cards #island .number, .wrapper .main_screen .content .cards #dolomit .number, .wrapper .main_screen .content .cards #norway .number {
   margin: 0;
+  position: absolute;
+  left: 25px;
+  top: 25px;
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
-  position: absolute; }
+  font-size: 25px; }
+
+.wrapper .main_screen .content .cards #island .name_card, .wrapper .main_screen .content .cards #dolomit .name_card, .wrapper .main_screen .content .cards #norway .name_card {
+  margin: 0;
+  width: 171px;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFBFB; }
+
+.wrapper .main_screen .content .cards #island .arrow_follow, .wrapper .main_screen .content .cards #dolomit .arrow_follow, .wrapper .main_screen .content .cards #norway .arrow_follow {
+  position: absolute;
+  bottom: 25px;
+  right: 25px; }
 
 .wrapper .main_screen {
   background-image: url("../img/Irelandmain.png");
@@ -116,15 +134,27 @@
       justify-content: space-between;
       padding-top: 22px;
       align-items: center; }
-  .wrapper .main_screen .content .container_cards {
+  .wrapper .main_screen .content .cards {
     display: flex;
     justify-content: flex-end;
-    color: #FFFBFB; }
-    .wrapper .main_screen .content .container_cards #island {
+    color: #FFFBFB;
+    position: relative; }
+    .wrapper .main_screen .content .cards #island {
       margin-right: 16px;
-      width: 278px;
-      height: 200px; }
-    .wrapper .main_screen .content .container_cards #dolomit {
-      margin: 0 16px; }
-    .wrapper .main_screen .content .container_cards #norway {
-      margin-left: 16px; }
+      position: relative; }
+    .wrapper .main_screen .content .cards #dolomit {
+      margin: 0 16px;
+      position: relative; }
+    .wrapper .main_screen .content .cards #norway {
+      margin-left: 16px;
+      position: relative; }
+
+.wrapper main {
+  padding: 120px 344px 0 190px; }
+  .wrapper main .lookAllTours .imageTag .bg {
+    width: 617px;
+    height: 159px;
+    background: #d1d1d1;
+    border-radius: 16px 0px 0px 0px; }
+  .wrapper main .lookAllTours .imageTag img {
+    padding: 30px 0 0 30px; }

@@ -9,15 +9,45 @@ $colorTextBtn: #2D0000;
 // variable of font
 $fontMontserrat: 'Montserrat';
 $fontPlayfairDisplay: 'Playfair Display';
-// rules for numbers in cards
+// extend for numbers in cards
 %style_for_numbers {
-    padding: 18px 0 0 25px;
     margin: 0;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    // style
     font-family: $fontPlayfairDisplay;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
+}
+
+// extend for name in cards
+%style_for_nameCards {
+    margin: 0;
+    width: 171px;
     position: absolute;
+    left: 25px;
+    bottom: 25px;
+    // style
+    font-family: $fontMontserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: $colorPrimary;
+}
+
+// extend for arrow in cards
+%style_for_arrow_follow {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+// extend for background
+%style_bg {
+    background: rgba(201, 201, 201, 0.85);
+    opacity: 0.16;
 }
 
 .wrapper {
@@ -152,31 +182,69 @@ $fontPlayfairDisplay: 'Playfair Display';
                     align-items: center;
                 }
             }
-            .container_cards {
+            .cards {
                 display: flex;
                 justify-content: flex-end;
                 color: $colorPrimary;
+                position: relative;
                 #island {
                     margin-right: 16px;
-                    width: 278px;
-                    height: 200px;
+                    position: relative;
                     .number {
                         @extend %style_for_numbers;
+                    }
+                    .name_card {
+                        @extend %style_for_nameCards;
+                    }
+                    .arrow_follow {
+                        @extend %style_for_arrow_follow;
                     }
                 }
                 #dolomit {
                     margin: 0 16px;
+                    position: relative;
                     .number {
                         @extend %style_for_numbers;
+                    }
+                    .name_card {
+                        @extend %style_for_nameCards;
+                    }
+                    .arrow_follow {
+                        @extend %style_for_arrow_follow;
                     }
                 }
                 #norway {
                     margin-left: 16px;
+                    position: relative;
                     .number {
                         @extend %style_for_numbers;
                     }
+                    .name_card {
+                        @extend %style_for_nameCards;
+                    }
+                    .arrow_follow {
+                        @extend %style_for_arrow_follow;
+                    }
                 }
             }
+        }
+    }
+    main {
+        padding: 120px 344px 0 190px;
+        .lookAllTours {
+            .imageTag {
+                .bg {
+                    width: 617px;
+                    height: 159px;
+                    background: $colorBg;
+                    // opacity: 0.16;
+                    border-radius: 16px 0px 0px 0px;
+                }
+                img {
+                    padding: 30px 0 0 30px;
+                }
+            }
+            .description {}
         }
     }
 }
