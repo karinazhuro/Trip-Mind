@@ -1,33 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:397,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
-.wrapper .main_screen .content .cards #island .number, .wrapper .main_screen .content .cards #dolomit .number, .wrapper .main_screen .content .cards #norway .number {
-  margin: 0;
-  position: absolute;
-  left: 25px;
-  top: 25px;
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px; }
+.wrapper main .lookAllTours .imageTag .bg {
+  background-color: rgba(201, 201, 201, 0.16);
+  width: 617px;
+  height: 159px; }
 
-.wrapper .main_screen .content .cards #island .name_card, .wrapper .main_screen .content .cards #dolomit .name_card, .wrapper .main_screen .content .cards #norway .name_card {
-  margin: 0;
-  width: 171px;
+.wrapper main .lookAllTours .imageTag .linkText {
+  width: 370px;
+  height: 110px;
+  background: #FFFBFB;
+  box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
+  border-radius: 16px;
   position: absolute;
-  left: 25px;
-  bottom: 25px;
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-  color: #FFFBFB; }
+  bottom: 0;
+  right: 29px; }
 
-.wrapper .main_screen .content .cards #island .arrow_follow, .wrapper .main_screen .content .cards #dolomit .arrow_follow, .wrapper .main_screen .content .cards #norway .arrow_follow {
-  position: absolute;
-  bottom: 25px;
-  right: 25px; }
-
-.wrapper .main_screen {
+.wrapper .mainScreen {
   background-image: url("../img/Irelandmain.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -35,42 +23,42 @@
   background-size: cover;
   min-height: 1184px;
   padding: 102px 190px 0 190px; }
-  .wrapper .main_screen header {
+  .wrapper .mainScreen header {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .wrapper .main_screen header .logo {
+    .wrapper .mainScreen header .logo {
       height: 100%; }
-    .wrapper .main_screen header nav {
+    .wrapper .mainScreen header nav {
       height: 100%;
       padding-top: 8px; }
-      .wrapper .main_screen header nav ul {
+      .wrapper .mainScreen header nav ul {
         padding: 0;
         margin: 0;
         display: flex;
         font: 500 16px "Montserrat"; }
-        .wrapper .main_screen header nav ul li {
+        .wrapper .mainScreen header nav ul li {
           list-style: none; }
-          .wrapper .main_screen header nav ul li:not(:last-child) {
+          .wrapper .mainScreen header nav ul li:not(:last-child) {
             margin-right: 40px; }
-          .wrapper .main_screen header nav ul li a {
+          .wrapper .mainScreen header nav ul li a {
             text-decoration: none;
             color: #FFFBFB; }
-            .wrapper .main_screen header nav ul li a:hover {
+            .wrapper .mainScreen header nav ul li a:hover {
               text-decoration: underline; }
-    .wrapper .main_screen header .menu {
+    .wrapper .mainScreen header .menu {
       height: 100%;
       padding-top: 5px; }
-  .wrapper .main_screen .content .title {
+  .wrapper .mainScreen .content .title {
     width: 806px;
     padding: 170px 0 70px 0; }
-    .wrapper .main_screen .content .title h1 {
+    .wrapper .mainScreen .content .title h1 {
       font: bold 70px/95px "Playfair Display";
       color: #FFFBFB;
       margin: 0;
       top: 0;
       height: 179px; }
-    .wrapper .main_screen .content .title p {
+    .wrapper .mainScreen .content .title p {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
@@ -80,10 +68,10 @@
       width: 493px;
       padding-top: 50px;
       margin: 0; }
-  .wrapper .main_screen .content .btn_user {
+  .wrapper .mainScreen .content .btnUser {
     width: 573px;
     height: 75px; }
-    .wrapper .main_screen .content .btn_user button {
+    .wrapper .mainScreen .content .btnUser button {
       width: 309px;
       height: 75px;
       border-radius: 75px;
@@ -93,21 +81,21 @@
       font: 600 20px "Montserrat";
       cursor: pointer;
       float: left; }
-      .wrapper .main_screen .content .btn_user button:hover {
+      .wrapper .mainScreen .content .btnUser button:hover {
         border: 3px solid #b48e05; }
-    .wrapper .main_screen .content .btn_user .btn_play {
+    .wrapper .mainScreen .content .btnUser .btnPlay {
       width: 203px;
       height: 75px;
       margin-left: 61px;
       float: left;
       padding: 0;
       list-style: none; }
-      .wrapper .main_screen .content .btn_user .btn_play .play_video-img {
+      .wrapper .mainScreen .content .btnUser .btnPlay .playVideoImg {
         opacity: 0.75; }
-      .wrapper .main_screen .content .btn_user .btn_play .play_video-text {
+      .wrapper .mainScreen .content .btnUser .btnPlay .playVideoText {
         text-decoration: none;
         float: right; }
-        .wrapper .main_screen .content .btn_user .btn_play .play_video-text p {
+        .wrapper .mainScreen .content .btnUser .btnPlay .playVideoText p {
           width: 108px;
           height: 75px;
           font-family: "Montserrat";
@@ -117,11 +105,11 @@
           line-height: 25px;
           color: #FFFBFB;
           margin: 0; }
-  .wrapper .main_screen .content .social {
+  .wrapper .mainScreen .content .social {
     width: 206px;
     height: 55px;
     margin-top: 120px; }
-    .wrapper .main_screen .content .social p {
+    .wrapper .mainScreen .content .social p {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: normal;
@@ -129,32 +117,92 @@
       line-height: 14px;
       color: #FFFBFB;
       margin: 0; }
-    .wrapper .main_screen .content .social .cosial_icon {
+    .wrapper .mainScreen .content .social .cosialIcon {
       display: flex;
       justify-content: space-between;
       padding-top: 22px;
       align-items: center; }
-  .wrapper .main_screen .content .cards {
+  .wrapper .mainScreen .content .cards {
     display: flex;
     justify-content: flex-end;
     color: #FFFBFB;
     position: relative; }
-    .wrapper .main_screen .content .cards #island {
-      margin-right: 16px;
+    .wrapper .mainScreen .content .cards div {
       position: relative; }
-    .wrapper .main_screen .content .cards #dolomit {
-      margin: 0 16px;
-      position: relative; }
-    .wrapper .main_screen .content .cards #norway {
-      margin-left: 16px;
-      position: relative; }
+      .wrapper .mainScreen .content .cards div:not(:last-child) {
+        margin-right: 32px; }
+      .wrapper .mainScreen .content .cards div .number {
+        margin: 0;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px; }
+      .wrapper .mainScreen .content .cards div .name {
+        margin: 0;
+        width: 171px;
+        position: absolute;
+        left: 25px;
+        bottom: 25px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFBFB; }
+      .wrapper .mainScreen .content .cards div .arrow {
+        position: absolute;
+        bottom: 25px;
+        right: 25px; }
 
 .wrapper main {
   padding: 120px 344px 0 190px; }
-  .wrapper main .lookAllTours .imageTag .bg {
-    width: 617px;
-    height: 159px;
-    background: #d1d1d1;
-    border-radius: 16px 0px 0px 0px; }
-  .wrapper main .lookAllTours .imageTag img {
-    padding: 30px 0 0 30px; }
+  .wrapper main .lookAllTours {
+    display: flex;
+    justify-content: space-between; }
+    .wrapper main .lookAllTours .imageTag {
+      width: 770px;
+      height: 543px;
+      position: relative; }
+      .wrapper main .lookAllTours .imageTag .bg {
+        position: absolute;
+        border-radius: 16px 0px 0px 0px; }
+      .wrapper main .lookAllTours .imageTag img {
+        padding: 30px 0 0 30px;
+        position: absolute; }
+      .wrapper main .lookAllTours .imageTag .linkText p {
+        padding-top: 30px;
+        padding-left: 40px;
+        width: 178px;
+        height: 50px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #333333;
+        box-sizing: content-box;
+        margin: 0; }
+      .wrapper main .lookAllTours .imageTag .linkText img {
+        right: 35px;
+        top: 20px; }
+    .wrapper main .lookAllTours .description .descriptionSubject {
+      margin: 0;
+      width: 449px;
+      height: 156px;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 52px;
+      color: #333333; }
+      .wrapper main .lookAllTours .description .descriptionSubject span {
+        color: #FFC806; }
+    .wrapper main .lookAllTours .description .descriptionText {
+      width: 449px;
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      color: #B5B5B5; }

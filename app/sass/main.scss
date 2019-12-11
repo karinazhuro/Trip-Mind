@@ -1,57 +1,68 @@
 // import font
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+@import '../fonts/Montserrat';
+@import '../fonts/PlayfairDisplay';
 // variable of color
 $colorPrimary: #FFFBFB;
-$colorButton: #FFC806;
-$colorButtonBorder: #b48e05;
+$colorSecondary: #FFC806;
+$colorSecondaryBorder: #b48e05;
 $colorTextBtn: #2D0000;
-// variable of font
-$fontMontserrat: 'Montserrat';
-$fontPlayfairDisplay: 'Playfair Display';
-// extend for numbers in cards
-%style_for_numbers {
-    margin: 0;
-    position: absolute;
-    left: 25px;
-    top: 25px;
-    // style
-    font-family: $fontPlayfairDisplay;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-}
+$colorTextGorge: #333333;
+$colorDescriptionText: #B5B5B5;
 
-// extend for name in cards
-%style_for_nameCards {
-    margin: 0;
-    width: 171px;
-    position: absolute;
-    left: 25px;
-    bottom: 25px;
-    // style
-    font-family: $fontMontserrat;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    color: $colorPrimary;
-}
-
-// extend for arrow in cards
-%style_for_arrow_follow {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-}
-
-// extend for background
+// extend for background in card
 %style_bg {
-    background: rgba(201, 201, 201, 0.85);
-    opacity: 0.16;
+    background-color: rgba(201, 201, 201, 0.16);
+    width: 617px;
+    height: 159px;
 }
 
+%style_text_link {
+    width: 370px;
+    height: 110px;
+    background: $colorPrimary;
+    box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
+    border-radius: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 29px;
+}
+
+@mixin cardsBox () {
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 32px;
+    }
+    .number {
+        margin: 0;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        font-family: $fontPlayfairDisplay;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+    }
+    .name {
+        margin: 0;
+        width: 171px;
+        position: absolute;
+        left: 25px;
+        bottom: 25px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: $colorPrimary;
+    }
+    .arrow {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+    }
+}
+
+// STYLE
 .wrapper {
-    .main_screen {
+    .mainScreen {
         background-image: url('../img/Irelandmain.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -63,11 +74,7 @@ $fontPlayfairDisplay: 'Playfair Display';
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .logo {
-                height: 100%;
-            }
             nav {
-                height: 100%;
                 padding-top: 8px;
                 ul {
                     padding: 0;
@@ -90,7 +97,6 @@ $fontPlayfairDisplay: 'Playfair Display';
                 }
             }
             .menu {
-                height: 100%;
                 padding-top: 5px;
             }
         }
@@ -117,35 +123,34 @@ $fontPlayfairDisplay: 'Playfair Display';
                     margin: 0;
                 }
             }
-            .btn_user {
+            .btnUser {
                 width: 573px;
                 height: 75px;
                 button {
                     width: 309px;
                     height: 75px;
-                    // margin: 70px 0;
                     border-radius: 75px;
-                    background-color: $colorButton;
+                    background-color: $colorSecondary;
                     color: $colorTextBtn;
                     border: none;
                     font: 600 20px $fontMontserrat;
                     cursor: pointer;
                     float: left;
                     &:hover {
-                        border: 3px solid $colorButtonBorder;
+                        border: 3px solid $colorSecondaryBorder;
                     }
                 }
-                .btn_play {
+                .btnPlay {
                     width: 203px;
                     height: 75px;
                     margin-left: 61px;
                     float: left;
                     padding: 0;
                     list-style: none;
-                    .play_video-img {
+                    .playVideoImg {
                         opacity: 0.75;
                     }
-                    .play_video-text {
+                    .playVideoText {
                         text-decoration: none;
                         float: right;
                         p {
@@ -175,7 +180,7 @@ $fontPlayfairDisplay: 'Playfair Display';
                     color: $colorPrimary;
                     margin: 0;
                 }
-                .cosial_icon {
+                .cosialIcon {
                     display: flex;
                     justify-content: space-between;
                     padding-top: 22px;
@@ -187,44 +192,8 @@ $fontPlayfairDisplay: 'Playfair Display';
                 justify-content: flex-end;
                 color: $colorPrimary;
                 position: relative;
-                #island {
-                    margin-right: 16px;
-                    position: relative;
-                    .number {
-                        @extend %style_for_numbers;
-                    }
-                    .name_card {
-                        @extend %style_for_nameCards;
-                    }
-                    .arrow_follow {
-                        @extend %style_for_arrow_follow;
-                    }
-                }
-                #dolomit {
-                    margin: 0 16px;
-                    position: relative;
-                    .number {
-                        @extend %style_for_numbers;
-                    }
-                    .name_card {
-                        @extend %style_for_nameCards;
-                    }
-                    .arrow_follow {
-                        @extend %style_for_arrow_follow;
-                    }
-                }
-                #norway {
-                    margin-left: 16px;
-                    position: relative;
-                    .number {
-                        @extend %style_for_numbers;
-                    }
-                    .name_card {
-                        @extend %style_for_nameCards;
-                    }
-                    .arrow_follow {
-                        @extend %style_for_arrow_follow;
-                    }
+                div {
+                    @include cardsBox ();
                 }
             }
         }
@@ -232,19 +201,67 @@ $fontPlayfairDisplay: 'Playfair Display';
     main {
         padding: 120px 344px 0 190px;
         .lookAllTours {
+            display: flex;
+            justify-content: space-between;
             .imageTag {
+                width: 770px;
+                height: 543px;
+                position: relative;
                 .bg {
-                    width: 617px;
-                    height: 159px;
-                    background: $colorBg;
-                    // opacity: 0.16;
+                    position: absolute;
+                    @extend %style_bg;
                     border-radius: 16px 0px 0px 0px;
                 }
                 img {
                     padding: 30px 0 0 30px;
+                    position: absolute;
+                }
+                .linkText {
+                    @extend %style_text_link;
+                    p {
+                        padding-top: 30px;
+                        padding-left: 40px;
+                        width: 178px;
+                        height: 50px;
+                        font-family: $fontMontserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: $colorTextGorge;
+                        box-sizing: content-box;
+                        margin: 0;
+                    }
+                    img {
+                        right: 35px;
+                        top: 20px;
+                    }
                 }
             }
-            .description {}
+            .description {
+                .descriptionSubject {
+                    margin: 0;
+                    width: 449px;
+                    height: 156px;
+                    font-family: $fontPlayfairDisplay;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 52px;
+                    color: $colorTextGorge;
+                    span {
+                        color: $colorSecondary;
+                    }
+                }
+                .descriptionText {
+                    width: 449px;
+                    font-family: $fontMontserrat;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: $colorDescriptionText;
+                }
+            }
         }
     }
 }
