@@ -8,15 +8,14 @@ $colorSecondaryBorder: #b48e05;
 $colorTextBtn: #2D0000;
 $colorTextGorge: #333333;
 $colorDescriptionText: #B5B5B5;
-
 // extend for background in card
-%style_bg {
+@mixin styleBgUnderImg() {
     background-color: rgba(201, 201, 201, 0.16);
     width: 617px;
     height: 159px;
 }
 
-%style_text_link {
+@mixin styleTextLink() {
     width: 370px;
     height: 110px;
     background: $colorPrimary;
@@ -48,6 +47,7 @@ $colorDescriptionText: #B5B5B5;
         position: absolute;
         left: 25px;
         bottom: 25px;
+        font-family: $fontMontserrat;
         font-weight: 500;
         font-size: 18px;
         line-height: 25px;
@@ -62,7 +62,7 @@ $colorDescriptionText: #B5B5B5;
 
 // STYLE
 .wrapper {
-    .mainScreen {
+    .page {
         background-image: url('../img/Irelandmain.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -199,17 +199,17 @@ $colorDescriptionText: #B5B5B5;
         }
     }
     main {
-        padding: 120px 344px 0 190px;
         .lookAllTours {
+            padding: 120px 344px 0 190px;
             display: flex;
             justify-content: space-between;
             .imageTag {
                 width: 770px;
                 height: 543px;
                 position: relative;
-                .bg {
+                .bgUnderImg {
                     position: absolute;
-                    @extend %style_bg;
+                    @include styleBgUnderImg ();
                     border-radius: 16px 0px 0px 0px;
                 }
                 img {
@@ -217,7 +217,7 @@ $colorDescriptionText: #B5B5B5;
                     position: absolute;
                 }
                 .linkText {
-                    @extend %style_text_link;
+                    @include styleTextLink ();
                     p {
                         padding-top: 30px;
                         padding-left: 40px;
@@ -238,7 +238,7 @@ $colorDescriptionText: #B5B5B5;
                     }
                 }
             }
-            .description {
+            .descriptionA {
                 .descriptionSubject {
                     margin: 0;
                     width: 449px;
@@ -260,8 +260,80 @@ $colorDescriptionText: #B5B5B5;
                     font-size: 20px;
                     line-height: 20px;
                     color: $colorDescriptionText;
+                    margin: 40px 0;
+                }
+                button {
+                    width: 309px;
+                    height: 75px;
+                    border: 2px solid $colorSecondary;
+                    background-color: #fff;
+                    color: $colorSecondary;
+                    border-radius: 75px;
+                    font-family: $fontMontserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    margin: 30px 0;
+                    padding: 0;
+                    &:hover {
+                        border: 3px solid $colorSecondaryBorder;
+                    }
                 }
             }
+        }
+        .descriptionBlock {
+            padding: 120px 190px 0 344px;
+            display: flex;
+            justify-content: space-between;
+            margin: 200px 0;
+            .descriptionB {
+                .descriptionSubject {
+                    margin: 0;
+                    width: 423px;
+                    height: 156px;
+                    font-family: $fontPlayfairDisplay;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 52px;
+                    color: $colorTextGorge;
+                    span {
+                        color: $colorSecondary;
+                    }
+                }
+                .descriptionText {
+                    width: 449px;
+                    height: 52px;
+                    font-family: $fontMontserrat;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: $colorDescriptionText;
+                    margin: 40px 0;
+                }
+                button {
+                    width: 309px;
+                    height: 75px;
+                    border: 2px solid $colorSecondary;
+                    background-color: #fff;
+                    color: $colorSecondary;
+                    border-radius: 75px;
+                    font-family: $fontMontserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    margin: 30px 0;
+                    padding: 0;
+                    &:hover {
+                        border: 3px solid $colorSecondaryBorder;
+                    }
+                }
+            }
+            .imageTag {}
         }
     }
 }
