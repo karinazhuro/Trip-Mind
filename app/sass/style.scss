@@ -1,0 +1,218 @@
+// import font
+@import '../fonts/Montserrat';
+@import '../fonts/PlayfairDisplay';
+// variable of color
+$colorPrimary: #FFFBFB;
+$colorSecondary: #FFC806;
+$colorSecondaryBorder: #b48e05;
+$colorTextBtn: #2D0000;
+$colorTextGorge: #333333;
+$colorDescriptionText: #B5B5B5;
+// extend for background in card
+@mixin cardsBox {
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 32px;
+    }
+    .number {
+        margin: 0;
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        font-family: $fontPlayfairDisplay;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+    }
+    .name {
+        margin: 0;
+        width: 171px;
+        position: absolute;
+        left: 25px;
+        bottom: 25px;
+        font-family: $fontMontserrat;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: $colorPrimary;
+    }
+    .arrow {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+    }
+}
+
+@mixin imageAndDesc {
+    .imageTag {
+        width: 770px;
+        height: 543px;
+        position: relative;
+        .bgUnderImg {
+            position: absolute;
+            background-color: rgba(201, 201, 201, 0.16);
+            width: 617px;
+            height: 159px;
+        }
+        img {
+            position: absolute;
+        }
+        .bgLinkDesc {
+            width: 370px;
+            height: 110px;
+            background: $colorPrimary;
+            box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
+            border-radius: 16px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+// STYLE
+.wrapper {
+    .page {
+        background-image: url('../img/Irelandmain.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        background-size: cover;
+        min-height: 1184px;
+        padding: 102px 190px 0 190px;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            nav {
+                padding-top: 8px;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    font: 500 16px $fontMontserrat;
+                    li {
+                        list-style: none;
+                        &:not(:last-child) {
+                            margin-right: 40px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: $colorPrimary;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            .menu {
+                padding-top: 5px;
+            }
+        }
+        .content {
+            .title {
+                width: 806px;
+                padding: 170px 0 70px 0;
+                h1 {
+                    font: bold 70px/95px $fontPlayfairDisplay;
+                    color: $colorPrimary;
+                    margin: 0;
+                    top: 0;
+                    height: 179px;
+                }
+                p {
+                    font-family: $fontMontserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 45px;
+                    color: $colorPrimary;
+                    width: 493px;
+                    padding-top: 50px;
+                    margin: 0;
+                }
+            }
+            .btnUser {
+                width: 573px;
+                height: 75px;
+                button {
+                    width: 309px;
+                    height: 75px;
+                    border-radius: 75px;
+                    background-color: $colorSecondary;
+                    color: $colorTextBtn;
+                    border: none;
+                    font: 600 20px $fontMontserrat;
+                    cursor: pointer;
+                    float: left;
+                    &:hover {
+                        border: 3px solid $colorSecondaryBorder;
+                    }
+                }
+                .btnPlay {
+                    width: 203px;
+                    height: 75px;
+                    margin-left: 61px;
+                    float: left;
+                    padding: 0;
+                    list-style: none;
+                    .playVideoImg {
+                        opacity: 0.75;
+                    }
+                    .playVideoText {
+                        text-decoration: none;
+                        float: right;
+                        p {
+                            width: 108px;
+                            height: 75px;
+                            font-family: $fontMontserrat;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 25px;
+                            color: $colorPrimary;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .social {
+                width: 206px;
+                height: 55px;
+                margin-top: 120px;
+                p {
+                    font-family: $fontMontserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: $colorPrimary;
+                    margin: 0;
+                }
+                .cosialIcon {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 22px;
+                    align-items: center;
+                }
+            }
+            .cards {
+                display: flex;
+                justify-content: flex-end;
+                color: $colorPrimary;
+                position: relative;
+                div {
+                    @include cardsBox;
+                }
+            }
+        }
+    }
+    main {
+        .lookAllTours {
+            padding: 120px 344px 0 190px;
+        }
+        .descriptionBlock {
+            padding: 120px 190px 0 344px;
+        }
+    }
+}

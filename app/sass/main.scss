@@ -9,13 +9,13 @@ $colorTextBtn: #2D0000;
 $colorTextGorge: #333333;
 $colorDescriptionText: #B5B5B5;
 // extend for background in card
-@mixin styleBgUnderImg() {
+@mixin styleBgUnderImg {
     background-color: rgba(201, 201, 201, 0.16);
     width: 617px;
     height: 159px;
 }
 
-@mixin styleTextLink() {
+@mixin bgLinkDesc {
     width: 370px;
     height: 110px;
     background: $colorPrimary;
@@ -23,10 +23,9 @@ $colorDescriptionText: #B5B5B5;
     border-radius: 16px;
     position: absolute;
     bottom: 0;
-    right: 29px;
 }
 
-@mixin cardsBox () {
+@mixin cardsBox {
     position: relative;
     &:not(:last-child) {
         margin-right: 32px;
@@ -193,7 +192,7 @@ $colorDescriptionText: #B5B5B5;
                 color: $colorPrimary;
                 position: relative;
                 div {
-                    @include cardsBox ();
+                    @include cardsBox;
                 }
             }
         }
@@ -209,15 +208,16 @@ $colorDescriptionText: #B5B5B5;
                 position: relative;
                 .bgUnderImg {
                     position: absolute;
-                    @include styleBgUnderImg ();
-                    border-radius: 16px 0px 0px 0px;
+                    @include styleBgUnderImg;
+                    border-radius: 16px 0px 0px 0px; // var
                 }
                 img {
-                    padding: 30px 0 0 30px;
+                    padding: 30px 0 0 30px; //var
                     position: absolute;
                 }
-                .linkText {
-                    @include styleTextLink ();
+                .bgLinkDesc {
+                    @include bgLinkDesc;
+                    right: 30px;
                     p {
                         padding-top: 30px;
                         padding-left: 40px;
@@ -238,7 +238,7 @@ $colorDescriptionText: #B5B5B5;
                     }
                 }
             }
-            .descriptionA {
+            .description {
                 .descriptionSubject {
                     margin: 0;
                     width: 449px;
@@ -288,7 +288,7 @@ $colorDescriptionText: #B5B5B5;
             display: flex;
             justify-content: space-between;
             margin: 200px 0;
-            .descriptionB {
+            .description {
                 .descriptionSubject {
                     margin: 0;
                     width: 423px;
@@ -333,7 +333,43 @@ $colorDescriptionText: #B5B5B5;
                     }
                 }
             }
-            .imageTag {}
+            .imageTag {
+                width: 770px;
+                height: 543px;
+                position: relative;
+                .bgUnderImg {
+                    position: absolute;
+                    @include styleBgUnderImg ();
+                    border-radius: 0px 16px 0px 0px; // var
+                    right: 0; // var
+                }
+                img {
+                    padding: 30px 30px 0 0; // var
+                    position: absolute;
+                }
+                .bgLinkDesc {
+                    @include bgLinkDesc ();
+                    left: 30px;
+                    p {
+                        padding-top: 30px;
+                        padding-left: 40px;
+                        width: 178px;
+                        height: 50px;
+                        font-family: $fontMontserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: $colorTextGorge;
+                        box-sizing: content-box;
+                        margin: 0;
+                    }
+                    img {
+                        right: 35px;
+                        top: 20px;
+                    }
+                }
+            }
         }
     }
 }
