@@ -147,6 +147,44 @@
 
 .wrapper main .lookAllTours {
   padding: 120px 344px 0 190px; }
+  .wrapper main .lookAllTours .imageTag {
+    width: 770px;
+    height: 543px;
+    position: relative; }
+    .wrapper main .lookAllTours .imageTag .bgUnderImg {
+      position: absolute;
+      background-color: rgba(201, 201, 201, 0.16);
+      width: 617px;
+      height: 159px; }
+    .wrapper main .lookAllTours .imageTag .bgImage {
+      position: absolute; }
+    .wrapper main .lookAllTours .imageTag .bgLinkDesc {
+      width: 370px;
+      height: 110px;
+      background: #FFFBFB;
+      box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
+      border-radius: 16px;
+      position: absolute;
+      bottom: 0; }
 
 .wrapper main .descriptionBlock {
   padding: 120px 190px 0 344px; }
+  .wrapper main .descriptionBlock .imageTag {
+    width: 770px;
+    height: 543px;
+    position: relative; }
+    .wrapper main .descriptionBlock .imageTag .bgUnderImg {
+      position: absolute;
+      background-color: rgba(201, 201, 201, 0.16);
+      width: 617px;
+      height: 159px; }
+    .wrapper main .descriptionBlock .imageTag .bgImage {
+      position: absolute; }
+    .wrapper main .descriptionBlock .imageTag .bgLinkDesc {
+      width: 370px;
+      height: 110px;
+      background: #FFFBFB;
+      box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
+      border-radius: 16px;
+      position: absolute;
+      bottom: 0; }

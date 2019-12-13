@@ -54,7 +54,7 @@ $colorDescriptionText: #B5B5B5;
             width: 617px;
             height: 159px;
         }
-        img {
+        .bgImage {
             position: absolute;
         }
         .bgLinkDesc {
@@ -210,9 +210,11 @@ $colorDescriptionText: #B5B5B5;
     main {
         .lookAllTours {
             padding: 120px 344px 0 190px;
+            @include imageAndDesc();
         }
         .descriptionBlock {
             padding: 120px 190px 0 344px;
+            @include imageAndDesc();
         }
     }
 }

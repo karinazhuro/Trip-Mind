@@ -211,13 +211,13 @@ $colorDescriptionText: #B5B5B5;
                     @include styleBgUnderImg;
                     border-radius: 16px 0px 0px 0px; // var
                 }
-                img {
+                .bgImage {
                     padding: 30px 0 0 30px; //var
                     position: absolute;
                 }
                 .bgLinkDesc {
                     @include bgLinkDesc;
-                    right: 30px;
+                    right: 30px; // var
                     p {
                         padding-top: 30px;
                         padding-left: 40px;
@@ -343,13 +343,13 @@ $colorDescriptionText: #B5B5B5;
                     border-radius: 0px 16px 0px 0px; // var
                     right: 0; // var
                 }
-                img {
+                .bgImage {
                     padding: 30px 30px 0 0; // var
                     position: absolute;
                 }
                 .bgLinkDesc {
                     @include bgLinkDesc ();
-                    left: 30px;
+                    left: 30px; // var
                     p {
                         padding-top: 30px;
                         padding-left: 40px;
