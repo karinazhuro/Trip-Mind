@@ -162,7 +162,7 @@
     .wrapper main .lookAllTours .imageTag img {
       padding: 30px 0 0 30px;
       position: absolute; }
-    .wrapper main .lookAllTours .imageTag .linkText {
+    .wrapper main .lookAllTours .imageTag .bgLinkDesc {
       width: 370px;
       height: 110px;
       background: #FFFBFB;
@@ -171,7 +171,7 @@
       position: absolute;
       bottom: 0;
       right: 30px; }
-      .wrapper main .lookAllTours .imageTag .linkText p {
+      .wrapper main .lookAllTours .imageTag .bgLinkDesc p {
         padding-top: 30px;
         padding-left: 40px;
         width: 178px;
@@ -184,7 +184,7 @@
         color: #333333;
         box-sizing: content-box;
         margin: 0; }
-      .wrapper main .lookAllTours .imageTag .linkText img {
+      .wrapper main .lookAllTours .imageTag .bgLinkDesc img {
         right: 35px;
         top: 20px; }
   .wrapper main .lookAllTours .description .descriptionSubject {
