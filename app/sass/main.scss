@@ -8,24 +8,29 @@ $colorSecondaryBorder: #b48e05;
 $colorTextBtn: #2D0000;
 $colorTextGorge: #333333;
 $colorDescriptionText: #B5B5B5;
-// extend for background in card
-@mixin styleBgUnderImg {
-    background-color: rgba(201, 201, 201, 0.16);
-    width: 617px;
-    height: 159px;
+$colorBgFooterSocial: #fcfcfc;
+// var for mixin image first
+$borderRadiusFirst: 16px 0px 0px 0px;
+$paddingBgImageFirst: 30px 0 0 30px;
+$rightBgLinkDescFirst: 30px;
+// var for mixin image second
+$borderRadiusSecond: 0px 16px 0px 0px;
+$paddingBgImageSecond: 30px 30px 0 0;
+$rightBgUnderImgSecond: 0;
+$leftBgLinkDescSecond: 30px;
+// var for mixin desc first
+$widthDescriptionSubjectFirst: 449px;
+// var for mixin desc second
+$widthDescriptionSubjectSecond: 423px;
+// social icons
+@mixin socialIcons($paddingTop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: $paddingTop;
 }
 
-@mixin bgLinkDesc {
-    width: 370px;
-    height: 110px;
-    background: $colorPrimary;
-    box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
-    border-radius: 16px;
-    position: absolute;
-    bottom: 0;
-}
-
-@mixin cardsBox {
+@mixin cardsBox() {
     position: relative;
     &:not(:last-child) {
         margin-right: 32px;
@@ -52,10 +57,104 @@ $colorDescriptionText: #B5B5B5;
         line-height: 25px;
         color: $colorPrimary;
     }
-    .arrow {
+    .arrowWhite {
         position: absolute;
         bottom: 25px;
         right: 25px;
+    }
+}
+
+@mixin imageTag ($borderRadius, $paddingBgImage) {
+    .imageTag {
+        width: 770px;
+        height: 543px;
+        position: relative;
+        .bgUnderImg {
+            position: absolute;
+            background-color: rgba(201, 201, 201, 0.16);
+            width: 617px;
+            height: 159px;
+            border-radius: $borderRadius;
+        }
+        .bgImage {
+            position: absolute;
+            padding: $paddingBgImage;
+        }
+        .bgLinkDesc {
+            width: 370px;
+            height: 110px;
+            background: $colorPrimary;
+            box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
+            border-radius: 16px;
+            position: absolute;
+            bottom: 0;
+            p {
+                padding-top: 30px;
+                padding-left: 40px;
+                width: 178px;
+                height: 50px;
+                font-family: $fontMontserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: $colorTextGorge;
+                box-sizing: content-box;
+                margin: 0;
+            }
+            .arrowYeyllow {
+                position: absolute;
+                right: 35px;
+                top: 55px;
+            }
+        }
+    }
+}
+
+@mixin desc ($widthdescriptionSubject) {
+    .description {
+        .descriptionSubject {
+            margin: 0;
+            height: 156px;
+            width: $widthdescriptionSubject;
+            font-family: $fontPlayfairDisplay;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 52px;
+            color: $colorTextGorge;
+            span {
+                color: $colorSecondary;
+            }
+        }
+        .descriptionText {
+            width: 449px;
+            font-family: $fontMontserrat;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            color: $colorDescriptionText;
+            margin: 40px 0;
+        }
+        button {
+            width: 309px;
+            height: 75px;
+            border: 2px solid $colorSecondary;
+            background-color: #fff;
+            color: $colorSecondary;
+            border-radius: 75px;
+            font-family: $fontMontserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            cursor: pointer;
+            margin: 30px 0;
+            padding: 0;
+            &:hover {
+                border: 3px solid $colorSecondaryBorder;
+            }
+        }
     }
 }
 
@@ -179,11 +278,8 @@ $colorDescriptionText: #B5B5B5;
                     color: $colorPrimary;
                     margin: 0;
                 }
-                .cosialIcon {
-                    display: flex;
-                    justify-content: space-between;
-                    padding-top: 22px;
-                    align-items: center;
+                .socialIcons {
+                    @include socialIcons(22px);
                 }
             }
             .cards {
@@ -202,173 +298,76 @@ $colorDescriptionText: #B5B5B5;
             padding: 120px 344px 0 190px;
             display: flex;
             justify-content: space-between;
-            .imageTag {
-                width: 770px;
-                height: 543px;
-                position: relative;
-                .bgUnderImg {
-                    position: absolute;
-                    @include styleBgUnderImg;
-                    border-radius: 16px 0px 0px 0px; // var
-                }
-                .bgImage {
-                    padding: 30px 0 0 30px; //var
-                    position: absolute;
-                }
-                .bgLinkDesc {
-                    @include bgLinkDesc;
-                    right: 30px; // var
-                    p {
-                        padding-top: 30px;
-                        padding-left: 40px;
-                        width: 178px;
-                        height: 50px;
-                        font-family: $fontMontserrat;
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 18px;
-                        line-height: 25px;
-                        color: $colorTextGorge;
-                        box-sizing: content-box;
-                        margin: 0;
-                    }
-                    img {
-                        right: 35px;
-                        top: 20px;
-                    }
-                }
+            @include imageTag ($borderRadiusFirst,
+            $paddingBgImageFirst);
+            .bgLinkDesc {
+                right: $rightBgLinkDescFirst;
             }
-            .description {
-                .descriptionSubject {
-                    margin: 0;
-                    width: 449px;
-                    height: 156px;
-                    font-family: $fontPlayfairDisplay;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 40px;
-                    line-height: 52px;
-                    color: $colorTextGorge;
-                    span {
-                        color: $colorSecondary;
-                    }
-                }
-                .descriptionText {
-                    width: 449px;
-                    font-family: $fontMontserrat;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 20px;
-                    color: $colorDescriptionText;
-                    margin: 40px 0;
-                }
-                button {
-                    width: 309px;
-                    height: 75px;
-                    border: 2px solid $colorSecondary;
-                    background-color: #fff;
-                    color: $colorSecondary;
-                    border-radius: 75px;
-                    font-family: $fontMontserrat;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 20px;
-                    cursor: pointer;
-                    margin: 30px 0;
-                    padding: 0;
-                    &:hover {
-                        border: 3px solid $colorSecondaryBorder;
-                    }
-                }
-            }
+            @include desc($widthDescriptionSubjectFirst);
         }
         .descriptionBlock {
             padding: 120px 190px 0 344px;
             display: flex;
             justify-content: space-between;
-            margin: 200px 0;
-            .description {
-                .descriptionSubject {
-                    margin: 0;
-                    width: 423px;
-                    height: 156px;
-                    font-family: $fontPlayfairDisplay;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 40px;
-                    line-height: 52px;
-                    color: $colorTextGorge;
-                    span {
-                        color: $colorSecondary;
-                    }
-                }
-                .descriptionText {
-                    width: 449px;
-                    height: 52px;
-                    font-family: $fontMontserrat;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 20px;
-                    color: $colorDescriptionText;
-                    margin: 40px 0;
-                }
-                button {
-                    width: 309px;
-                    height: 75px;
-                    border: 2px solid $colorSecondary;
-                    background-color: #fff;
-                    color: $colorSecondary;
-                    border-radius: 75px;
-                    font-family: $fontMontserrat;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 20px;
-                    cursor: pointer;
-                    margin: 30px 0;
-                    padding: 0;
+            @include imageTag ($borderRadiusSecond,
+            $paddingBgImageSecond);
+            .bgUnderImg {
+                right: $rightBgUnderImgSecond;
+            }
+            .bgLinkDesc {
+                left: $leftBgLinkDescSecond;
+            }
+            @include desc($widthDescriptionSubjectSecond);
+        }
+    }
+    footer {
+        height: 170px;
+        margin-top: 300px;
+        padding-left: 205px;
+        display: flex;
+        align-items: center;
+        ul {
+            // padding-left: 151px;
+            display: flex;
+            font-family: $fontMontserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            // width: 532px;
+            margin: 0;
+            .privacyPolicy {
+                width: 171px;
+            }
+            .personalData {
+                width: 224px;
+            }
+            li {
+                list-style: none;
+                height: 36px;
+                a {
+                    text-decoration: none;
+                    color: #B5B5B5;
                     &:hover {
-                        border: 3px solid $colorSecondaryBorder;
+                        text-decoration: underline;
                     }
                 }
             }
-            .imageTag {
-                width: 770px;
-                height: 543px;
-                position: relative;
-                .bgUnderImg {
-                    position: absolute;
-                    @include styleBgUnderImg ();
-                    border-radius: 0px 16px 0px 0px; // var
-                    right: 0; // var
-                }
-                .bgImage {
-                    padding: 30px 30px 0 0; // var
-                    position: absolute;
-                }
-                .bgLinkDesc {
-                    @include bgLinkDesc ();
-                    left: 30px; // var
-                    p {
-                        padding-top: 30px;
-                        padding-left: 40px;
-                        width: 178px;
-                        height: 50px;
-                        font-family: $fontMontserrat;
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 18px;
-                        line-height: 25px;
-                        color: $colorTextGorge;
-                        box-sizing: content-box;
-                        margin: 0;
-                    }
-                    img {
-                        right: 35px;
-                        top: 20px;
-                    }
-                }
+        }
+        .footerSocial {
+            width: 637px;
+            height: 170px;
+            position: absolute;
+            right: 0;
+            background: $colorBgFooterSocial;
+            border-radius: 16px 0px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .socialIcons {
+                width: 203;
+                height: 24;
+                @include socialIcons(0);
             }
         }
     }

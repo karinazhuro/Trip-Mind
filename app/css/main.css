@@ -106,11 +106,11 @@
       line-height: 14px;
       color: #FFFBFB;
       margin: 0; }
-    .wrapper .page .content .social .cosialIcon {
+    .wrapper .page .content .social .socialIcons {
       display: flex;
       justify-content: space-between;
-      padding-top: 22px;
-      align-items: center; }
+      align-items: center;
+      padding-top: 22px; }
   .wrapper .page .content .cards {
     display: flex;
     justify-content: flex-end;
@@ -140,7 +140,7 @@
         font-size: 18px;
         line-height: 25px;
         color: #FFFBFB; }
-      .wrapper .page .content .cards div .arrow {
+      .wrapper .page .content .cards div .arrowWhite {
         position: absolute;
         bottom: 25px;
         right: 25px; }
@@ -160,8 +160,8 @@
       height: 159px;
       border-radius: 16px 0px 0px 0px; }
     .wrapper main .lookAllTours .imageTag .bgImage {
-      padding: 30px 0 0 30px;
-      position: absolute; }
+      position: absolute;
+      padding: 30px 0 0 30px; }
     .wrapper main .lookAllTours .imageTag .bgLinkDesc {
       width: 370px;
       height: 110px;
@@ -169,8 +169,7 @@
       box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
       border-radius: 16px;
       position: absolute;
-      bottom: 0;
-      right: 30px; }
+      bottom: 0; }
       .wrapper main .lookAllTours .imageTag .bgLinkDesc p {
         padding-top: 30px;
         padding-left: 40px;
@@ -184,13 +183,16 @@
         color: #333333;
         box-sizing: content-box;
         margin: 0; }
-      .wrapper main .lookAllTours .imageTag .bgLinkDesc img {
+      .wrapper main .lookAllTours .imageTag .bgLinkDesc .arrowYeyllow {
+        position: absolute;
         right: 35px;
-        top: 20px; }
+        top: 55px; }
+  .wrapper main .lookAllTours .bgLinkDesc {
+    right: 30px; }
   .wrapper main .lookAllTours .description .descriptionSubject {
     margin: 0;
-    width: 449px;
     height: 156px;
+    width: 449px;
     font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
     font-style: normal;
     font-weight: bold;
@@ -228,12 +230,53 @@
 .wrapper main .descriptionBlock {
   padding: 120px 190px 0 344px;
   display: flex;
-  justify-content: space-between;
-  margin: 200px 0; }
+  justify-content: space-between; }
+  .wrapper main .descriptionBlock .imageTag {
+    width: 770px;
+    height: 543px;
+    position: relative; }
+    .wrapper main .descriptionBlock .imageTag .bgUnderImg {
+      position: absolute;
+      background-color: rgba(201, 201, 201, 0.16);
+      width: 617px;
+      height: 159px;
+      border-radius: 0px 16px 0px 0px; }
+    .wrapper main .descriptionBlock .imageTag .bgImage {
+      position: absolute;
+      padding: 30px 30px 0 0; }
+    .wrapper main .descriptionBlock .imageTag .bgLinkDesc {
+      width: 370px;
+      height: 110px;
+      background: #FFFBFB;
+      box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
+      border-radius: 16px;
+      position: absolute;
+      bottom: 0; }
+      .wrapper main .descriptionBlock .imageTag .bgLinkDesc p {
+        padding-top: 30px;
+        padding-left: 40px;
+        width: 178px;
+        height: 50px;
+        font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #333333;
+        box-sizing: content-box;
+        margin: 0; }
+      .wrapper main .descriptionBlock .imageTag .bgLinkDesc .arrowYeyllow {
+        position: absolute;
+        right: 35px;
+        top: 55px; }
+  .wrapper main .descriptionBlock .bgUnderImg {
+    right: 0; }
+  .wrapper main .descriptionBlock .bgLinkDesc {
+    left: 30px; }
   .wrapper main .descriptionBlock .description .descriptionSubject {
     margin: 0;
-    width: 423px;
     height: 156px;
+    width: 423px;
     font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
     font-style: normal;
     font-weight: bold;
@@ -244,7 +287,6 @@
       color: #FFC806; }
   .wrapper main .descriptionBlock .description .descriptionText {
     width: 449px;
-    height: 52px;
     font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
     font-weight: 600;
     font-size: 20px;
@@ -268,42 +310,47 @@
     padding: 0; }
     .wrapper main .descriptionBlock .description button:hover {
       border: 3px solid #b48e05; }
-  .wrapper main .descriptionBlock .imageTag {
-    width: 770px;
-    height: 543px;
-    position: relative; }
-    .wrapper main .descriptionBlock .imageTag .bgUnderImg {
-      position: absolute;
-      background-color: rgba(201, 201, 201, 0.16);
-      width: 617px;
-      height: 159px;
-      border-radius: 0px 16px 0px 0px;
-      right: 0; }
-    .wrapper main .descriptionBlock .imageTag .bgImage {
-      padding: 30px 30px 0 0;
-      position: absolute; }
-    .wrapper main .descriptionBlock .imageTag .bgLinkDesc {
-      width: 370px;
-      height: 110px;
-      background: #FFFBFB;
-      box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
-      border-radius: 16px;
-      position: absolute;
-      bottom: 0;
-      left: 30px; }
-      .wrapper main .descriptionBlock .imageTag .bgLinkDesc p {
-        padding-top: 30px;
-        padding-left: 40px;
-        width: 178px;
-        height: 50px;
-        font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 25px;
-        color: #333333;
-        box-sizing: content-box;
-        margin: 0; }
-      .wrapper main .descriptionBlock .imageTag .bgLinkDesc img {
-        right: 35px;
-        top: 20px; }
+
+.wrapper footer {
+  height: 170px;
+  margin-top: 300px;
+  padding-left: 205px;
+  display: flex;
+  align-items: center; }
+  .wrapper footer ul {
+    display: flex;
+    font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0; }
+    .wrapper footer ul .privacyPolicy {
+      width: 171px; }
+    .wrapper footer ul .personalData {
+      width: 224px; }
+    .wrapper footer ul li {
+      list-style: none;
+      height: 36px; }
+      .wrapper footer ul li a {
+        text-decoration: none;
+        color: #B5B5B5; }
+        .wrapper footer ul li a:hover {
+          text-decoration: underline; }
+  .wrapper footer .footerSocial {
+    width: 637px;
+    height: 170px;
+    position: absolute;
+    right: 0;
+    background: #fcfcfc;
+    border-radius: 16px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .wrapper footer .footerSocial .socialIcons {
+      width: 203;
+      height: 24;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0; }
