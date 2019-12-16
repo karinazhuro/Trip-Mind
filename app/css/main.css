@@ -8,316 +8,326 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
-.wrapper .page {
-  background-image: url("../img/Irelandmain.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.wrapper .headerContainer {
+  background: url("../img/Irelandmain.png") no-repeat center;
   height: 100%;
   background-size: cover;
   min-height: 1184px;
-  padding: 102px 190px 0 190px; }
-  .wrapper .page header {
+  padding: 102px 0 0 0; }
+  .wrapper .headerContainer header {
+    max-width: 1516px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .wrapper .page header nav {
+    .wrapper .headerContainer header nav {
       padding-top: 8px; }
-      .wrapper .page header nav ul {
+      .wrapper .headerContainer header nav ul {
         padding: 0;
         margin: 0;
         display: flex;
         font: 500 16px "Montserrat", "Open Sans", "Roboto", "Raleway"; }
-        .wrapper .page header nav ul li {
+        .wrapper .headerContainer header nav ul li {
           list-style: none; }
-          .wrapper .page header nav ul li:not(:last-child) {
+          .wrapper .headerContainer header nav ul li:not(:last-child) {
             margin-right: 40px; }
-          .wrapper .page header nav ul li a {
+          .wrapper .headerContainer header nav ul li a {
             text-decoration: none;
             color: #FFFBFB; }
-            .wrapper .page header nav ul li a:hover {
+            .wrapper .headerContainer header nav ul li a:hover {
               text-decoration: underline; }
-    .wrapper .page header .menu {
+    .wrapper .headerContainer header .menu {
       padding-top: 5px; }
-  .wrapper .page .content .title {
-    width: 806px;
-    padding: 170px 0 70px 0; }
-    .wrapper .page .content .title h1 {
-      font: bold 70px/95px "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
-      color: #FFFBFB;
-      margin: 0;
-      top: 0;
-      height: 179px; }
-    .wrapper .page .content .title p {
-      font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 25px;
-      line-height: 45px;
-      color: #FFFBFB;
-      width: 493px;
-      padding-top: 50px;
-      margin: 0; }
-  .wrapper .page .content .btnUser {
-    width: 573px;
-    height: 75px; }
-    .wrapper .page .content .btnUser button {
-      width: 309px;
-      height: 75px;
-      border-radius: 75px;
-      background-color: #FFC806;
-      color: #2D0000;
-      border: none;
-      font: 600 20px "Montserrat", "Open Sans", "Roboto", "Raleway";
-      cursor: pointer;
-      float: left; }
-      .wrapper .page .content .btnUser button:hover {
-        border: 3px solid #b48e05; }
-    .wrapper .page .content .btnUser .btnPlay {
-      width: 203px;
-      height: 75px;
-      margin-left: 61px;
-      float: left;
-      padding: 0;
-      list-style: none; }
-      .wrapper .page .content .btnUser .btnPlay .playVideoImg {
-        opacity: 0.75; }
-      .wrapper .page .content .btnUser .btnPlay .playVideoText {
-        text-decoration: none;
-        float: right; }
-        .wrapper .page .content .btnUser .btnPlay .playVideoText p {
-          width: 108px;
-          height: 75px;
-          font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 25px;
-          color: #FFFBFB;
-          margin: 0; }
-  .wrapper .page .content .social {
-    width: 206px;
-    height: 55px;
-    margin-top: 120px; }
-    .wrapper .page .content .social p {
-      font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 14px;
-      color: #FFFBFB;
-      margin: 0; }
-    .wrapper .page .content .social .socialIcons {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 22px; }
-  .wrapper .page .content .cards {
-    display: flex;
-    justify-content: flex-end;
-    color: #FFFBFB;
-    position: relative; }
-    .wrapper .page .content .cards div {
-      position: relative; }
-      .wrapper .page .content .cards div:not(:last-child) {
-        margin-right: 32px; }
-      .wrapper .page .content .cards div .number {
+  .wrapper .headerContainer .content {
+    max-width: 1516px;
+    margin: 0 auto; }
+    .wrapper .headerContainer .content .title {
+      width: 806px;
+      padding: 170px 0 70px 0; }
+      .wrapper .headerContainer .content .title h1 {
+        font: bold 70px/95px "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
+        color: #FFFBFB;
         margin: 0;
-        position: absolute;
-        left: 25px;
-        top: 25px;
-        font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
+        top: 0;
+        height: 179px; }
+      .wrapper .headerContainer .content .title p {
+        font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 45px;
+        color: #FFFBFB;
+        width: 493px;
+        padding-top: 50px;
+        margin: 0; }
+    .wrapper .headerContainer .content .btnUser {
+      width: 573px;
+      height: 75px; }
+      .wrapper .headerContainer .content .btnUser button {
+        width: 309px;
+        height: 75px;
+        border-radius: 75px;
+        background-color: #FFC806;
+        color: #2D0000;
+        border: none;
+        font: 600 20px "Montserrat", "Open Sans", "Roboto", "Raleway";
+        cursor: pointer;
+        float: left; }
+        .wrapper .headerContainer .content .btnUser button:hover {
+          border: 3px solid #b48e05; }
+      .wrapper .headerContainer .content .btnUser .btnPlay {
+        width: 203px;
+        height: 75px;
+        margin-left: 61px;
+        float: left;
+        padding: 0;
+        list-style: none; }
+        .wrapper .headerContainer .content .btnUser .btnPlay .playVideoImg {
+          opacity: 0.75; }
+        .wrapper .headerContainer .content .btnUser .btnPlay .playVideoText {
+          text-decoration: none;
+          float: right; }
+          .wrapper .headerContainer .content .btnUser .btnPlay .playVideoText p {
+            width: 108px;
+            height: 75px;
+            font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            color: #FFFBFB;
+            margin: 0; }
+    .wrapper .headerContainer .content .social {
+      width: 206px;
+      height: 55px;
+      margin-top: 120px; }
+      .wrapper .headerContainer .content .social p {
+        font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
         font-style: normal;
         font-weight: normal;
-        font-size: 25px; }
-      .wrapper .page .content .cards div .name {
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFBFB;
+        margin: 0; }
+      .wrapper .headerContainer .content .social .socialIcons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 22px; }
+    .wrapper .headerContainer .content .cards {
+      display: flex;
+      justify-content: flex-end;
+      color: #FFFBFB;
+      position: relative; }
+      .wrapper .headerContainer .content .cards div {
+        position: relative; }
+        .wrapper .headerContainer .content .cards div:not(:last-child) {
+          margin-right: 32px; }
+        .wrapper .headerContainer .content .cards div .number {
+          margin: 0;
+          position: absolute;
+          left: 25px;
+          top: 25px;
+          font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 25px; }
+        .wrapper .headerContainer .content .cards div .name {
+          margin: 0;
+          width: 171px;
+          position: absolute;
+          left: 25px;
+          bottom: 25px;
+          font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 25px;
+          color: #FFFBFB; }
+        .wrapper .headerContainer .content .cards div .arrowWhite {
+          position: absolute;
+          bottom: 25px;
+          right: 25px; }
+
+.wrapper main {
+  margin: 120px 0; }
+  .wrapper main .offer {
+    max-width: 1516px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .wrapper main .offer:nth-child(odd) {
+      padding: 0 60px 0 0; }
+      .wrapper main .offer:nth-child(odd) .imageTag {
+        width: 770px;
+        height: 543px;
+        position: relative; }
+        .wrapper main .offer:nth-child(odd) .imageTag .bgUnderImg {
+          position: absolute;
+          background-color: rgba(201, 201, 201, 0.16);
+          width: 617px;
+          height: 159px;
+          border-radius: 16px 0px 0px 0px; }
+        .wrapper main .offer:nth-child(odd) .imageTag .bgImage {
+          position: absolute;
+          padding: 30px 0 0 30px; }
+        .wrapper main .offer:nth-child(odd) .imageTag .bgLinkDesc {
+          width: 370px;
+          height: 110px;
+          background: #FFFBFB;
+          box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
+          border-radius: 16px;
+          position: absolute;
+          bottom: 0; }
+          .wrapper main .offer:nth-child(odd) .imageTag .bgLinkDesc p {
+            padding-top: 30px;
+            padding-left: 40px;
+            width: 178px;
+            height: 50px;
+            font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            color: #333333;
+            box-sizing: content-box;
+            margin: 0; }
+          .wrapper main .offer:nth-child(odd) .imageTag .bgLinkDesc .arrowYeyllow {
+            position: absolute;
+            right: 35px;
+            top: 55px; }
+      .wrapper main .offer:nth-child(odd) .bgLinkDesc {
+        right: 30px; }
+      .wrapper main .offer:nth-child(odd) .description .descriptionSubject {
         margin: 0;
-        width: 171px;
-        position: absolute;
-        left: 25px;
-        bottom: 25px;
+        height: 156px;
+        width: 449px;
+        font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 52px;
+        color: #333333; }
+        .wrapper main .offer:nth-child(odd) .description .descriptionSubject span {
+          color: #FFC806; }
+      .wrapper main .offer:nth-child(odd) .description .descriptionText {
+        width: 449px;
         font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 25px;
-        color: #FFFBFB; }
-      .wrapper .page .content .cards div .arrowWhite {
-        position: absolute;
-        bottom: 25px;
-        right: 25px; }
-
-.wrapper main .lookAllTours {
-  padding: 120px 344px 0 190px;
-  display: flex;
-  justify-content: space-between; }
-  .wrapper main .lookAllTours .imageTag {
-    width: 770px;
-    height: 543px;
-    position: relative; }
-    .wrapper main .lookAllTours .imageTag .bgUnderImg {
-      position: absolute;
-      background-color: rgba(201, 201, 201, 0.16);
-      width: 617px;
-      height: 159px;
-      border-radius: 16px 0px 0px 0px; }
-    .wrapper main .lookAllTours .imageTag .bgImage {
-      position: absolute;
-      padding: 30px 0 0 30px; }
-    .wrapper main .lookAllTours .imageTag .bgLinkDesc {
-      width: 370px;
-      height: 110px;
-      background: #FFFBFB;
-      box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
-      border-radius: 16px;
-      position: absolute;
-      bottom: 0; }
-      .wrapper main .lookAllTours .imageTag .bgLinkDesc p {
-        padding-top: 30px;
-        padding-left: 40px;
-        width: 178px;
-        height: 50px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        color: #B5B5B5;
+        margin: 40px 0; }
+      .wrapper main .offer:nth-child(odd) .description button {
+        width: 309px;
+        height: 75px;
+        border: 2px solid #FFC806;
+        background-color: #fff;
+        color: #FFC806;
+        border-radius: 75px;
         font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
         font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 25px;
-        color: #333333;
-        box-sizing: content-box;
-        margin: 0; }
-      .wrapper main .lookAllTours .imageTag .bgLinkDesc .arrowYeyllow {
-        position: absolute;
-        right: 35px;
-        top: 55px; }
-  .wrapper main .lookAllTours .bgLinkDesc {
-    right: 30px; }
-  .wrapper main .lookAllTours .description .descriptionSubject {
-    margin: 0;
-    height: 156px;
-    width: 449px;
-    font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 52px;
-    color: #333333; }
-    .wrapper main .lookAllTours .description .descriptionSubject span {
-      color: #FFC806; }
-  .wrapper main .lookAllTours .description .descriptionText {
-    width: 449px;
-    font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    color: #B5B5B5;
-    margin: 40px 0; }
-  .wrapper main .lookAllTours .description button {
-    width: 309px;
-    height: 75px;
-    border: 2px solid #FFC806;
-    background-color: #fff;
-    color: #FFC806;
-    border-radius: 75px;
-    font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    cursor: pointer;
-    margin: 30px 0;
-    padding: 0; }
-    .wrapper main .lookAllTours .description button:hover {
-      border: 3px solid #b48e05; }
-
-.wrapper main .descriptionBlock {
-  padding: 120px 190px 0 344px;
-  display: flex;
-  justify-content: space-between; }
-  .wrapper main .descriptionBlock .imageTag {
-    width: 770px;
-    height: 543px;
-    position: relative; }
-    .wrapper main .descriptionBlock .imageTag .bgUnderImg {
-      position: absolute;
-      background-color: rgba(201, 201, 201, 0.16);
-      width: 617px;
-      height: 159px;
-      border-radius: 0px 16px 0px 0px; }
-    .wrapper main .descriptionBlock .imageTag .bgImage {
-      position: absolute;
-      padding: 30px 30px 0 0; }
-    .wrapper main .descriptionBlock .imageTag .bgLinkDesc {
-      width: 370px;
-      height: 110px;
-      background: #FFFBFB;
-      box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
-      border-radius: 16px;
-      position: absolute;
-      bottom: 0; }
-      .wrapper main .descriptionBlock .imageTag .bgLinkDesc p {
-        padding-top: 30px;
-        padding-left: 40px;
-        width: 178px;
-        height: 50px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        cursor: pointer;
+        margin: 30px 0;
+        padding: 0; }
+        .wrapper main .offer:nth-child(odd) .description button:hover {
+          border: 3px solid #b48e05; }
+    .wrapper main .offer:nth-child(even) {
+      flex-direction: row-reverse;
+      padding: 0 0 0 60px; }
+      .wrapper main .offer:nth-child(even) .imageTag {
+        width: 770px;
+        height: 543px;
+        position: relative; }
+        .wrapper main .offer:nth-child(even) .imageTag .bgUnderImg {
+          position: absolute;
+          background-color: rgba(201, 201, 201, 0.16);
+          width: 617px;
+          height: 159px;
+          border-radius: 0px 16px 0px 0px; }
+        .wrapper main .offer:nth-child(even) .imageTag .bgImage {
+          position: absolute;
+          padding: 30px 30px 0 0; }
+        .wrapper main .offer:nth-child(even) .imageTag .bgLinkDesc {
+          width: 370px;
+          height: 110px;
+          background: #FFFBFB;
+          box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
+          border-radius: 16px;
+          position: absolute;
+          bottom: 0; }
+          .wrapper main .offer:nth-child(even) .imageTag .bgLinkDesc p {
+            padding-top: 30px;
+            padding-left: 40px;
+            width: 178px;
+            height: 50px;
+            font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            color: #333333;
+            box-sizing: content-box;
+            margin: 0; }
+          .wrapper main .offer:nth-child(even) .imageTag .bgLinkDesc .arrowYeyllow {
+            position: absolute;
+            right: 35px;
+            top: 55px; }
+      .wrapper main .offer:nth-child(even) .bgUnderImg {
+        right: 0; }
+      .wrapper main .offer:nth-child(even) .bgLinkDesc {
+        left: 30px; }
+      .wrapper main .offer:nth-child(even) .description .descriptionSubject {
+        margin: 0;
+        height: 156px;
+        width: 423px;
+        font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 52px;
+        color: #333333; }
+        .wrapper main .offer:nth-child(even) .description .descriptionSubject span {
+          color: #FFC806; }
+      .wrapper main .offer:nth-child(even) .description .descriptionText {
+        width: 449px;
+        font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        color: #B5B5B5;
+        margin: 40px 0; }
+      .wrapper main .offer:nth-child(even) .description button {
+        width: 309px;
+        height: 75px;
+        border: 2px solid #FFC806;
+        background-color: #fff;
+        color: #FFC806;
+        border-radius: 75px;
         font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
         font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 25px;
-        color: #333333;
-        box-sizing: content-box;
-        margin: 0; }
-      .wrapper main .descriptionBlock .imageTag .bgLinkDesc .arrowYeyllow {
-        position: absolute;
-        right: 35px;
-        top: 55px; }
-  .wrapper main .descriptionBlock .bgUnderImg {
-    right: 0; }
-  .wrapper main .descriptionBlock .bgLinkDesc {
-    left: 30px; }
-  .wrapper main .descriptionBlock .description .descriptionSubject {
-    margin: 0;
-    height: 156px;
-    width: 423px;
-    font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 52px;
-    color: #333333; }
-    .wrapper main .descriptionBlock .description .descriptionSubject span {
-      color: #FFC806; }
-  .wrapper main .descriptionBlock .description .descriptionText {
-    width: 449px;
-    font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    color: #B5B5B5;
-    margin: 40px 0; }
-  .wrapper main .descriptionBlock .description button {
-    width: 309px;
-    height: 75px;
-    border: 2px solid #FFC806;
-    background-color: #fff;
-    color: #FFC806;
-    border-radius: 75px;
-    font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    cursor: pointer;
-    margin: 30px 0;
-    padding: 0; }
-    .wrapper main .descriptionBlock .description button:hover {
-      border: 3px solid #b48e05; }
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        cursor: pointer;
+        margin: 30px 0;
+        padding: 0; }
+        .wrapper main .offer:nth-child(even) .description button:hover {
+          border: 3px solid #b48e05; }
+    .wrapper main .offer:not(:last-child) {
+      margin-bottom: 150px; }
 
-.wrapper footer {
+.wrapper footer .foterContainer {
+  max-width: 1516px;
+  margin: 0 auto;
   height: 170px;
   margin-top: 300px;
   padding-left: 205px;
   display: flex;
   align-items: center; }
-  .wrapper footer ul {
+  .wrapper footer .foterContainer ul {
     display: flex;
     justify-content: space-around;
     font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
@@ -327,19 +337,19 @@
     line-height: 18px;
     margin: 0 637px 0 0;
     width: 100%; }
-    .wrapper footer ul .privacyPolicy {
+    .wrapper footer .foterContainer ul .privacyPolicy {
       width: 171px; }
-    .wrapper footer ul .personalData {
+    .wrapper footer .foterContainer ul .personalData {
       width: 224px; }
-    .wrapper footer ul li {
+    .wrapper footer .foterContainer ul li {
       list-style: none;
       height: 36px; }
-      .wrapper footer ul li a {
+      .wrapper footer .foterContainer ul li a {
         text-decoration: none;
         color: #B5B5B5; }
-        .wrapper footer ul li a:hover {
+        .wrapper footer .foterContainer ul li a:hover {
           text-decoration: underline; }
-  .wrapper footer .footerSocial {
+  .wrapper footer .foterContainer .footerSocial {
     width: 637px;
     height: 170px;
     position: absolute;
@@ -349,7 +359,7 @@
     display: flex;
     justify-content: center;
     align-items: center; }
-    .wrapper footer .footerSocial .socialIcons {
+    .wrapper footer .foterContainer .footerSocial .socialIcons {
       width: 203px;
       height: 24px;
       display: flex;

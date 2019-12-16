@@ -9,6 +9,7 @@ $colorTextBtn: #2D0000;
 $colorTextGorge: #333333;
 $colorDescriptionText: #B5B5B5;
 $colorBgFooterSocial: #fcfcfc;
+$maxWidthContent: 1516px;
 // var for mixin image first
 $borderRadiusFirst: 16px 0px 0px 0px;
 $paddingBgImageFirst: 30px 0 0 30px;
@@ -160,15 +161,15 @@ $widthDescriptionSubjectSecond: 423px;
 
 // STYLE
 .wrapper {
-    .page {
-        background-image: url('../img/Irelandmain.png');
-        background-repeat: no-repeat;
-        background-position: center;
+    .headerContainer {
+        background: url('../img/Irelandmain.png') no-repeat center;
         height: 100%;
         background-size: cover;
         min-height: 1184px;
-        padding: 102px 190px 0 190px;
+        padding: 102px 0 0 0;
         header {
+            max-width: $maxWidthContent;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -199,6 +200,8 @@ $widthDescriptionSubjectSecond: 423px;
             }
         }
         .content {
+            max-width: 1516px;
+            margin: 0 auto;
             .title {
                 width: 806px;
                 padding: 170px 0 70px 0;
@@ -294,80 +297,91 @@ $widthDescriptionSubjectSecond: 423px;
         }
     }
     main {
-        .lookAllTours {
-            padding: 120px 344px 0 190px;
+        margin: 120px 0;
+        .offer {
+            max-width: $maxWidthContent;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            @include imageTag ($borderRadiusFirst,
-            $paddingBgImageFirst);
-            .bgLinkDesc {
-                right: $rightBgLinkDescFirst;
+            &:nth-child(odd) {
+                @include imageTag ($borderRadiusFirst,
+                $paddingBgImageFirst);
+                .bgLinkDesc {
+                    right: $rightBgLinkDescFirst;
+                }
+                @include desc($widthDescriptionSubjectFirst);
+                padding: 0 60px 0 0;
             }
-            @include desc($widthDescriptionSubjectFirst);
-        }
-        .descriptionBlock {
-            padding: 120px 190px 0 344px;
-            display: flex;
-            justify-content: space-between;
-            @include imageTag ($borderRadiusSecond,
-            $paddingBgImageSecond);
-            .bgUnderImg {
-                right: $rightBgUnderImgSecond;
+            &:nth-child(even) {
+                @include imageTag ($borderRadiusSecond,
+                $paddingBgImageSecond);
+                .bgUnderImg {
+                    right: $rightBgUnderImgSecond;
+                }
+                .bgLinkDesc {
+                    left: $leftBgLinkDescSecond;
+                }
+                @include desc($widthDescriptionSubjectSecond);
+                flex-direction: row-reverse;
+                padding: 0 0 0 60px;
             }
-            .bgLinkDesc {
-                left: $leftBgLinkDescSecond;
+            &:not(:last-child) {
+                margin-bottom: 150px;
             }
-            @include desc($widthDescriptionSubjectSecond);
         }
     }
     footer {
-        height: 170px;
-        margin-top: 300px;
-        padding-left: 205px;
-        display: flex;
-        align-items: center;
-        ul {
+        .foterContainer {
+            max-width: $maxWidthContent;
+            margin: 0 auto;
+            height: 170px;
+            margin-top: 300px;
+            padding-left: 205px;
             display: flex;
-            justify-content: space-around;
-            font-family: $fontMontserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
-            margin: 0 637px 0 0;
-            width: 100%;
-            .privacyPolicy {
-                width: 171px;
-            }
-            .personalData {
-                width: 224px;
-            }
-            li {
-                list-style: none;
-                height: 36px;
-                a {
-                    text-decoration: none;
-                    color: #B5B5B5;
-                    &:hover {
-                        text-decoration: underline;
+            align-items: center;
+            ul {
+                display: flex;
+                justify-content: space-around;
+                font-family: $fontMontserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                margin: 0 637px 0 0;
+                width: 100%;
+                .privacyPolicy {
+                    width: 171px;
+                }
+                .personalData {
+                    width: 224px;
+                }
+                li {
+                    list-style: none;
+                    height: 36px;
+                    a {
+                        text-decoration: none;
+                        color: #B5B5B5;
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
-        }
-        .footerSocial {
-            width: 637px;
-            height: 170px;
-            position: absolute;
-            right: 0;
-            background: $colorBgFooterSocial;
-            border-radius: 16px 0px 0px 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .socialIcons {
-                width: 203px;
-                height: 24px;
-                @include socialIcons(0);
+            .footerSocial {
+                width: 637px;
+                height: 170px;
+                position: absolute;
+                right: 0;
+                background: $colorBgFooterSocial;
+                border-radius: 16px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .socialIcons {
+                    width: 203px;
+                    height: 24px;
+                    @include socialIcons(0);
+                }
             }
         }
     }
