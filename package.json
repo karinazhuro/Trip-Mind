@@ -1,27 +1,34 @@
 {
-  "name": "trip-mind",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/karinazhuro/Trip-Mind.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/karinazhuro/Trip-Mind/issues"
-  },
-  "homepage": "https://github.com/karinazhuro/Trip-Mind#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
-  },
-  "description": "",
-  "dependencies": {
-    "bootstrap": "^4.3.1"
-  }
+    "name": "trip-mind",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npm-run-all --parallel liveserver watch",
+        "liveserver": "live-server",
+        "watch": "node-sass sass/main.scss css/main.css -w",
+        "compile": "node-sass sass/main.scss css/main.css",
+        "prefix": "postcss css/main.css --use autoprefixer -o css/main.css",
+        "build": "npm-run-all compile prefix compress"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/karinazhuro/Trip-Mind.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/karinazhuro/Trip-Mind/issues"
+    },
+    "homepage": "https://github.com/karinazhuro/Trip-Mind#readme",
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.2",
+        "gulp-sass": "^4.0.2"
+    },
+    "description": "",
+    "dependencies": {
+        "autoprefixer": "^9.7.3",
+        "bootstrap": "^4.3.1"
+    }
 }

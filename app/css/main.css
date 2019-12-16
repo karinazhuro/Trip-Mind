@@ -319,12 +319,14 @@
   align-items: center; }
   .wrapper footer ul {
     display: flex;
+    justify-content: space-around;
     font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    margin: 0; }
+    margin: 0 637px 0 0;
+    width: 100%; }
     .wrapper footer ul .privacyPolicy {
       width: 171px; }
     .wrapper footer ul .personalData {
@@ -348,8 +350,8 @@
     justify-content: center;
     align-items: center; }
     .wrapper footer .footerSocial .socialIcons {
-      width: 203;
-      height: 24;
+      width: 203px;
+      height: 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
