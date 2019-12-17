@@ -156,7 +156,7 @@
     display: flex;
     justify-content: space-between; }
     .wrapper main .offer:nth-child(odd) {
-      padding: 0 60px 0 0; }
+      padding: 0 135px 0 0; }
       .wrapper main .offer:nth-child(odd) .imageTag {
         width: 770px;
         height: 543px;
@@ -236,7 +236,7 @@
           border: 3px solid #b48e05; }
     .wrapper main .offer:nth-child(even) {
       flex-direction: row-reverse;
-      padding: 0 0 0 60px; }
+      padding: 0 0 0 135px; }
       .wrapper main .offer:nth-child(even) .imageTag {
         width: 770px;
         height: 543px;
@@ -324,7 +324,6 @@
   margin: 0 auto;
   height: 170px;
   margin-top: 300px;
-  padding-left: 205px;
   display: flex;
   align-items: center; }
   .wrapper footer .foterContainer ul {
