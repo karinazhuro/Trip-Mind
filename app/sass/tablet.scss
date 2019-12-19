@@ -1,0 +1,52 @@
+@import '../fonts/Montserrat';
+@import '../fonts/PlayfairDisplay';
+@media screen and (max-width: 1650px) {
+    .wrapper {
+        .headerContainer {
+            header {
+                // margin: 0 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .wrapper {
+        .headerContainer {
+            header {
+                // margin: 0 40px;
+                nav {
+                    ul {
+                        font-family: $fontMontserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .content {
+                margin: 0 40px;
+                .title {
+                    width: 408px;
+                    padding: 100px 0 70px 0;
+                    h1 {
+                        font-size: 47px;
+                        line-height: 70px;
+                        height: 140px;
+                    }
+                    p {
+                        font-size: 20px;
+                        line-height: 35px;
+                        width: 390px;
+                    }
+                }
+                .cards {
+                    margin-top: 50px;
+                }
+            }
+        }
+        main {
+            margin: 100px 40px;
+        }
+    }
+}
