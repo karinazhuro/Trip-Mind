@@ -5,10 +5,10 @@
 // STYLE
 .wrapper {
     .headerContainer {
-        background: url('../img/Irelandmain.png') no-repeat center;
+        background: url('../img/Irelandmain.png') no-repeat center center;
         height: 100%;
         background-size: cover;
-        min-height: 1184px;
+        // min-height: 1184px;
         padding: 102px 0 0 0;
         header {
             max-width: $maxWidthContent;
@@ -133,6 +133,8 @@
                 justify-content: flex-end;
                 color: $colorPrimary;
                 position: relative;
+                padding-bottom: 100px;
+                // right: 0;
                 div {
                     @include cardsBox;
                 }
@@ -145,7 +147,7 @@
             max-width: $maxWidthContent;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             &:nth-child(odd) {
                 @include imageTag ($borderRadiusFirst,
                 $paddingBgImageFirst);
@@ -153,7 +155,10 @@
                     right: $rightBgLinkDescFirst;
                 }
                 @include desc($widthDescriptionSubjectFirst);
-                padding: 0 135px 0 0;
+                .description {
+                    margin: 0 0 0 200px;
+                    left: 0;
+                }
             }
             &:nth-child(even) {
                 @include imageTag ($borderRadiusSecond,
@@ -165,8 +170,10 @@
                     left: $leftBgLinkDescSecond;
                 }
                 @include desc($widthDescriptionSubjectSecond);
+                .description {
+                    margin: 0 200px 0 0;
+                }
                 flex-direction: row-reverse;
-                padding: 0 0 0 135px;
             }
             &:not(:last-child) {
                 margin-bottom: 150px;

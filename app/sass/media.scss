@@ -1,0 +1,91 @@
+@import '../fonts/Montserrat';
+@import '../fonts/PlayfairDisplay';
+// variables
+$marginConrainer: 0 55px;
+$marginConrainerMain: 100px 55px;
+// media
+@media screen and (max-width: 1650px) {
+    .wrapper {
+        .headerContainer {
+            header {
+                margin: $marginConrainer;
+            }
+            .content {
+                margin: $marginConrainer;
+            }
+        }
+        main {
+            margin: $marginConrainerMain;
+        }
+        footer {
+            margin: $marginConrainer;
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .wrapper {
+        main {
+            .offer {
+                &:nth-child(odd) {
+                    .description {
+                        margin: 0 50px;
+                        left: 0;
+                    }
+                }
+                &:nth-child(even) {
+                    .description {
+                        margin: 0 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .wrapper {
+        .headerContainer {
+            background-size: cover;
+            header {
+                margin: 0 40px;
+                nav {
+                    ul {
+                        font-family: $fontMontserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .content {
+                margin: 0 40px;
+            }
+        }
+        main {
+            margin: 100px 40px;
+        }
+        footer {
+            .foterContainer {
+                .footerSocial {
+                    width: 500px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        .headerContainer {
+            .content {
+                .cards {
+                    // display: flex;
+                    margin-top: 50px;
+                    // justify-content: center;
+                }
+            }
+        }
+    }
+}
