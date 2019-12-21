@@ -5,37 +5,40 @@ $marginConrainer: 0 55px;
 $marginConrainerMain: 100px 55px;
 // media
 @media screen and (max-width: 1650px) {
-    .wrapper {
-        .headerContainer {
-            header {
+    body {
+        .wrapper {
+            .headerContainer {
+                header {
+                    margin: $marginConrainer;
+                }
+                .content {
+                    margin: $marginConrainer;
+                }
+            }
+            main {
+                margin: $marginConrainerMain;
+            }
+            footer {
                 margin: $marginConrainer;
             }
-            .content {
-                margin: $marginConrainer;
-            }
-        }
-        main {
-            margin: $marginConrainerMain;
-        }
-        footer {
-            margin: $marginConrainer;
         }
     }
 }
 
 @media screen and (max-width: 1550px) {
-    .wrapper {
-        main {
-            .offer {
-                &:nth-child(odd) {
-                    .description {
-                        margin: 0 50px;
-                        left: 0;
+    body {
+        .wrapper {
+            main {
+                .offer {
+                    &:nth-child(odd) {
+                        .description {
+                            margin: 0 50px 0 100px;
+                        }
                     }
-                }
-                &:nth-child(even) {
-                    .description {
-                        margin: 0 50px;
+                    &:nth-child(even) {
+                        .description {
+                            margin: 0 50px;
+                        }
                     }
                 }
             }
@@ -44,47 +47,102 @@ $marginConrainerMain: 100px 55px;
 }
 
 @media screen and (max-width: 1440px) {
-    .wrapper {
-        .headerContainer {
-            background-size: cover;
-            header {
-                margin: 0 40px;
-                nav {
-                    ul {
-                        font-family: $fontMontserrat;
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 16px;
+    body {
+        .wrapper {
+            .headerContainer {
+                background-size: cover;
+                header {
+                    margin: 0 40px;
+                    nav {
+                        ul {
+                            font-family: $fontMontserrat;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
                     }
                 }
+                .content {
+                    margin: 0 40px;
+                }
             }
-            .content {
-                margin: 0 40px;
+            main {
+                margin: 100px 40px;
             }
-        }
-        main {
-            margin: 100px 40px;
-        }
-        footer {
-            .foterContainer {
-                .footerSocial {
-                    width: 500px;
-                    height: 150px;
+            footer {
+                .foterContainer {
+                    .footerSocial {
+                        width: 450px;
+                        height: 170px;
+                    }
                 }
             }
         }
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .wrapper {
-        .headerContainer {
-            .content {
-                .cards {
-                    // display: flex;
-                    margin-top: 50px;
-                    // justify-content: center;
+@media screen and (max-width: 1440px) {
+    body {
+        .wrapper {
+            .headerContainer {
+                .content {
+                    .title {
+                        padding: 70px 0 70px 0;
+                    }
+                    .social {
+                        margin-top: 70px;
+                    }
+                    .cards {
+                        padding: 50px 0 70px 0;
+                        justify-content: center;
+                    }
                 }
+            }
+            main {
+                .offer {
+                    display: block;
+                    .imageTag {
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 50px;
+                    }
+                    .description {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+            footer {
+                .foterContainer {
+                    margin-top: 105px;
+                    ul {
+                        text-align: center;
+                        padding: 0;
+                        display: block;
+                        font-size: 14px;
+                        line-height: 15px;
+                        margin: 0 0px 0 -300px;
+                        .privacyPolicy {
+                            width: auto;
+                        }
+                        .personalData {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        .wrapper {
+            footer {
+                .footerSocial {}
             }
         }
     }

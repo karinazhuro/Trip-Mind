@@ -9,40 +9,69 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
 @media screen and (max-width: 1650px) {
-  .wrapper .headerContainer header {
+  body .wrapper .headerContainer header {
     margin: 0 55px; }
-  .wrapper .headerContainer .content {
+  body .wrapper .headerContainer .content {
     margin: 0 55px; }
-  .wrapper main {
+  body .wrapper main {
     margin: 100px 55px; }
-  .wrapper footer {
+  body .wrapper footer {
     margin: 0 55px; } }
 
 @media screen and (max-width: 1550px) {
-  .wrapper main .offer:nth-child(odd) .description {
-    margin: 0 50px;
-    left: 0; }
-  .wrapper main .offer:nth-child(even) .description {
+  body .wrapper main .offer:nth-child(odd) .description {
+    margin: 0 50px 0 100px; }
+  body .wrapper main .offer:nth-child(even) .description {
     margin: 0 50px; } }
 
 @media screen and (max-width: 1440px) {
-  .wrapper .headerContainer {
+  body .wrapper .headerContainer {
     background-size: cover; }
-    .wrapper .headerContainer header {
+    body .wrapper .headerContainer header {
       margin: 0 40px; }
-      .wrapper .headerContainer header nav ul {
+      body .wrapper .headerContainer header nav ul {
         font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
         font-style: normal;
         font-weight: 500;
         font-size: 16px; }
-    .wrapper .headerContainer .content {
+    body .wrapper .headerContainer .content {
       margin: 0 40px; }
-  .wrapper main {
+  body .wrapper main {
     margin: 100px 40px; }
-  .wrapper footer .foterContainer .footerSocial {
-    width: 500px;
-    height: 150px; } }
+  body .wrapper footer .foterContainer .footerSocial {
+    width: 450px;
+    height: 170px; } }
 
-@media screen and (min-width: 1024px) {
-  .wrapper .headerContainer .content .cards {
-    margin-top: 50px; } }
+@media screen and (max-width: 1440px) {
+  body .wrapper .headerContainer .content .title {
+    padding: 70px 0 70px 0; }
+  body .wrapper .headerContainer .content .social {
+    margin-top: 70px; }
+  body .wrapper .headerContainer .content .cards {
+    padding: 50px 0 70px 0;
+    justify-content: center; }
+  body .wrapper main .offer {
+    display: block; }
+    body .wrapper main .offer .imageTag {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px; }
+    body .wrapper main .offer .description {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-left: auto;
+      margin-right: auto; }
+  body .wrapper footer .foterContainer {
+    margin-top: 105px; }
+    body .wrapper footer .foterContainer ul {
+      text-align: center;
+      padding: 0;
+      display: block;
+      font-size: 14px;
+      line-height: 15px;
+      margin: 0 0px 0 -300px; }
+      body .wrapper footer .foterContainer ul .privacyPolicy {
+        width: auto; }
+      body .wrapper footer .foterContainer ul .personalData {
+        width: auto; } }

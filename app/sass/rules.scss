@@ -111,28 +111,30 @@ $widthDescriptionSubjectSecond: 423px;
 
 @mixin desc ($widthdescriptionSubject) {
     .description {
-        .descriptionSubject {
-            margin: 0;
-            height: 156px;
-            width: $widthdescriptionSubject;
-            font-family: $fontPlayfairDisplay;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 52px;
-            color: $colorTextGorge;
-            span {
-                color: $colorSecondary;
+        .descCont {
+            .descriptionSubject {
+                margin: 0;
+                height: 156px;
+                width: $widthdescriptionSubject;
+                font-family: $fontPlayfairDisplay;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 52px;
+                color: $colorTextGorge;
+                span {
+                    color: $colorSecondary;
+                }
             }
-        }
-        .descriptionText {
-            width: 449px;
-            font-family: $fontMontserrat;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 20px;
-            color: $colorDescriptionText;
-            margin: 40px 0;
+            .descriptionText {
+                width: 449px;
+                font-family: $fontMontserrat;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+                color: $colorDescriptionText;
+                margin: 40px 0;
+            }
         }
         button {
             width: 309px;
