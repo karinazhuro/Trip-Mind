@@ -5,12 +5,12 @@
 // STYLE
 body {
     overflow-x: hidden;
+    height: 100%;
     .wrapper {
         .headerContainer {
             background: url('../img/Irelandmain.png') no-repeat center center;
             height: 100%;
             background-size: cover;
-            // min-height: 1184px;
             padding: 102px 0 0 0;
             header {
                 max-width: $maxWidthContent;
@@ -143,7 +143,7 @@ body {
             }
         }
         main {
-            margin: 120px 0;
+            margin: 120px 0 300px 0;
             .offer {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
@@ -181,11 +181,10 @@ body {
             }
         }
         footer {
-            .foterContainer {
+            .footerContainer {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
                 height: 170px;
-                margin-top: 300px;
                 display: flex;
                 align-items: center;
                 ul {
