@@ -136,23 +136,25 @@ $widthDescriptionSubjectSecond: 423px;
                 margin: 40px 0;
             }
         }
-        button {
-            width: 309px;
-            height: 75px;
-            border: 2px solid $colorSecondary;
-            background-color: #fff;
-            color: $colorSecondary;
-            border-radius: 75px;
-            font-family: $fontMontserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 20px;
-            cursor: pointer;
-            margin: 30px 0;
-            padding: 0;
-            &:hover {
-                border: 3px solid $colorSecondaryBorder;
+        .button {
+            button {
+                width: 309px;
+                height: 75px;
+                border: 2px solid $colorSecondary;
+                background-color: #fff;
+                color: $colorSecondary;
+                border-radius: 75px;
+                font-family: $fontMontserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+                cursor: pointer;
+                margin: 30px 0;
+                padding: 0;
+                &:hover {
+                    border: 3px solid $colorSecondaryBorder;
+                }
             }
         }
     }

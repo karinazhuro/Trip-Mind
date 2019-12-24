@@ -148,7 +148,6 @@ body {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
                 display: flex;
-                // justify-content: space-between;
                 &:nth-child(odd) {
                     @include imageTag ($borderRadiusFirst,
                     $paddingBgImageFirst);

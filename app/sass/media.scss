@@ -52,7 +52,6 @@ $marginConrainerMain: 100px 55px 200px;
             .headerContainer {
                 background-size: cover;
                 header {
-                    margin: 0 40px;
                     nav {
                         ul {
                             font-family: $fontMontserrat;
@@ -63,7 +62,6 @@ $marginConrainerMain: 100px 55px 200px;
                     }
                 }
                 .content {
-                    margin: 0 40px;
                     .title {
                         padding: 70px 0 70px 0;
                     }
@@ -166,9 +164,58 @@ $marginConrainerMain: 100px 55px 200px;
                     }
                 }
             }
+            main {
+                margin: 100px 55px 150px;
+                .offer {
+                    margin-bottom: 100px;
+                    &:nth-child(odd) {
+                        .description {
+                            display: block;
+                            .descCont {
+                                .descriptionSubject {
+                                    width: auto;
+                                    height: 140px;
+                                }
+                                .descriptionText {
+                                    width: auto;
+                                    margin: 0 0 15px 0;
+                                }
+                            }
+                            .button {
+                                text-align: end;
+                            }
+                        }
+                    }
+                    &:nth-child(even) {
+                        .description {
+                            display: block;
+                            .descCont {
+                                text-align: end;
+                                .descriptionSubject {
+                                    width: auto;
+                                    height: 140px;
+                                }
+                                .descriptionText {
+                                    width: auto;
+                                    margin: 0 0 15px 0;
+                                }
+                            }
+                        }
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 100px;
+                    }
+                }
+            }
             footer {
                 .footerContainer {
-                    ul {}
+                    display: block;
+                    .logoDark {
+                        float: left;
+                    }
+                    .footerSocial {
+                        width: 100%;
+                    }
                 }
             }
         }

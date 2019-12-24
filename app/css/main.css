@@ -216,7 +216,7 @@ body {
         line-height: 20px;
         color: #B5B5B5;
         margin: 40px 0; }
-      body .wrapper main .offer:nth-child(odd) .description button {
+      body .wrapper main .offer:nth-child(odd) .description .button button {
         width: 309px;
         height: 75px;
         border: 2px solid #FFC806;
@@ -231,7 +231,7 @@ body {
         cursor: pointer;
         margin: 30px 0;
         padding: 0; }
-        body .wrapper main .offer:nth-child(odd) .description button:hover {
+        body .wrapper main .offer:nth-child(odd) .description .button button:hover {
           border: 3px solid #b48e05; }
       body .wrapper main .offer:nth-child(odd) .description {
         margin: 0 0 0 200px; }
@@ -299,7 +299,7 @@ body {
           line-height: 20px;
           color: #B5B5B5;
           margin: 40px 0; }
-        body .wrapper main .offer:nth-child(even) .description button {
+        body .wrapper main .offer:nth-child(even) .description .button button {
           width: 309px;
           height: 75px;
           border: 2px solid #FFC806;
@@ -314,7 +314,7 @@ body {
           cursor: pointer;
           margin: 30px 0;
           padding: 0; }
-          body .wrapper main .offer:nth-child(even) .description button:hover {
+          body .wrapper main .offer:nth-child(even) .description .button button:hover {
             border: 3px solid #b48e05; }
         body .wrapper main .offer:nth-child(even) .description {
           margin: 0 200px 0 0; }

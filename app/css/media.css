@@ -27,22 +27,18 @@
 @media screen and (max-width: 1440px) {
   body .wrapper .headerContainer {
     background-size: cover; }
-    body .wrapper .headerContainer header {
-      margin: 0 40px; }
-      body .wrapper .headerContainer header nav ul {
-        font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px; }
-    body .wrapper .headerContainer .content {
-      margin: 0 40px; }
-      body .wrapper .headerContainer .content .title {
-        padding: 70px 0 70px 0; }
-      body .wrapper .headerContainer .content .social {
-        margin-top: 70px; }
-      body .wrapper .headerContainer .content .cards {
-        padding: 50px 0 70px 0;
-        justify-content: center; }
+    body .wrapper .headerContainer header nav ul {
+      font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px; }
+    body .wrapper .headerContainer .content .title {
+      padding: 70px 0 70px 0; }
+    body .wrapper .headerContainer .content .social {
+      margin-top: 70px; }
+    body .wrapper .headerContainer .content .cards {
+      padding: 50px 0 70px 0;
+      justify-content: center; }
   body .wrapper main .offer {
     display: block; }
     body .wrapper main .offer .imageTag {
@@ -95,4 +91,36 @@
       body .wrapper .headerContainer .content .cards div {
         margin: 16px; }
         body .wrapper .headerContainer .content .cards div:not(:last-child) {
-          margin: 16px; } }
+          margin: 16px; }
+  body .wrapper main {
+    margin: 100px 55px 150px; }
+    body .wrapper main .offer {
+      margin-bottom: 100px; }
+      body .wrapper main .offer:nth-child(odd) .description {
+        display: block; }
+        body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionSubject {
+          width: auto;
+          height: 140px; }
+        body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionText {
+          width: auto;
+          margin: 0 0 15px 0; }
+        body .wrapper main .offer:nth-child(odd) .description .button {
+          text-align: end; }
+      body .wrapper main .offer:nth-child(even) .description {
+        display: block; }
+        body .wrapper main .offer:nth-child(even) .description .descCont {
+          text-align: end; }
+          body .wrapper main .offer:nth-child(even) .description .descCont .descriptionSubject {
+            width: auto;
+            height: 140px; }
+          body .wrapper main .offer:nth-child(even) .description .descCont .descriptionText {
+            width: auto;
+            margin: 0 0 15px 0; }
+      body .wrapper main .offer:not(:last-child) {
+        margin-bottom: 100px; }
+  body .wrapper footer .footerContainer {
+    display: block; }
+    body .wrapper footer .footerContainer .logoDark {
+      float: left; }
+    body .wrapper footer .footerContainer .footerSocial {
+      width: 100%; } }
