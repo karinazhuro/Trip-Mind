@@ -78,7 +78,7 @@
     width: 316px;
     height: 120px; } }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 850px) {
   body .wrapper .headerContainer {
     padding: 40px 0 0 0; }
     body .wrapper .headerContainer .content .title {

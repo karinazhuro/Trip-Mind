@@ -77,6 +77,9 @@ $widthDescriptionSubjectSecond: 423px;
         .bgImage {
             position: absolute;
             padding: $paddingBgImage;
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
         .bgLinkDesc {
             width: 370px;

@@ -140,7 +140,7 @@ $marginConrainerMain: 100px 55px 200px;
     }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 850px) {
     body {
         .wrapper {
             .headerContainer {
@@ -221,3 +221,5 @@ $marginConrainerMain: 100px 55px 200px;
         }
     }
 }
+
+@media screen and (max-width: 767px) {}
