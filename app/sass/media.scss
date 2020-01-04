@@ -1,8 +1,9 @@
 @import '../fonts/Montserrat';
 @import '../fonts/PlayfairDisplay';
+@import 'rules';
 // variables
-$marginConrainer: 0 55px;
-$marginConrainerMain: 100px 55px 200px;
+$marginConrainer: 0 100px;
+$marginConrainerMain: 100px 100px 200px;
 // media
 @media screen and (max-width: 1650px) {
     body {
@@ -121,6 +122,27 @@ $marginConrainerMain: 100px 55px 200px;
 @media screen and (max-width: 1150px) {
     body {
         .wrapper {
+            .headerContainer {
+                padding: 40px 0 0 0;
+                .content {
+                    .title {
+                        padding: 50px 0 50px 0;
+                        width: 698px;
+                        h1 {
+                            font-size: 60px;
+                        }
+                    }
+                    .cards {
+                        flex-wrap: wrap;
+                        div {
+                            &:not(:last-child) {
+                                margin: 16px;
+                            }
+                            margin: 16px;
+                        }
+                    }
+                }
+            }
             footer {
                 .footerContainer {
                     ul {
@@ -143,27 +165,6 @@ $marginConrainerMain: 100px 55px 200px;
 @media screen and (max-width: 850px) {
     body {
         .wrapper {
-            .headerContainer {
-                padding: 40px 0 0 0;
-                .content {
-                    .title {
-                        padding: 50px 0 50px 0;
-                        width: 698px;
-                        h1 {
-                            font-size: 60px;
-                        }
-                    }
-                    .cards {
-                        flex-wrap: wrap;
-                        div {
-                            &:not(:last-child) {
-                                margin: 16px;
-                            }
-                            margin: 16px;
-                        }
-                    }
-                }
-            }
             main {
                 margin: 100px 55px 150px;
                 .offer {
@@ -174,11 +175,10 @@ $marginConrainerMain: 100px 55px 200px;
                             .descCont {
                                 .descriptionSubject {
                                     width: auto;
-                                    height: 140px;
                                 }
                                 .descriptionText {
                                     width: auto;
-                                    margin: 0 0 15px 0;
+                                    margin: 30px 0;
                                 }
                             }
                             .button {
@@ -193,11 +193,10 @@ $marginConrainerMain: 100px 55px 200px;
                                 text-align: end;
                                 .descriptionSubject {
                                     width: auto;
-                                    height: 140px;
                                 }
                                 .descriptionText {
                                     width: auto;
-                                    margin: 0 0 15px 0;
+                                    margin: 30px 0;
                                 }
                             }
                         }
@@ -222,4 +221,44 @@ $marginConrainerMain: 100px 55px 200px;
     }
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    body {
+        .wrapper {
+            main {
+                .offer {
+                    &:nth-child(odd) {
+                        @include offerMaxWidth767px();
+                    }
+                    &:nth-child(even) {
+                        @include offerMaxWidth767px();
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        .wrapper {
+            .headerContainer {
+                header {
+                    nav {
+                        display: none;
+                    }
+                    .menu {
+                        img {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// сделвать выпадающее меню
+// затемнить главный фон от ширины 1150

@@ -117,7 +117,6 @@ $widthDescriptionSubjectSecond: 423px;
         .descCont {
             .descriptionSubject {
                 margin: 0;
-                height: 156px;
                 width: $widthdescriptionSubject;
                 font-family: $fontPlayfairDisplay;
                 font-style: normal;
@@ -158,6 +157,30 @@ $widthDescriptionSubjectSecond: 423px;
                 &:hover {
                     border: 3px solid $colorSecondaryBorder;
                 }
+            }
+        }
+    }
+}
+
+@mixin offerMaxWidth767px() {
+    .imageTag {
+        height: 400px;
+        .bgUnderImg {
+            width: 85%;
+            height: 20%;
+        }
+        .bgLinkDesc {
+            width: 40%;
+            height: 20%;
+            p {
+                padding-top: 12px;
+                padding-left: 20px;
+                font-size: 14px;
+                line-height: 27px;
+            }
+            .arrowYeyllow {
+                right: 14px;
+                top: 42px;
             }
         }
     }

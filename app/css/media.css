@@ -10,13 +10,13 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
 @media screen and (max-width: 1650px) {
   body .wrapper .headerContainer header {
-    margin: 0 55px; }
+    margin: 0 100px; }
   body .wrapper .headerContainer .content {
-    margin: 0 55px; }
+    margin: 0 100px; }
   body .wrapper main {
-    margin: 100px 55px 200px; }
+    margin: 100px 100px 200px; }
   body .wrapper footer {
-    margin: 0 55px; } }
+    margin: 0 100px; } }
 
 @media screen and (max-width: 1550px) {
   body .wrapper main .offer:nth-child(odd) .description {
@@ -69,16 +69,6 @@
       height: 120px; } }
 
 @media screen and (max-width: 1150px) {
-  body .wrapper footer .footerContainer ul {
-    padding: 0 0 0 40px;
-    margin: 0 272px 0 0; }
-    body .wrapper footer .footerContainer ul li {
-      height: 25px; }
-  body .wrapper footer .footerContainer .footerSocial {
-    width: 316px;
-    height: 120px; } }
-
-@media screen and (max-width: 850px) {
   body .wrapper .headerContainer {
     padding: 40px 0 0 0; }
     body .wrapper .headerContainer .content .title {
@@ -92,6 +82,16 @@
         margin: 16px; }
         body .wrapper .headerContainer .content .cards div:not(:last-child) {
           margin: 16px; }
+  body .wrapper footer .footerContainer ul {
+    padding: 0 0 0 40px;
+    margin: 0 272px 0 0; }
+    body .wrapper footer .footerContainer ul li {
+      height: 25px; }
+  body .wrapper footer .footerContainer .footerSocial {
+    width: 316px;
+    height: 120px; } }
+
+@media screen and (max-width: 850px) {
   body .wrapper main {
     margin: 100px 55px 150px; }
     body .wrapper main .offer {
@@ -99,11 +99,10 @@
       body .wrapper main .offer:nth-child(odd) .description {
         display: block; }
         body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionSubject {
-          width: auto;
-          height: 140px; }
+          width: auto; }
         body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionText {
           width: auto;
-          margin: 0 0 15px 0; }
+          margin: 30px 0; }
         body .wrapper main .offer:nth-child(odd) .description .button {
           text-align: end; }
       body .wrapper main .offer:nth-child(even) .description {
@@ -111,11 +110,10 @@
         body .wrapper main .offer:nth-child(even) .description .descCont {
           text-align: end; }
           body .wrapper main .offer:nth-child(even) .description .descCont .descriptionSubject {
-            width: auto;
-            height: 140px; }
+            width: auto; }
           body .wrapper main .offer:nth-child(even) .description .descCont .descriptionText {
             width: auto;
-            margin: 0 0 15px 0; }
+            margin: 30px 0; }
       body .wrapper main .offer:not(:last-child) {
         margin-bottom: 100px; }
   body .wrapper footer .footerContainer {
@@ -124,3 +122,45 @@
       float: left; }
     body .wrapper footer .footerContainer .footerSocial {
       width: 100%; } }
+
+@media screen and (max-width: 767px) {
+  body .wrapper main .offer:nth-child(odd) .imageTag {
+    height: 400px; }
+    body .wrapper main .offer:nth-child(odd) .imageTag .bgUnderImg {
+      width: 85%;
+      height: 20%; }
+    body .wrapper main .offer:nth-child(odd) .imageTag .bgLinkDesc {
+      width: 40%;
+      height: 20%; }
+      body .wrapper main .offer:nth-child(odd) .imageTag .bgLinkDesc p {
+        padding-top: 12px;
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 27px; }
+      body .wrapper main .offer:nth-child(odd) .imageTag .bgLinkDesc .arrowYeyllow {
+        right: 14px;
+        top: 42px; }
+  body .wrapper main .offer:nth-child(even) .imageTag {
+    height: 400px; }
+    body .wrapper main .offer:nth-child(even) .imageTag .bgUnderImg {
+      width: 85%;
+      height: 20%; }
+    body .wrapper main .offer:nth-child(even) .imageTag .bgLinkDesc {
+      width: 40%;
+      height: 20%; }
+      body .wrapper main .offer:nth-child(even) .imageTag .bgLinkDesc p {
+        padding-top: 12px;
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 27px; }
+      body .wrapper main .offer:nth-child(even) .imageTag .bgLinkDesc .arrowYeyllow {
+        right: 14px;
+        top: 42px; }
+  body .wrapper main .offer:not(:last-child) {
+    margin-bottom: 50px; } }
+
+@media screen and (max-width: 700px) {
+  body .wrapper .headerContainer header nav {
+    display: none; }
+  body .wrapper .headerContainer header .menu img {
+    display: block; } }

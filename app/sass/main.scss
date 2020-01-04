@@ -42,6 +42,9 @@ body {
                 }
                 .menu {
                     padding-top: 5px;
+                    img {
+                        display: none;
+                    }
                 }
             }
             .content {
@@ -95,10 +98,12 @@ body {
                         list-style: none;
                         .playVideoImg {
                             opacity: 0.75;
+                            padding: 0 10px 0 0;
                         }
                         .playVideoText {
                             text-decoration: none;
                             float: right;
+                            padding: 0 0 0 10px;
                             p {
                                 width: 108px;
                                 height: 75px;

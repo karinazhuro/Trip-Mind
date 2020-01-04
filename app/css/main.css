@@ -40,6 +40,8 @@ body {
                 text-decoration: underline; }
       body .wrapper .headerContainer header .menu {
         padding-top: 5px; }
+        body .wrapper .headerContainer header .menu img {
+          display: none; }
     body .wrapper .headerContainer .content {
       max-width: 1516px;
       margin: 0 auto; }
@@ -85,10 +87,12 @@ body {
           padding: 0;
           list-style: none; }
           body .wrapper .headerContainer .content .btnUser .btnPlay .playVideoImg {
-            opacity: 0.75; }
+            opacity: 0.75;
+            padding: 0 10px 0 0; }
           body .wrapper .headerContainer .content .btnUser .btnPlay .playVideoText {
             text-decoration: none;
-            float: right; }
+            float: right;
+            padding: 0 0 0 10px; }
             body .wrapper .headerContainer .content .btnUser .btnPlay .playVideoText p {
               width: 108px;
               height: 75px;
@@ -201,7 +205,6 @@ body {
         right: 30px; }
       body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionSubject {
         margin: 0;
-        height: 156px;
         width: 449px;
         font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
         font-style: normal;
@@ -287,7 +290,6 @@ body {
           left: 30px; }
         body .wrapper main .offer:nth-child(even) .description .descCont .descriptionSubject {
           margin: 0;
-          height: 156px;
           width: 423px;
           font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
           font-style: normal;
