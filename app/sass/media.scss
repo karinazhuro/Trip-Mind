@@ -123,7 +123,7 @@ $heightImageTag1650px: 513px;
                         padding: 70px 0 70px 0;
                     }
                     .social {
-                        margin-top: 70px;
+                        margin: 70px 0 0 0;
                     }
                     .cards {
                         padding: 50px 0 70px 0;
@@ -165,7 +165,7 @@ $heightImageTag1650px: 513px;
                 padding: 40px 0 0 0;
                 .content {
                     .title {
-                        padding: 50px 0 50px 0;
+                        padding: 50px 0;
                         width: 698px;
                         h1 {
                             font-size: 60px;
@@ -204,6 +204,13 @@ $heightImageTag1650px: 513px;
 @media screen and (max-width: 991px) {
     body {
         .wrapper {
+            .headerContainer {
+                .content {
+                    .title {
+                        padding: 30px 0;
+                    }
+                }
+            }
             main {
                 .offer {
                     .imageTag {
@@ -295,9 +302,24 @@ $heightImageTag1650px: 513px;
                     display: block;
                     nav {
                         display: none;
+                        ul {
+                            margin: 20px 0 0;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 40px;
+                            flex-direction: column;
+                            li {
+                                display: flex;
+                                justify-content: flex-end;
+                                &:not(:last-child) {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
                     }
                     .show {
-                        display: block;
+                        display: flex;
+                        justify-content: flex-end;
                     }
                     .menu {
                         position: absolute;
@@ -307,6 +329,23 @@ $heightImageTag1650px: 513px;
                         img {
                             display: block;
                         }
+                    }
+                }
+                .content {
+                    .title {
+                        width: 550px;
+                    }
+                    .btnUser {
+                        button {
+                            float: none;
+                        }
+                        .btnPlay {
+                            float: none;
+                            margin: 50px 0;
+                        }
+                    }
+                    .social {
+                        margin: 170px 0 0;
                     }
                 }
             }
@@ -335,6 +374,14 @@ $heightImageTag1650px: 513px;
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        .wrapper {
+            .headerContainer {}
         }
     }
 }
