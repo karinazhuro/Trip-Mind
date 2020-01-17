@@ -46,12 +46,12 @@ body {
       max-width: 1516px;
       margin: 0 auto; }
       body .wrapper .headerContainer .content .title {
-        width: 806px;
         padding: 170px 0 70px 0; }
         body .wrapper .headerContainer .content .title h1 {
           font: bold 70px/95px "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
           color: #FFFBFB;
-          height: 179px; }
+          height: 179px;
+          width: 607px; }
         body .wrapper .headerContainer .content .title p {
           font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
           font-style: normal;
@@ -60,7 +60,7 @@ body {
           line-height: 45px;
           color: #FFFBFB;
           width: 493px;
-          padding-top: 50px; }
+          margin: 50px 0; }
       body .wrapper .headerContainer .content .btnUser {
         width: 573px;
         height: 75px; }

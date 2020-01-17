@@ -95,8 +95,7 @@
   body .wrapper .headerContainer {
     padding: 40px 0 0 0; }
     body .wrapper .headerContainer .content .title {
-      padding: 50px 0;
-      width: 698px; }
+      padding: 50px 0; }
       body .wrapper .headerContainer .content .title h1 {
         font-size: 60px; }
     body .wrapper .headerContainer .content .cards {
@@ -183,15 +182,29 @@
       padding: 45px 100px; }
       body .wrapper .headerContainer header .menu img {
         display: block; }
-  body .wrapper .headerContainer .content .title {
+  body .wrapper .headerContainer .content .title h1 {
+    font-size: 50px;
+    line-height: 70px;
+    height: 128px;
     width: 550px; }
-  body .wrapper .headerContainer .content .btnUser button {
-    float: none; }
-  body .wrapper .headerContainer .content .btnUser .btnPlay {
-    float: none;
-    margin: 50px 0; }
+  body .wrapper .headerContainer .content .title p {
+    font-size: 20px;
+    line-height: 40px;
+    width: 474px; }
+  body .wrapper .headerContainer .content .btnUser {
+    display: inline-block;
+    text-align: center; }
+    body .wrapper .headerContainer .content .btnUser button {
+      float: none;
+      display: inline-block; }
+    body .wrapper .headerContainer .content .btnUser .btnPlay {
+      float: none;
+      margin: 50px auto; }
+      body .wrapper .headerContainer .content .btnUser .btnPlay .playVideoText {
+        text-align: start; }
   body .wrapper .headerContainer .content .social {
-    margin: 170px 0 0; }
+    text-align: center;
+    margin: 100px auto 10px; }
   body .wrapper main .offer:nth-child(odd) .imageTag {
     height: 400px; }
     body .wrapper main .offer:nth-child(odd) .imageTag .bgUnderImg {

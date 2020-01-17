@@ -166,7 +166,6 @@ $heightImageTag1650px: 513px;
                 .content {
                     .title {
                         padding: 50px 0;
-                        width: 698px;
                         h1 {
                             font-size: 60px;
                         }
@@ -332,20 +331,38 @@ $heightImageTag1650px: 513px;
                     }
                 }
                 .content {
+                    // display: inline-block;
                     .title {
-                        width: 550px;
+                        h1 {
+                            font-size: 50px;
+                            line-height: 70px;
+                            height: 128px;
+                            width: 550px;
+                        }
+                        p {
+                            font-size: 20px;
+                            line-height: 40px;
+                            width: 474px;
+                        }
                     }
                     .btnUser {
+                        display: inline-block;
+                        text-align: center;
                         button {
                             float: none;
+                            display: inline-block;
                         }
                         .btnPlay {
                             float: none;
-                            margin: 50px 0;
+                            margin: 50px auto;
+                            .playVideoText {
+                                text-align: start;
+                            }
                         }
                     }
                     .social {
-                        margin: 170px 0 0;
+                        text-align: center;
+                        margin: 100px auto 10px;
                     }
                 }
             }
@@ -378,7 +395,7 @@ $heightImageTag1650px: 513px;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 691px) {
     body {
         .wrapper {
             .headerContainer {}

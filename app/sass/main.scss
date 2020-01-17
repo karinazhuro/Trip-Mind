@@ -51,12 +51,12 @@ body {
                 max-width: 1516px;
                 margin: 0 auto;
                 .title {
-                    width: 806px;
                     padding: 170px 0 70px 0;
                     h1 {
                         font: bold 70px/95px $fontPlayfairDisplay;
                         color: $colorPrimary;
                         height: 179px;
+                        width: 607px;
                     }
                     p {
                         font-family: $fontMontserrat;
@@ -66,7 +66,7 @@ body {
                         line-height: 45px;
                         color: $colorPrimary;
                         width: 493px;
-                        padding-top: 50px;
+                        margin: 50px 0;
                     }
                 }
                 .btnUser {
