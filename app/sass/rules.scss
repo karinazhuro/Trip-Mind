@@ -1,4 +1,6 @@
-// variable of color
+// variable 
+// --
+// color
 $colorPrimary: #FFFBFB;
 $colorSecondary: #FFC806;
 $colorSecondaryBorder: #b48e05;
@@ -6,21 +8,46 @@ $colorTextBtn: #2D0000;
 $colorTextGorge: #333333;
 $colorDescriptionText: #B5B5B5;
 $colorBgFooterSocial: #fcfcfc;
+// max-width 
+// ---
+// 1516px
 $maxWidthContent: 1516px;
-// var for mixin image first
-$borderRadiusFirst: 16px 0px 0px 0px;
-$paddingBgImageFirst: 30px 0 0 30px;
-$rightBgLinkDescFirst: 30px;
-// var for mixin image second
-$borderRadiusSecond: 0px 16px 0px 0px;
-$paddingBgImageSecond: 30px 30px 0 0;
-$rightBgUnderImgSecond: 0;
-$leftBgLinkDescSecond: 30px;
-// var for mixin desc first
-$widthDescriptionSubjectFirst: 449px;
-// var for mixin desc second
-$widthDescriptionSubjectSecond: 423px;
-// social icons
+// --
+// image first
+$borderRadiusFirst1516px: 16px 0px 0px 0px;
+$paddingBgImageFirst1516px: 30px 0 0 30px;
+$rightBgLinkDescFirst1516px: 30px;
+// --
+// image second
+$borderRadiusSecond1516px: 0px 16px 0px 0px;
+$paddingBgImageSecond1516px: 30px 30px 0 0;
+$rightBgUnderImgSecond1516px: 0;
+$leftBgLinkDescSecond1516px: 30px;
+// --
+// desc first
+$widthDescriptionSubjectFirst1516px: 449px;
+// --
+// desc second
+$widthDescriptionSubjectSecond1516px: 423px;
+// ---
+// 1650px
+$marginConrainer1650px: 0 100px;
+$marginConrainerMain1650px: 100px 100px 200px;
+// ---
+// 850px
+$marginConrainer850px: 0 70px;
+$marginConrainerMain850px: 100px 70px 200px;
+$heightImageTag850px: 513px;
+// ---
+// 767px
+// --
+// image first
+$paddingBgImageFirst767px: 20px 0 0 20px;
+// --
+// image second
+$paddingBgImageSecond767px: 20px 20px 0 0;
+// ---
+// 691px
 @mixin socialIcons($paddingTop) {
     display: flex;
     justify-content: space-between;
@@ -67,6 +94,7 @@ $widthDescriptionSubjectSecond: 423px;
         width: 770px;
         height: 543px;
         position: relative;
+        padding: 0;
         .bgUnderImg {
             position: absolute;
             background-color: rgba(201, 201, 201, 0.16);
@@ -112,12 +140,12 @@ $widthDescriptionSubjectSecond: 423px;
     }
 }
 
-@mixin desc ($widthdescriptionSubject) {
+@mixin desc ($widthDescriptionSubject) {
     .description {
         .descCont {
             .descriptionSubject {
                 margin: 0;
-                width: $widthdescriptionSubject;
+                width: $widthDescriptionSubject;
                 font-family: $fontPlayfairDisplay;
                 font-style: normal;
                 font-weight: bold;
@@ -150,7 +178,6 @@ $widthDescriptionSubjectSecond: 423px;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 20px;
-                line-height: 20px;
                 cursor: pointer;
                 margin: 30px 0;
                 padding: 0;
@@ -162,12 +189,15 @@ $widthDescriptionSubjectSecond: 423px;
     }
 }
 
-@mixin offerMaxWidth767px() {
+@mixin offerMaxWidth767px($paddingBgImage, $paddingBgImage) {
     .imageTag {
         height: 400px;
         .bgUnderImg {
             width: 85%;
-            height: 20%;
+            height: 30%;
+        }
+        .bgImage {
+            padding: $paddingBgImage;
         }
         .bgLinkDesc {
             width: 40%;
@@ -181,6 +211,33 @@ $widthDescriptionSubjectSecond: 423px;
             .arrowYeyllow {
                 right: 14px;
                 top: 42px;
+            }
+        }
+    }
+}
+
+@mixin offerMaxWidth691px() {
+    .imageTag {
+        margin: 0 auto 25px;
+    }
+    .description {
+        .descCont {
+            .descriptionSubject {
+                font-size: 35px;
+                line-height: 44px;
+            }
+            .descriptionText {
+                font-size: 17px;
+                line-height: 17px;
+                margin: 25px 0;
+            }
+        }
+        .button {
+            button {
+                width: 270px;
+                height: 62px;
+                font-size: 18px;
+                margin: 15px 0;
             }
         }
     }

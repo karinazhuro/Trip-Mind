@@ -13,19 +13,18 @@
     margin: 0 100px; }
   body .wrapper .headerContainer .content {
     margin: 0 100px; }
+    body .wrapper .headerContainer .content .title {
+      padding: 140px 0 70px; }
   body .wrapper main {
-    margin: 100px 100px 200px; } }
-  @media screen and (max-width: 1650px) and (max-width: 1620px) {
-    body .wrapper main .offer:nth-child(odd) .imageTag {
-      height: 513px; }
-    body .wrapper main .offer:nth-child(even) .imageTag {
-      height: 513px; } }
-
-@media screen and (max-width: 1650px) {
+    margin: 100px 100px 200px; }
   body .wrapper footer {
     margin: 0 100px; } }
 
 @media screen and (max-width: 1550px) {
+  body .wrapper .headerContainer {
+    padding: 76px 0 0 0; }
+    body .wrapper .headerContainer .content .title {
+      padding: 110px 0 70px; }
   body .wrapper main .offer:nth-child(odd) .imageTag {
     height: 520px; }
   body .wrapper main .offer:nth-child(odd) .description {
@@ -69,17 +68,13 @@
       font-size: 16px; }
     body .wrapper .headerContainer .content .title {
       padding: 70px 0 70px 0; }
-    body .wrapper .headerContainer .content .social {
-      margin: 70px 0 0 0; }
     body .wrapper .headerContainer .content .cards {
       padding: 50px 0 70px 0;
       justify-content: center; }
   body .wrapper main .offer {
     display: block; }
     body .wrapper main .offer .imageTag {
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 50px; }
+      margin: 0 auto 50px; }
       body .wrapper main .offer .imageTag:nth-child(odd) {
         height: 555px; }
       body .wrapper main .offer .imageTag:nth-child(even) {
@@ -129,6 +124,12 @@
       width: 100%; } }
 
 @media screen and (max-width: 850px) {
+  body .wrapper .headerContainer header {
+    margin: 0 70px; }
+  body .wrapper .headerContainer .content {
+    margin: 0 70px; }
+    body .wrapper .headerContainer .content .btnPlay {
+      margin: 0 0 0 39px; }
   body .wrapper main {
     margin: 100px 55px 150px; }
     body .wrapper main .offer {
@@ -175,41 +176,46 @@
     body .wrapper .headerContainer header .show {
       display: flex;
       justify-content: flex-end; }
+      body .wrapper .headerContainer header .show ul li a {
+        color: #FFC806; }
     body .wrapper .headerContainer header .menu {
       position: absolute;
       top: 0;
       right: 0;
-      padding: 45px 100px; }
+      padding: 45px 70px; }
       body .wrapper .headerContainer header .menu img {
         display: block; }
-  body .wrapper .headerContainer .content .title h1 {
-    font-size: 50px;
-    line-height: 70px;
-    height: 128px;
-    width: 550px; }
-  body .wrapper .headerContainer .content .title p {
-    font-size: 20px;
-    line-height: 40px;
-    width: 474px; }
-  body .wrapper .headerContainer .content .btnUser {
-    display: inline-block;
-    text-align: center; }
-    body .wrapper .headerContainer .content .btnUser button {
+  body .wrapper .headerContainer .content {
+    display: flex;
+    flex-direction: column; }
+    body .wrapper .headerContainer .content .title {
+      padding: 30px 0 0; }
+      body .wrapper .headerContainer .content .title h1 {
+        font-size: 50px;
+        line-height: 70px;
+        width: auto; }
+      body .wrapper .headerContainer .content .title p {
+        font-size: 20px;
+        line-height: 40px;
+        width: auto;
+        margin: 45px 0 40px; }
+    body .wrapper .headerContainer .content .btnUser {
+      text-align: center;
+      margin: 0 auto; }
+    body .wrapper .headerContainer .content .btnPlay {
+      width: 203px;
       float: none;
-      display: inline-block; }
-    body .wrapper .headerContainer .content .btnUser .btnPlay {
-      float: none;
-      margin: 50px auto; }
-      body .wrapper .headerContainer .content .btnUser .btnPlay .playVideoText {
-        text-align: start; }
-  body .wrapper .headerContainer .content .social {
-    text-align: center;
-    margin: 100px auto 10px; }
+      margin: 55px auto 50px; }
+    body .wrapper .headerContainer .content .social {
+      text-align: center;
+      margin: 0 auto; }
   body .wrapper main .offer:nth-child(odd) .imageTag {
     height: 400px; }
     body .wrapper main .offer:nth-child(odd) .imageTag .bgUnderImg {
       width: 85%;
-      height: 20%; }
+      height: 30%; }
+    body .wrapper main .offer:nth-child(odd) .imageTag .bgImage {
+      padding: 20px 0 0 20px; }
     body .wrapper main .offer:nth-child(odd) .imageTag .bgLinkDesc {
       width: 40%;
       height: 20%; }
@@ -225,7 +231,9 @@
     height: 400px; }
     body .wrapper main .offer:nth-child(even) .imageTag .bgUnderImg {
       width: 85%;
-      height: 20%; }
+      height: 30%; }
+    body .wrapper main .offer:nth-child(even) .imageTag .bgImage {
+      padding: 20px 20px 0 0; }
     body .wrapper main .offer:nth-child(even) .imageTag .bgLinkDesc {
       width: 40%;
       height: 20%; }
@@ -245,3 +253,42 @@
     justify-content: center; }
   body .wrapper footer .footerContainer ul {
     margin: 30px 0; } }
+
+@media screen and (max-width: 691px) {
+  body .wrapper .headerContainer .content .title h1 {
+    font-size: 46px;
+    line-height: 66px; }
+  body .wrapper .headerContainer .content .title p {
+    margin: 30px 0 35px;
+    font-size: 18px;
+    line-height: 34px; }
+  body .wrapper main {
+    margin: 100px 55px 100px; }
+    body .wrapper main .offer:nth-child(odd) .imageTag {
+      margin: 0 auto 25px; }
+    body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionSubject {
+      font-size: 35px;
+      line-height: 44px; }
+    body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionText {
+      font-size: 17px;
+      line-height: 17px;
+      margin: 25px 0; }
+    body .wrapper main .offer:nth-child(odd) .description .button button {
+      width: 270px;
+      height: 62px;
+      font-size: 18px;
+      margin: 15px 0; }
+    body .wrapper main .offer:nth-child(even) .imageTag {
+      margin: 0 auto 25px; }
+    body .wrapper main .offer:nth-child(even) .description .descCont .descriptionSubject {
+      font-size: 35px;
+      line-height: 44px; }
+    body .wrapper main .offer:nth-child(even) .description .descCont .descriptionText {
+      font-size: 17px;
+      line-height: 17px;
+      margin: 25px 0; }
+    body .wrapper main .offer:nth-child(even) .description .button button {
+      width: 270px;
+      height: 62px;
+      font-size: 18px;
+      margin: 15px 0; } }

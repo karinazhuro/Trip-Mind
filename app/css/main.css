@@ -50,7 +50,6 @@ body {
         body .wrapper .headerContainer .content .title h1 {
           font: bold 70px/95px "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
           color: #FFFBFB;
-          height: 179px;
           width: 607px; }
         body .wrapper .headerContainer .content .title p {
           font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
@@ -61,45 +60,38 @@ body {
           color: #FFFBFB;
           width: 493px;
           margin: 50px 0; }
-      body .wrapper .headerContainer .content .btnUser {
-        width: 573px;
-        height: 75px; }
-        body .wrapper .headerContainer .content .btnUser button {
-          width: 309px;
-          height: 75px;
-          border-radius: 75px;
-          background-color: #FFC806;
-          color: #2D0000;
-          border: none;
-          font: 600 20px "Montserrat", "Open Sans", "Roboto", "Raleway";
-          cursor: pointer;
-          float: left; }
-          body .wrapper .headerContainer .content .btnUser button:hover {
-            border: 3px solid #b48e05; }
-        body .wrapper .headerContainer .content .btnUser .btnPlay {
-          width: 203px;
-          height: 75px;
-          margin: 0 0 0 61px;
-          float: left;
-          padding: 0;
-          list-style: none; }
-          body .wrapper .headerContainer .content .btnUser .btnPlay .playVideoImg {
-            opacity: 0.75;
-            padding: 0 10px 0 0; }
-          body .wrapper .headerContainer .content .btnUser .btnPlay .playVideoText {
-            text-decoration: none;
-            float: right;
-            padding: 0 0 0 10px; }
-            body .wrapper .headerContainer .content .btnUser .btnPlay .playVideoText p {
-              width: 108px;
-              height: 75px;
-              font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-              font-style: normal;
-              font-weight: 500;
-              font-size: 16px;
-              line-height: 25px;
-              color: #FFFBFB;
-              margin: 0; }
+      body .wrapper .headerContainer .content .btnUser button {
+        width: 309px;
+        height: 75px;
+        border-radius: 75px;
+        background-color: #FFC806;
+        color: #2D0000;
+        border: none;
+        font: 600 20px "Montserrat", "Open Sans", "Roboto", "Raleway";
+        cursor: pointer;
+        float: left; }
+        body .wrapper .headerContainer .content .btnUser button:hover {
+          border: 3px solid #b48e05; }
+      body .wrapper .headerContainer .content .btnPlay {
+        margin: 0 0 0 61px;
+        float: left; }
+        body .wrapper .headerContainer .content .btnPlay .playVideoImg {
+          opacity: 0.75;
+          padding: 0 10px 0 0; }
+        body .wrapper .headerContainer .content .btnPlay .playVideoText {
+          text-decoration: none;
+          float: right;
+          padding: 0 0 0 10px; }
+          body .wrapper .headerContainer .content .btnPlay .playVideoText p {
+            width: 108px;
+            height: 75px;
+            font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            color: #FFFBFB;
+            margin: 0; }
       body .wrapper .headerContainer .content .social {
         width: 206px;
         margin: 120px 0 0 0; }
@@ -159,7 +151,8 @@ body {
       body .wrapper main .offer:nth-child(odd) .imageTag {
         width: 770px;
         height: 543px;
-        position: relative; }
+        position: relative;
+        padding: 0; }
         body .wrapper main .offer:nth-child(odd) .imageTag .bgUnderImg {
           position: absolute;
           background-color: rgba(201, 201, 201, 0.16);
@@ -229,7 +222,6 @@ body {
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
-        line-height: 20px;
         cursor: pointer;
         margin: 30px 0;
         padding: 0; }
@@ -242,7 +234,8 @@ body {
         body .wrapper main .offer:nth-child(even) .imageTag {
           width: 770px;
           height: 543px;
-          position: relative; }
+          position: relative;
+          padding: 0; }
           body .wrapper main .offer:nth-child(even) .imageTag .bgUnderImg {
             position: absolute;
             background-color: rgba(201, 201, 201, 0.16);
@@ -314,7 +307,6 @@ body {
           font-style: normal;
           font-weight: 600;
           font-size: 20px;
-          line-height: 20px;
           cursor: pointer;
           margin: 30px 0;
           padding: 0; }

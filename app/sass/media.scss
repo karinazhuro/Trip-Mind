@@ -1,41 +1,26 @@
 @import '../fonts/Montserrat';
 @import '../fonts/PlayfairDisplay';
 @import 'rules';
-// variables
-$marginConrainer: 0 100px;
-$marginConrainerMain: 100px 100px 200px;
-$heightImageTag1650px: 513px;
 // media
 @media screen and (max-width: 1650px) {
     body {
         .wrapper {
             .headerContainer {
                 header {
-                    margin: $marginConrainer;
+                    margin: $marginConrainer1650px;
                 }
                 .content {
-                    margin: $marginConrainer;
-                }
-            }
-            main {
-                margin: $marginConrainerMain;
-                .offer {
-                    @media screen and (max-width: 1620px) {
-                        &:nth-child(odd) {
-                            .imageTag {
-                                height: $heightImageTag1650px;
-                            }
-                        }
-                        &:nth-child(even) {
-                            .imageTag {
-                                height: $heightImageTag1650px;
-                            }
-                        }
+                    margin: $marginConrainer1650px;
+                    .title {
+                        padding: 140px 0 70px;
                     }
                 }
             }
+            main {
+                margin: $marginConrainerMain1650px;
+            }
             footer {
-                margin: $marginConrainer;
+                margin: $marginConrainer1650px;
             }
         }
     }
@@ -44,6 +29,14 @@ $heightImageTag1650px: 513px;
 @media screen and (max-width: 1550px) {
     body {
         .wrapper {
+            .headerContainer {
+                padding: 76px 0 0 0;
+                .content {
+                    .title {
+                        padding: 110px 0 70px;
+                    }
+                }
+            }
             main {
                 .offer {
                     &:nth-child(odd) {
@@ -122,9 +115,6 @@ $heightImageTag1650px: 513px;
                     .title {
                         padding: 70px 0 70px 0;
                     }
-                    .social {
-                        margin: 70px 0 0 0;
-                    }
                     .cards {
                         padding: 50px 0 70px 0;
                         justify-content: center;
@@ -135,9 +125,7 @@ $heightImageTag1650px: 513px;
                 .offer {
                     display: block;
                     .imageTag {
-                        margin-left: auto;
-                        margin-right: auto;
-                        margin-bottom: 50px;
+                        margin: 0 auto 50px;
                         &:nth-child(odd) {
                             height: 555px;
                         }
@@ -241,6 +229,17 @@ $heightImageTag1650px: 513px;
 @media screen and (max-width: 850px) {
     body {
         .wrapper {
+            .headerContainer {
+                header {
+                    margin: $marginConrainer850px;
+                }
+                .content {
+                    margin: $marginConrainer850px;
+                    .btnPlay {
+                        margin: 0 0 0 39px;
+                    }
+                }
+            }
             main {
                 margin: 100px 55px 150px;
                 .offer {
@@ -319,60 +318,63 @@ $heightImageTag1650px: 513px;
                     .show {
                         display: flex;
                         justify-content: flex-end;
+                        ul {
+                            li {
+                                a {
+                                    color: $colorSecondary;
+                                }
+                            }
+                        }
                     }
                     .menu {
                         position: absolute;
                         top: 0;
                         right: 0;
-                        padding: 45px 100px;
+                        padding: 45px 70px;
                         img {
                             display: block;
                         }
                     }
                 }
                 .content {
-                    // display: inline-block;
+                    display: flex;
+                    flex-direction: column;
                     .title {
+                        padding: 30px 0 0;
                         h1 {
                             font-size: 50px;
                             line-height: 70px;
-                            height: 128px;
-                            width: 550px;
+                            width: auto;
                         }
                         p {
                             font-size: 20px;
                             line-height: 40px;
-                            width: 474px;
+                            width: auto;
+                            margin: 45px 0 40px;
                         }
                     }
                     .btnUser {
-                        display: inline-block;
                         text-align: center;
-                        button {
-                            float: none;
-                            display: inline-block;
-                        }
-                        .btnPlay {
-                            float: none;
-                            margin: 50px auto;
-                            .playVideoText {
-                                text-align: start;
-                            }
-                        }
+                        margin: 0 auto;
+                    }
+                    .btnPlay {
+                        width: 203px;
+                        float: none;
+                        margin: 55px auto 50px;
                     }
                     .social {
                         text-align: center;
-                        margin: 100px auto 10px;
+                        margin: 0 auto;
                     }
                 }
             }
             main {
                 .offer {
                     &:nth-child(odd) {
-                        @include offerMaxWidth767px();
+                        @include offerMaxWidth767px($paddingBgImageFirst767px);
                     }
                     &:nth-child(even) {
-                        @include offerMaxWidth767px();
+                        @include offerMaxWidth767px($paddingBgImageSecond767px);
                     }
                     &:not(:last-child) {
                         margin-bottom: 50px;
@@ -398,7 +400,32 @@ $heightImageTag1650px: 513px;
 @media screen and (max-width: 691px) {
     body {
         .wrapper {
-            .headerContainer {}
+            .headerContainer {
+                .content {
+                    .title {
+                        h1 {
+                            font-size: 46px;
+                            line-height: 66px;
+                        }
+                        p {
+                            margin: 30px 0 35px;
+                            font-size: 18px;
+                            line-height: 34px;
+                        }
+                    }
+                }
+            }
+            main {
+                margin: 100px 55px 100px;
+                .offer {
+                    &:nth-child(odd) {
+                        @include offerMaxWidth691px();
+                    }
+                    &:nth-child(even) {
+                        @include offerMaxWidth691px();
+                    }
+                }
+            }
         }
     }
 }

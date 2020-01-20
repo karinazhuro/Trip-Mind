@@ -55,7 +55,6 @@ body {
                     h1 {
                         font: bold 70px/95px $fontPlayfairDisplay;
                         color: $colorPrimary;
-                        height: 179px;
                         width: 607px;
                     }
                     p {
@@ -70,8 +69,6 @@ body {
                     }
                 }
                 .btnUser {
-                    width: 573px;
-                    height: 75px;
                     button {
                         width: 309px;
                         height: 75px;
@@ -86,32 +83,28 @@ body {
                             border: 3px solid $colorSecondaryBorder;
                         }
                     }
-                    .btnPlay {
-                        width: 203px;
-                        height: 75px;
-                        margin: 0 0 0 61px;
-                        float: left;
-                        padding: 0;
-                        list-style: none;
-                        .playVideoImg {
-                            opacity: 0.75;
-                            padding: 0 10px 0 0;
-                        }
-                        .playVideoText {
-                            text-decoration: none;
-                            float: right;
-                            padding: 0 0 0 10px;
-                            p {
-                                width: 108px;
-                                height: 75px;
-                                font-family: $fontMontserrat;
-                                font-style: normal;
-                                font-weight: 500;
-                                font-size: 16px;
-                                line-height: 25px;
-                                color: $colorPrimary;
-                                margin: 0;
-                            }
+                }
+                .btnPlay {
+                    margin: 0 0 0 61px;
+                    float: left;
+                    .playVideoImg {
+                        opacity: 0.75;
+                        padding: 0 10px 0 0;
+                    }
+                    .playVideoText {
+                        text-decoration: none;
+                        float: right;
+                        padding: 0 0 0 10px;
+                        p {
+                            width: 108px;
+                            height: 75px;
+                            font-family: $fontMontserrat;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 25px;
+                            color: $colorPrimary;
+                            margin: 0;
                         }
                     }
                 }
@@ -150,26 +143,26 @@ body {
                 margin: 0 auto;
                 display: flex;
                 &:nth-child(odd) {
-                    @include imageTag ($borderRadiusFirst,
-                    $paddingBgImageFirst);
+                    @include imageTag ($borderRadiusFirst1516px,
+                    $paddingBgImageFirst1516px);
                     .bgLinkDesc {
-                        right: $rightBgLinkDescFirst;
+                        right: $rightBgLinkDescFirst1516px;
                     }
-                    @include desc($widthDescriptionSubjectFirst);
+                    @include desc($widthDescriptionSubjectFirst1516px);
                     .description {
                         margin: 0 0 0 200px;
                     }
                 }
                 &:nth-child(even) {
-                    @include imageTag ($borderRadiusSecond,
-                    $paddingBgImageSecond);
+                    @include imageTag ($borderRadiusSecond1516px,
+                    $paddingBgImageSecond1516px);
                     .bgUnderImg {
-                        right: $rightBgUnderImgSecond;
+                        right: $rightBgUnderImgSecond1516px;
                     }
                     .bgLinkDesc {
-                        left: $leftBgLinkDescSecond;
+                        left: $leftBgLinkDescSecond1516px;
                     }
-                    @include desc($widthDescriptionSubjectSecond);
+                    @include desc($widthDescriptionSubjectSecond1516px);
                     .description {
                         margin: 0 200px 0 0;
                     }
