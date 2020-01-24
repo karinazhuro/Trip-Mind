@@ -19,7 +19,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 nav {
-                    padding-top: 8px;
+                    padding: 8px 0 0 0;
                     ul {
                         padding: 0;
                         margin: 0;
@@ -28,7 +28,7 @@ body {
                         li {
                             list-style: none;
                             &:not(:last-child) {
-                                margin-right: 40px;
+                                margin: 0 40px 0 0;
                             }
                             a {
                                 text-decoration: none;
@@ -41,7 +41,7 @@ body {
                     }
                 }
                 .menu {
-                    padding-top: 5px;
+                    padding: 5px 0 0 0;
                     img {
                         display: none;
                     }
@@ -129,7 +129,7 @@ body {
                     justify-content: flex-end;
                     color: $colorPrimary;
                     position: relative;
-                    padding-bottom: 100px;
+                    padding: 0 0 100px 0;
                     div {
                         @include cardsBox;
                     }
