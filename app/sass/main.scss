@@ -11,7 +11,7 @@ body {
             background: url('../img/Irelandmain.png') no-repeat center center;
             height: 100%;
             background-size: cover;
-            padding: 102px 0 0 0;
+            padding: 102px 50px 0;
             header {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
@@ -138,33 +138,31 @@ body {
         }
         main {
             margin: 120px 0 300px 0;
+            padding: 0 50px;
             .offer {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
                 display: flex;
                 &:nth-child(odd) {
-                    @include imageTag ($borderRadiusFirst1516px,
-                    $paddingBgImageFirst1516px);
-                    .bgLinkDesc {
-                        right: $rightBgLinkDescFirst1516px;
+                    @include imageTag (16px 0px 0px 0px,
+                    url(../img/gorge.png) no-repeat);
+                    .bgUnderImg {
+                        left: -30px;
                     }
-                    @include desc($widthDescriptionSubjectFirst1516px);
-                    .description {
-                        margin: 0 0 0 200px;
-                    }
+                    @include desc();
                 }
                 &:nth-child(even) {
-                    @include imageTag ($borderRadiusSecond1516px,
-                    $paddingBgImageSecond1516px);
+                    @include imageTag (0px 16px 0px 0px,
+                    url(../img/desc.png) no-repeat);
                     .bgUnderImg {
-                        right: $rightBgUnderImgSecond1516px;
+                        right: -30px;
                     }
-                    .bgLinkDesc {
-                        left: $leftBgLinkDescSecond1516px;
+                    .linkDesc {
+                        left: 30px;
                     }
-                    @include desc($widthDescriptionSubjectSecond1516px);
+                    @include desc();
                     .description {
-                        margin: 0 200px 0 0;
+                        margin: 0 100px 0 0;
                     }
                     flex-direction: row-reverse;
                 }
@@ -174,6 +172,7 @@ body {
             }
         }
         footer {
+            padding: 0 50px;
             .footerContainer {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
@@ -209,8 +208,8 @@ body {
                     }
                 }
                 .footerSocial {
-                    width: 637px;
-                    height: 170px;
+                    width: 30%;
+                    height: 14%;
                     position: absolute;
                     right: 0;
                     background: $colorBgFooterSocial;

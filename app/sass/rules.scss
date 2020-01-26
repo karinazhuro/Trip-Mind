@@ -12,23 +12,6 @@ $colorBgFooterSocial: #fcfcfc;
 // ---
 // 1516px
 $maxWidthContent: 1516px;
-// --
-// image first
-$borderRadiusFirst1516px: 16px 0px 0px 0px;
-$paddingBgImageFirst1516px: 30px 0 0 30px;
-$rightBgLinkDescFirst1516px: 30px;
-// --
-// image second
-$borderRadiusSecond1516px: 0px 16px 0px 0px;
-$paddingBgImageSecond1516px: 30px 30px 0 0;
-$rightBgUnderImgSecond1516px: 0;
-$leftBgLinkDescSecond1516px: 30px;
-// --
-// desc first
-$widthDescriptionSubjectFirst1516px: 449px;
-// --
-// desc second
-$widthDescriptionSubjectSecond1516px: 423px;
 // ---
 // 1650px
 $marginConrainer1650px: 0 100px;
@@ -90,66 +73,56 @@ $marginConrainer575px: 0 40px;
     }
 }
 
-@mixin imageTag ($borderRadius, $paddingBgImage) {
+@mixin imageTag ($borderRadius, $background) {
     .imageTag {
-        width: 770px;
-        height: 543px;
+        width: 740px;
         position: relative;
-        padding: 0;
+        margin: 30px 0 0 0;
         .bgUnderImg {
-            position: absolute;
-            background: linear-gradient(rgba(201, 201, 201, 0.16), rgba(201, 201, 201, -0.9));
+            background: rgba(201, 201, 201, 0.16);
             width: 617px;
             height: 159px;
             border-radius: $borderRadius;
+            top: -30px;
+            position: absolute;
+            padding: 30px 0 0 0;
         }
         .bgImage {
-            position: absolute;
-            padding: $paddingBgImage;
-            max-width: 100%;
-            height: auto;
-            // display: inline-block;
-            //
-            margin: 0 0 0 auto;
-            margin: 0 auto 0 0;
+            background: $background;
+            background-size: cover;
+            border-radius: 16px;
+            position: relative;
+            width: 100%;
+            height: 470px;
+            display: inline-block;
         }
-        .bgLinkDesc {
-            width: 370px;
-            height: 110px;
-            background: $colorPrimary;
+        .linkDesc {
+            font-family: $fontMontserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            color: $colorTextGorge;
+            box-sizing: border-box;
+            text-decoration: none;
+            background: $colorPrimary url(../img/ArrowYeyllow.png) no-repeat 90% center;
             box-shadow: 0px 4px 16px rgba(1, 8, 41, 0.08);
             border-radius: 16px;
             position: absolute;
-            bottom: 0;
-            p {
-                padding-top: 30px;
-                padding-left: 40px;
-                width: 178px;
-                height: 50px;
-                font-family: $fontMontserrat;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 25px;
-                color: $colorTextGorge;
-                box-sizing: content-box;
-                margin: 0;
-            }
-            .arrowYeyllow {
-                position: absolute;
-                right: 35px;
-                top: 55px;
-            }
+            bottom: -36px;
+            right: 30px;
+            padding: 30px 152px 30px 40px;
+            width: 370px;
         }
     }
 }
 
-@mixin desc ($widthDescriptionSubject) {
+@mixin desc () {
     .description {
+        margin: 0 0 0 100px;
         .descCont {
             .descriptionSubject {
                 margin: 0;
-                width: $widthDescriptionSubject;
+                width: 437px;
                 font-family: $fontPlayfairDisplay;
                 font-style: normal;
                 font-weight: bold;
@@ -169,24 +142,22 @@ $marginConrainer575px: 0 40px;
                 margin: 40px 0;
             }
         }
-        .button {
-            button {
-                width: 309px;
-                height: 75px;
-                border: 2px solid $colorSecondary;
-                background-color: #fff;
-                color: $colorSecondary;
-                border-radius: 75px;
-                font-family: $fontMontserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 20px;
-                cursor: pointer;
-                margin: 30px 0;
-                padding: 0;
-                &:hover {
-                    border: 3px solid $colorSecondaryBorder;
-                }
+        button {
+            width: 309px;
+            height: 75px;
+            border: 2px solid $colorSecondary;
+            background-color: #fff;
+            color: $colorSecondary;
+            border-radius: 75px;
+            font-family: $fontMontserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 30px 0;
+            padding: 0;
+            &:hover {
+                border: 3px solid $colorSecondaryBorder;
             }
         }
     }
