@@ -55,7 +55,8 @@ body {
                     h1 {
                         font: bold 70px/95px $fontPlayfairDisplay;
                         color: $colorPrimary;
-                        width: 607px;
+                        width: 50%;
+                        margin: 0;
                     }
                     p {
                         font-family: $fontMontserrat;
@@ -64,14 +65,15 @@ body {
                         font-size: 25px;
                         line-height: 45px;
                         color: $colorPrimary;
-                        width: 493px;
+                        width: 45%;
                         margin: 50px 0;
                     }
                 }
                 .btnUser {
                     button {
-                        width: 309px;
+                        width: 25%;
                         height: 75px;
+                        // padding: 2%;
                         border-radius: 75px;
                         background-color: $colorSecondary;
                         color: $colorTextBtn;
@@ -121,7 +123,7 @@ body {
                         margin: 0;
                     }
                     .socialIcons {
-                        @include socialIcons(22px);
+                        @include socialIcons(22px 0 0 0);
                     }
                 }
                 .cards {
@@ -146,19 +148,25 @@ body {
                 &:nth-child(odd) {
                     @include imageTag (16px 0px 0px 0px,
                     url(../img/gorge.png) no-repeat);
-                    .bgUnderImg {
-                        left: -30px;
+                    .imageTag {
+                        margin: 30px 0 0 30px;
+                        .bgUnderImg {
+                            left: -30px;
+                        }
                     }
                     @include desc();
                 }
                 &:nth-child(even) {
                     @include imageTag (0px 16px 0px 0px,
                     url(../img/desc.png) no-repeat);
-                    .bgUnderImg {
-                        right: -30px;
-                    }
-                    .linkDesc {
-                        left: 30px;
+                    .imageTag {
+                        margin: 30px 30px 0 0;
+                        .bgUnderImg {
+                            right: -30px;
+                        }
+                        .linkDesc {
+                            left: 30px;
+                        }
                     }
                     @include desc();
                     .description {
@@ -167,7 +175,7 @@ body {
                     flex-direction: row-reverse;
                 }
                 &:not(:last-child) {
-                    margin-bottom: 150px;
+                    margin: 0 0 150px 0;
                 }
             }
         }
@@ -176,28 +184,21 @@ body {
             .footerContainer {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
-                height: 170px;
                 display: flex;
                 align-items: center;
                 ul {
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: start;
                     font-family: $fontMontserrat;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 18px;
-                    margin: 0 637px 0 0;
-                    width: 100%;
-                    .privacyPolicy {
-                        width: 171px;
-                    }
-                    .personalData {
-                        width: 224px;
-                    }
+                    padding: 0 40px;
                     li {
+                        width: 32%;
                         list-style: none;
-                        height: 36px;
+                        margin: 0 15px 15px;
                         a {
                             text-decoration: none;
                             color: #B5B5B5;
@@ -208,19 +209,17 @@ body {
                     }
                 }
                 .footerSocial {
-                    width: 30%;
-                    height: 14%;
                     position: absolute;
                     right: 0;
                     background: $colorBgFooterSocial;
                     border-radius: 16px 0px 0px 0px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     .socialIcons {
-                        width: 203px;
-                        height: 24px;
-                        @include socialIcons(0);
+                        @include socialIcons(40px 50px);
+                        a {
+                            img {
+                                padding: 20px;
+                            }
+                        }
                     }
                 }
             }

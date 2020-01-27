@@ -50,7 +50,8 @@ body {
         body .wrapper .headerContainer .content .title h1 {
           font: bold 70px/95px "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
           color: #FFFBFB;
-          width: 607px; }
+          width: 50%;
+          margin: 0; }
         body .wrapper .headerContainer .content .title p {
           font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
           font-style: normal;
@@ -58,10 +59,10 @@ body {
           font-size: 25px;
           line-height: 45px;
           color: #FFFBFB;
-          width: 493px;
+          width: 45%;
           margin: 50px 0; }
       body .wrapper .headerContainer .content .btnUser button {
-        width: 309px;
+        width: 25%;
         height: 75px;
         border-radius: 75px;
         background-color: #FFC806;
@@ -129,7 +130,7 @@ body {
             font-size: 25px; }
           body .wrapper .headerContainer .content .cards div .name {
             margin: 0;
-            width: 171px;
+            width: 40%;
             position: absolute;
             left: 25px;
             bottom: 25px;
@@ -151,8 +152,7 @@ body {
       display: flex; }
       body .wrapper main .offer:nth-child(odd) .imageTag {
         width: 740px;
-        position: relative;
-        margin: 30px 0 0 0; }
+        position: relative; }
         body .wrapper main .offer:nth-child(odd) .imageTag .bgUnderImg {
           background: rgba(201, 201, 201, 0.16);
           width: 617px;
@@ -185,8 +185,10 @@ body {
           right: 30px;
           padding: 30px 152px 30px 40px;
           width: 370px; }
-      body .wrapper main .offer:nth-child(odd) .bgUnderImg {
-        left: -30px; }
+      body .wrapper main .offer:nth-child(odd) .imageTag {
+        margin: 30px 0 0 30px; }
+        body .wrapper main .offer:nth-child(odd) .imageTag .bgUnderImg {
+          left: -30px; }
       body .wrapper main .offer:nth-child(odd) .description {
         margin: 0 0 0 100px; }
         body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionSubject {
@@ -201,7 +203,6 @@ body {
           body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionSubject span {
             color: #FFC806; }
         body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionText {
-          width: 449px;
           font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
           font-weight: 600;
           font-size: 20px;
@@ -227,8 +228,7 @@ body {
         flex-direction: row-reverse; }
         body .wrapper main .offer:nth-child(even) .imageTag {
           width: 740px;
-          position: relative;
-          margin: 30px 0 0 0; }
+          position: relative; }
           body .wrapper main .offer:nth-child(even) .imageTag .bgUnderImg {
             background: rgba(201, 201, 201, 0.16);
             width: 617px;
@@ -261,10 +261,12 @@ body {
             right: 30px;
             padding: 30px 152px 30px 40px;
             width: 370px; }
-        body .wrapper main .offer:nth-child(even) .bgUnderImg {
-          right: -30px; }
-        body .wrapper main .offer:nth-child(even) .linkDesc {
-          left: 30px; }
+        body .wrapper main .offer:nth-child(even) .imageTag {
+          margin: 30px 30px 0 0; }
+          body .wrapper main .offer:nth-child(even) .imageTag .bgUnderImg {
+            right: -30px; }
+          body .wrapper main .offer:nth-child(even) .imageTag .linkDesc {
+            left: 30px; }
         body .wrapper main .offer:nth-child(even) .description {
           margin: 0 0 0 100px; }
           body .wrapper main .offer:nth-child(even) .description .descCont .descriptionSubject {
@@ -279,7 +281,6 @@ body {
             body .wrapper main .offer:nth-child(even) .description .descCont .descriptionSubject span {
               color: #FFC806; }
           body .wrapper main .offer:nth-child(even) .description .descCont .descriptionText {
-            width: 449px;
             font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
             font-weight: 600;
             font-size: 20px;
@@ -304,51 +305,41 @@ body {
         body .wrapper main .offer:nth-child(even) .description {
           margin: 0 100px 0 0; }
       body .wrapper main .offer:not(:last-child) {
-        margin-bottom: 150px; }
+        margin: 0 0 150px 0; }
   body .wrapper footer {
     padding: 0 50px; }
     body .wrapper footer .footerContainer {
       max-width: 1516px;
       margin: 0 auto;
-      height: 170px;
       display: flex;
       align-items: center; }
       body .wrapper footer .footerContainer ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: start;
         font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
-        margin: 0 637px 0 0;
-        width: 100%; }
-        body .wrapper footer .footerContainer ul .privacyPolicy {
-          width: 171px; }
-        body .wrapper footer .footerContainer ul .personalData {
-          width: 224px; }
+        padding: 0 40px; }
         body .wrapper footer .footerContainer ul li {
+          width: 32%;
           list-style: none;
-          height: 36px; }
+          margin: 0 15px 15px; }
           body .wrapper footer .footerContainer ul li a {
             text-decoration: none;
             color: #B5B5B5; }
             body .wrapper footer .footerContainer ul li a:hover {
               text-decoration: underline; }
       body .wrapper footer .footerContainer .footerSocial {
-        width: 30%;
-        height: 14%;
         position: absolute;
         right: 0;
         background: #fcfcfc;
-        border-radius: 16px 0px 0px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
+        border-radius: 16px 0px 0px 0px; }
         body .wrapper footer .footerContainer .footerSocial .socialIcons {
-          width: 203px;
-          height: 24px;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 0 0 0 0; }
+          padding: 40px 50px; }
+          body .wrapper footer .footerContainer .footerSocial .socialIcons a img {
+            padding: 20px; }
