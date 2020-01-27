@@ -8,21 +8,14 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
-@media screen and (max-width: 1260px) {
-  body .wrapper .headerContainer {
-    padding: 70px 50px 0; }
-    body .wrapper .headerContainer .content .title {
-      padding: 50px 0; }
-      body .wrapper .headerContainer .content .title h1 {
-        font-size: 60px; }
-    body .wrapper .headerContainer .content .cards {
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 50px 0; }
-      body .wrapper .headerContainer .content .cards div {
+@media all and (max-width: 1260px) {
+  body .wrapper .headerContainer .content .cards {
+    flex-wrap: wrap;
+    justify-content: center; }
+    body .wrapper .headerContainer .content .cards div {
+      margin: 16px; }
+      body .wrapper .headerContainer .content .cards div:not(:last-child) {
         margin: 16px; }
-        body .wrapper .headerContainer .content .cards div:not(:last-child) {
-          margin: 16px; }
   body .wrapper main {
     margin: 80px 0 125px 0; }
     body .wrapper main .offer {
@@ -48,6 +41,4 @@
       border-radius: 0;
       width: 100%;
       display: flex;
-      justify-content: center; }
-      body .wrapper footer .footerContainer .footerSocial .socialIcons {
-        padding: 20px 0; } }
+      justify-content: center; } }

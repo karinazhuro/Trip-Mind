@@ -32,13 +32,6 @@ $paddingBgImageSecond767px: 20px 20px 0 0;
 // ---
 // 575px
 $marginConrainer575px: 0 40px;
-@mixin socialIcons($padding) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: $padding;
-}
-
 @mixin cardsBox() {
     position: relative;
     &:not(:last-child) {

@@ -50,8 +50,9 @@ body {
         body .wrapper .headerContainer .content .title h1 {
           font: bold 70px/95px "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
           color: #FFFBFB;
-          width: 50%;
-          margin: 0; }
+          width: 61%;
+          margin: 0;
+          max-width: 608px; }
         body .wrapper .headerContainer .content .title p {
           font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
           font-style: normal;
@@ -312,6 +313,7 @@ body {
       max-width: 1516px;
       margin: 0 auto;
       display: flex;
+      justify-content: space-between;
       align-items: center; }
       body .wrapper footer .footerContainer ul {
         display: flex;
@@ -332,14 +334,9 @@ body {
             body .wrapper footer .footerContainer ul li a:hover {
               text-decoration: underline; }
       body .wrapper footer .footerContainer .footerSocial {
-        position: absolute;
-        right: 0;
         background: #fcfcfc;
-        border-radius: 16px 0px 0px 0px; }
-        body .wrapper footer .footerContainer .footerSocial .socialIcons {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 40px 50px; }
-          body .wrapper footer .footerContainer .footerSocial .socialIcons a img {
-            padding: 20px; }
+        border-radius: 16px 0px 0px 0px;
+        padding: 40px 50px;
+        margin: 0 -50px 0 0; }
+        body .wrapper footer .footerContainer .footerSocial a:not(:last-child) {
+          margin: 0 30px 0 0; }
