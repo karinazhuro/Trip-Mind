@@ -15,7 +15,7 @@ body {
     background: url("../img/Irelandmain.png") no-repeat center center;
     height: 100%;
     background-size: cover;
-    padding: 102px 50px 0; }
+    padding: 100px; }
     body .wrapper .headerContainer header {
       max-width: 1516px;
       margin: 0 auto;
@@ -60,10 +60,10 @@ body {
           font-size: 25px;
           line-height: 45px;
           color: #FFFBFB;
-          width: 45%;
+          max-width: 558px;
           margin: 50px 0; }
-      body .wrapper .headerContainer .content .btnUser button {
-        width: 25%;
+      body .wrapper .headerContainer .content button {
+        width: 302px;
         height: 75px;
         border-radius: 75px;
         background-color: #FFC806;
@@ -72,11 +72,12 @@ body {
         font: 600 20px "Montserrat", "Open Sans", "Roboto", "Raleway";
         cursor: pointer;
         float: left; }
-        body .wrapper .headerContainer .content .btnUser button:hover {
+        body .wrapper .headerContainer .content button:hover {
           border: 3px solid #b48e05; }
       body .wrapper .headerContainer .content .btnPlay {
         margin: 0 0 0 61px;
-        float: left; }
+        float: left;
+        width: 203px; }
         body .wrapper .headerContainer .content .btnPlay .playVideoImg {
           opacity: 0.75;
           padding: 0 10px 0 0; }
@@ -94,56 +95,62 @@ body {
             line-height: 25px;
             color: #FFFBFB;
             margin: 0; }
-      body .wrapper .headerContainer .content .social {
-        width: 206px;
-        margin: 120px 0 0 0; }
-        body .wrapper .headerContainer .content .social p {
-          font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 14px;
-          color: #FFFBFB;
-          margin: 0; }
-        body .wrapper .headerContainer .content .social .socialIcons {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 22px 0 0 0; }
-      body .wrapper .headerContainer .content .cards {
-        display: flex;
-        justify-content: flex-end;
-        color: #FFFBFB;
-        position: relative;
-        padding: 0 0 100px 0; }
-        body .wrapper .headerContainer .content .cards div {
-          position: relative; }
-          body .wrapper .headerContainer .content .cards div:not(:last-child) {
-            margin: 0 32px 0 0; }
-          body .wrapper .headerContainer .content .cards div .number {
-            margin: 0;
-            position: absolute;
-            left: 25px;
-            top: 25px;
-            font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
+      body .wrapper .headerContainer .content .test {
+        display: inline-flex;
+        margin: 50px 0 0 0; }
+        body .wrapper .headerContainer .content .test .social {
+          min-width: 206px;
+          display: block;
+          margin: 0 50px 0 0; }
+          body .wrapper .headerContainer .content .test .social p {
+            font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
             font-style: normal;
             font-weight: normal;
-            font-size: 25px; }
-          body .wrapper .headerContainer .content .cards div .name {
-            margin: 0;
-            width: 40%;
-            position: absolute;
-            left: 25px;
-            bottom: 25px;
-            font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 25px;
-            color: #FFFBFB; }
-          body .wrapper .headerContainer .content .cards div .arrowWhite {
-            position: absolute;
-            bottom: 25px;
-            right: 25px; }
+            font-size: 14px;
+            line-height: 14px;
+            color: #FFFBFB;
+            margin: 0; }
+          body .wrapper .headerContainer .content .test .social .socialIcons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 0 0 0; }
+        body .wrapper .headerContainer .content .test .cards {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          color: #FFFBFB; }
+          body .wrapper .headerContainer .content .test .cards div {
+            position: relative;
+            margin: 0 16px 16px; }
+            body .wrapper .headerContainer .content .test .cards div:not(:last-child) {
+              margin: 0 32px 0 0; }
+            body .wrapper .headerContainer .content .test .cards div .number {
+              margin: 0;
+              position: absolute;
+              left: 25px;
+              top: 25px;
+              font-family: "Playfair Display", "Roboto", "Open Sans", "Montserrat", "Lato", "Raleway";
+              font-style: normal;
+              font-weight: normal;
+              font-size: 25px; }
+            body .wrapper .headerContainer .content .test .cards div .name {
+              margin: 0;
+              width: 40%;
+              position: absolute;
+              left: 25px;
+              bottom: 25px;
+              font-family: "Montserrat", "Open Sans", "Roboto", "Raleway";
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 25px;
+              color: #FFFBFB; }
+            body .wrapper .headerContainer .content .test .cards div .arrowWhite {
+              position: absolute;
+              bottom: 25px;
+              right: 25px; }
+            body .wrapper .headerContainer .content .test .cards div:not(:last-child) {
+              margin: 0 16px 16px; }
   body .wrapper main {
     margin: 120px 0 300px 0;
     padding: 0 50px; }
@@ -156,8 +163,8 @@ body {
         position: relative; }
         body .wrapper main .offer:nth-child(odd) .imageTag .bgUnderImg {
           background: rgba(201, 201, 201, 0.16);
-          width: 617px;
-          height: 159px;
+          width: 90%;
+          height: 30%;
           border-radius: 16px 0px 0px 0px;
           top: -30px;
           position: absolute;
@@ -232,8 +239,8 @@ body {
           position: relative; }
           body .wrapper main .offer:nth-child(even) .imageTag .bgUnderImg {
             background: rgba(201, 201, 201, 0.16);
-            width: 617px;
-            height: 159px;
+            width: 90%;
+            height: 30%;
             border-radius: 0px 16px 0px 0px;
             top: -30px;
             position: absolute;

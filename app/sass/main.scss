@@ -2,7 +2,6 @@
 @import '../fonts/Montserrat';
 @import '../fonts/PlayfairDisplay';
 @import 'rules';
-// STYLE
 body {
     overflow-x: hidden;
     height: 100%;
@@ -11,7 +10,7 @@ body {
             background: url('../img/Irelandmain.png') no-repeat center center;
             height: 100%;
             background-size: cover;
-            padding: 102px 50px 0;
+            padding: 100px;
             header {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
@@ -66,30 +65,28 @@ body {
                         font-size: 25px;
                         line-height: 45px;
                         color: $colorPrimary;
-                        width: 45%;
+                        max-width: 558px;
                         margin: 50px 0;
                     }
                 }
-                .btnUser {
-                    button {
-                        width: 25%;
-                        height: 75px;
-                        // padding: 2%;
-                        border-radius: 75px;
-                        background-color: $colorSecondary;
-                        color: $colorTextBtn;
-                        border: none;
-                        font: 600 20px $fontMontserrat;
-                        cursor: pointer;
-                        float: left;
-                        &:hover {
-                            border: 3px solid $colorSecondaryBorder;
-                        }
+                button {
+                    width: 302px;
+                    height: 75px;
+                    border-radius: 75px;
+                    background-color: $colorSecondary;
+                    color: $colorTextBtn;
+                    border: none;
+                    font: 600 20px $fontMontserrat;
+                    cursor: pointer;
+                    float: left;
+                    &:hover {
+                        border: 3px solid $colorSecondaryBorder;
                     }
                 }
                 .btnPlay {
                     margin: 0 0 0 61px;
                     float: left;
+                    width: 203px;
                     .playVideoImg {
                         opacity: 0.75;
                         padding: 0 10px 0 0;
@@ -111,33 +108,41 @@ body {
                         }
                     }
                 }
-                .social {
-                    width: 206px;
-                    margin: 120px 0 0 0;
-                    p {
-                        font-family: $fontMontserrat;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 14px;
-                        line-height: 14px;
-                        color: $colorPrimary;
-                        margin: 0;
+                .test {
+                    display: inline-flex;
+                    margin: 50px 0 0 0;
+                    .social {
+                        min-width: 206px;
+                        display: block;
+                        margin: 0 50px 0 0;
+                        p {
+                            font-family: $fontMontserrat;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: $colorPrimary;
+                            margin: 0;
+                        }
+                        .socialIcons {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 22px 0 0 0;
+                        }
                     }
-                    .socialIcons {
+                    .cards {
                         display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 22px 0 0 0;
-                    }
-                }
-                .cards {
-                    display: flex;
-                    justify-content: flex-end;
-                    color: $colorPrimary;
-                    position: relative;
-                    padding: 0 0 100px 0;
-                    div {
-                        @include cardsBox;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        color: $colorPrimary;
+                        div {
+                            @include cardsBox;
+                            &:not(:last-child) {
+                                margin: 0 16px 16px;
+                            }
+                            margin: 0 16px 16px;
+                        }
                     }
                 }
             }

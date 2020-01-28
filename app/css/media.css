@@ -9,13 +9,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
 @media all and (max-width: 1260px) {
-  body .wrapper .headerContainer .content .cards {
-    flex-wrap: wrap;
-    justify-content: center; }
-    body .wrapper .headerContainer .content .cards div {
-      margin: 16px; }
-      body .wrapper .headerContainer .content .cards div:not(:last-child) {
-        margin: 16px; }
   body .wrapper main {
     margin: 80px 0 125px 0; }
     body .wrapper main .offer {
@@ -37,8 +30,8 @@
           display: flex;
           justify-content: center; }
     body .wrapper footer .footerContainer .footerSocial {
-      position: relative;
       border-radius: 0;
       width: 100%;
       display: flex;
-      justify-content: center; } }
+      justify-content: center;
+      margin: 0; } }
