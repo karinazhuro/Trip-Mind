@@ -110,6 +110,8 @@ body {
                 }
                 .test {
                     display: inline-flex;
+                    justify-content: space-between;
+                    width: 100%;
                     margin: 50px 0 0 0;
                     .social {
                         min-width: 206px;
@@ -148,8 +150,7 @@ body {
             }
         }
         main {
-            margin: 120px 0 300px 0;
-            padding: 0 50px;
+            padding: 120px 100px 250px;
             .offer {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
@@ -189,7 +190,7 @@ body {
             }
         }
         footer {
-            padding: 0 50px;
+            padding: 0 100px;
             .footerContainer {
                 max-width: $maxWidthContent;
                 margin: 0 auto;

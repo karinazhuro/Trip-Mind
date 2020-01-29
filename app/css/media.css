@@ -9,14 +9,19 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
 @media all and (max-width: 1260px) {
-  body .wrapper main {
-    margin: 80px 0 125px 0; }
-    body .wrapper main .offer {
-      flex-wrap: wrap; }
-      body .wrapper main .offer:nth-child(odd) .imageTag {
-        margin: 30px 0 70px 30px; }
-      body .wrapper main .offer:nth-child(even) .imageTag {
-        margin: 30px 30px 70px; }
+  body .wrapper .headerContainer .content .test {
+    flex-direction: column; }
+    body .wrapper .headerContainer .content .test .social {
+      max-width: 206px;
+      margin: 0; }
+    body .wrapper .headerContainer .content .test .cards {
+      margin: 50px 0 0 0; }
+  body .wrapper main .offer {
+    flex-wrap: wrap; }
+    body .wrapper main .offer:nth-child(odd) .imageTag {
+      margin: 30px 0 70px 30px; }
+    body .wrapper main .offer:nth-child(even) .imageTag {
+      margin: 30px 30px 70px; }
   body .wrapper footer .footerContainer {
     flex-direction: column; }
     body .wrapper footer .footerContainer .logoDark {

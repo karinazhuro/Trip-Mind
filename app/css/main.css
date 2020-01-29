@@ -97,6 +97,8 @@ body {
             margin: 0; }
       body .wrapper .headerContainer .content .test {
         display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
         margin: 50px 0 0 0; }
         body .wrapper .headerContainer .content .test .social {
           min-width: 206px;
@@ -152,8 +154,7 @@ body {
             body .wrapper .headerContainer .content .test .cards div:not(:last-child) {
               margin: 0 16px 16px; }
   body .wrapper main {
-    margin: 120px 0 300px 0;
-    padding: 0 50px; }
+    padding: 120px 100px 250px; }
     body .wrapper main .offer {
       max-width: 1516px;
       margin: 0 auto;
@@ -315,7 +316,7 @@ body {
       body .wrapper main .offer:not(:last-child) {
         margin: 0 0 150px 0; }
   body .wrapper footer {
-    padding: 0 50px; }
+    padding: 0 100px; }
     body .wrapper footer .footerContainer {
       max-width: 1516px;
       margin: 0 auto;
