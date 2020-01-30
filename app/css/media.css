@@ -40,3 +40,49 @@
       display: flex;
       justify-content: center;
       margin: 0; } }
+
+@media all and (max-width: 768px) {
+  body .wrapper .headerContainer header {
+    display: block; }
+    body .wrapper .headerContainer header nav {
+      display: none; }
+      body .wrapper .headerContainer header nav ul {
+        margin: 20px 0 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+        flex-direction: column; }
+        body .wrapper .headerContainer header nav ul li {
+          display: flex;
+          justify-content: flex-end; }
+          body .wrapper .headerContainer header nav ul li:not(:last-child) {
+            margin: 0 0 0 0; }
+    body .wrapper .headerContainer header .show {
+      display: block; }
+      body .wrapper .headerContainer header .show ul li a {
+        color: #FFC806; }
+    body .wrapper .headerContainer header .menu {
+      position: absolute;
+      top: 108px;
+      right: 100px; }
+      body .wrapper .headerContainer header .menu a {
+        display: block; }
+  body .wrapper .headerContainer .content {
+    text-align: center; }
+    body .wrapper .headerContainer .content .title {
+      padding: 76px 0 0 0; }
+      body .wrapper .headerContainer .content .title h1 {
+        font-size: 55px;
+        line-height: 76px;
+        width: 100%; }
+    body .wrapper .headerContainer .content button {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin: 26px 0 40px; }
+    body .wrapper .headerContainer .content .btnPlay {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      float: none;
+      margin: 0; } }

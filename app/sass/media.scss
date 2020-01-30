@@ -63,202 +63,73 @@
     }
 }
 
-// @media screen and (max-width: 767px) {
-//     body {
-//         .wrapper {
-//             .headerContainer {
-//                 header {
-//                     display: block;
-//                     nav {
-//                         display: none;
-//                         ul {
-//                             margin: 20px 0 0;
-//                             font-weight: 700;
-//                             font-size: 18px;
-//                             line-height: 40px;
-//                             flex-direction: column;
-//                             li {
-//                                 display: flex;
-//                                 justify-content: flex-end;
-//                                 &:not(:last-child) {
-//                                     margin: 0 0 0 0;
-//                                 }
-//                             }
-//                         }
-//                     }
-//                     .show {
-//                         display: flex;
-//                         justify-content: flex-end;
-//                         ul {
-//                             li {
-//                                 a {
-//                                     color: $colorSecondary;
-//                                 }
-//                             }
-//                         }
-//                     }
-//                     .menu {
-//                         position: absolute;
-//                         top: 0;
-//                         right: 0;
-//                         padding: 45px 70px 0 0;
-//                         img {
-//                             display: block;
-//                         }
-//                     }
-//                 }
-//                 .content {
-//                     display: flex;
-//                     flex-direction: column;
-//                     .title {
-//                         padding: 30px 0 0;
-//                         h1 {
-//                             font-size: 50px;
-//                             line-height: 70px;
-//                             width: auto;
-//                         }
-//                         p {
-//                             font-size: 20px;
-//                             line-height: 40px;
-//                             width: auto;
-//                             margin: 45px 0 40px;
-//                         }
-//                     }
-//                     .btnUser {
-//                         text-align: center;
-//                         margin: 0 auto;
-//                     }
-//                     .btnPlay {
-//                         width: 203px;
-//                         float: none;
-//                         margin: 55px auto;
-//                     }
-//                     .social {
-//                         text-align: center;
-//                         margin: 0 auto;
-//                     }
-//                 }
-//             }
-//             main {
-//                 .offer {
-//                     &:nth-child(odd) {
-//                         @include offerMaxWidth767px($paddingBgImageFirst767px);
-//                     }
-//                     &:nth-child(even) {
-//                         @include offerMaxWidth767px($paddingBgImageSecond767px);
-//                     }
-//                     &:not(:last-child) {
-//                         margin: 0 0 50px 0;
-//                     }
-//                 }
-//             }
-//             footer {
-//                 margin: 0 55px;
-//                 .footerContainer {
-//                     .logoDark {
-//                         float: none;
-//                         display: flex;
-//                         justify-content: center;
-//                     }
-//                     ul {
-//                         margin: 30px 0;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media screen and (max-width: 691px) {
-//     body {
-//         .wrapper {
-//             .headerContainer {
-//                 .content {
-//                     .title {
-//                         h1 {
-//                             font-size: 46px;
-//                             line-height: 66px;
-//                         }
-//                         p {
-//                             margin: 30px 0 35px;
-//                             font-size: 18px;
-//                             line-height: 28px;
-//                         }
-//                     }
-//                 }
-//             }
-//             main {
-//                 margin: 100px 55px 100px;
-//                 .offer {
-//                     &:nth-child(odd) {
-//                         @include offerMaxWidth691px();
-//                     }
-//                     &:nth-child(even) {
-//                         @include offerMaxWidth691px();
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media screen and (max-width: 575px) {
-//     body {
-//         .wrapper {
-//             .headerContainer {
-//                 header {
-//                     margin: $marginConrainer575px;
-//                     .menu {
-//                         padding: 45px 40px 0 0;
-//                     }
-//                 }
-//                 .content {
-//                     margin: $marginConrainer575px;
-//                     .cards {
-//                         padding: 25px 0 16px;
-//                     }
-//                 }
-//             }
-//             main {
-//                 margin: 80px 40px;
-//                 .offer {
-//                     &:nth-child(odd) {
-//                         @include offerMaxWidth575px();
-//                     }
-//                     &:nth-child(even) {
-//                         @include offerMaxWidth575px();
-//                         .imageTag {
-//                             .bgUnderImg {
-//                                 right: 427px;
-//                                 top: 5px;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//             footer {
-//                 margin: 80px 40px;
-//             }
-//         }
-//     }
-// }
-// @media screen and (max-width: 424px) {
-//     body {
-//         .wrapper {
-//             .headerContainer {
-//                 .content {
-//                     .title {
-//                         padding: 20px 0 0;
-//                         h1 {
-//                             font-size: 40px;
-//                             line-height: 47px;
-//                         }
-//                         p {
-//                             margin: 25px 0 35px;
-//                             font-size: 17px;
-//                             line-height: 27px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+@media all and (max-width: 768px) {
+    body {
+        .wrapper {
+            .headerContainer {
+                header {
+                    display: block;
+                    nav {
+                        display: none;
+                        ul {
+                            margin: 20px 0 0;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 40px;
+                            flex-direction: column;
+                            li {
+                                display: flex;
+                                justify-content: flex-end;
+                                &:not(:last-child) {
+                                    margin: 0 0 0 0;
+                                }
+                            }
+                        }
+                    }
+                    .show {
+                        display: block;
+                        ul {
+                            li {
+                                a {
+                                    color: $colorSecondary;
+                                }
+                            }
+                        }
+                    }
+                    .menu {
+                        position: absolute;
+                        top: 108px;
+                        right: 100px;
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+                .content {
+                    text-align: center;
+                    .title {
+                        padding: 76px 0 0 0;
+                        h1 {
+                            font-size: 55px;
+                            line-height: 76px;
+                            width: 100%;
+                        }
+                    }
+                    button {
+                        position: relative;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        margin: 26px 0 40px;
+                    }
+                    .btnPlay {
+                        position: relative;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        float: none;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
