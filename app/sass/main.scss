@@ -76,6 +76,7 @@ body {
                     border: none;
                     font: 600 20px $fontMontserrat;
                     cursor: pointer;
+                    padding: 0;
                     float: left;
                     &:hover {
                         border: 3px solid $colorSecondaryBorder;
@@ -139,17 +140,16 @@ body {
                         div {
                             @include cardsBox;
                             &:not(:last-child) {
-                                margin: 0 16px 16px;
+                                margin: 0 16px 16px 16px;
                             }
-                            margin: 0 16px 16px;
+                            margin: 0 0 16px 16px;
                         }
                     }
                 }
             }
         }
         main {
-            margin: 120px 0 300px 0;
-            padding: 0 50px;
+            padding: 100px 100px 200px;
             .offer {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
@@ -189,7 +189,7 @@ body {
             }
         }
         footer {
-            padding: 0 50px;
+            padding: 0 50px 0 100px;
             .footerContainer {
                 max-width: $maxWidthContent;
                 margin: 0 auto;
