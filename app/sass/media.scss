@@ -28,7 +28,7 @@
                     }
                     &:nth-child(even) {
                         .imageTag {
-                            margin: 30px 30px 70px;
+                            margin: 30px 30px 70px 0;
                         }
                     }
                 }
@@ -42,6 +42,7 @@
                     }
                     ul {
                         flex-direction: column;
+                        padding: 0;
                         li {
                             width: 100%;
                             margin: 10px auto;
@@ -100,8 +101,8 @@
                     }
                     .menu {
                         position: absolute;
-                        top: 108px;
-                        right: 100px;
+                        top: 78px;
+                        right: 70px;
                         a {
                             display: block;
                         }
@@ -116,6 +117,9 @@
                             font-size: 55px;
                             line-height: 76px;
                             width: 100%;
+                        }
+                        p {
+                            margin: 50px auto;
                         }
                     }
                     button {
@@ -133,17 +137,124 @@
                         .social {
                             margin: 10px auto;
                         }
+                        .cards {
+                            div {
+                                &:not(:last-child) {
+                                    margin: 0 16px 16px 32px;
+                                }
+                            }
+                        }
                     }
                 }
             }
             main {
-                padding: 70px 70px 100px;
+                padding: 70px;
                 .offer {
+                    margin: 0 0 100px 0;
                     &:nth-child(odd) {
                         .description {
                             text-align: center;
                             width: 100%;
+                            margin: 0;
+                            .descCont {
+                                .descriptionSubject {
+                                    margin: 0 auto;
+                                }
+                                .descriptionText {
+                                    margin: 40px auto;
+                                }
+                            }
                         }
+                    }
+                    &:nth-child(even) {
+                        .description {
+                            text-align: center;
+                            width: 100%;
+                            margin: 0;
+                            .descCont {
+                                .descriptionSubject {
+                                    margin: 0 auto;
+                                }
+                                .descriptionText {
+                                    margin: 40px auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            footer {
+                padding: 0 70px;
+                .footerContainer {
+                    ul {
+                        li {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 647px) {
+    body {
+        .wrapper {
+            main {
+                .offer {
+                    &:nth-child(odd) {
+                        .imageTag {
+                            width: 385px;
+                            margin: 30px auto 70px;
+                            text-align: center;
+                            .bgUnderImg {
+                                display: none;
+                            }
+                            .bgImage {
+                                width: 92%;
+                                height: 252px;
+                            }
+                            .linkDesc {
+                                display: none;
+                            }
+                        }
+                        .description {
+                            .descCont {
+                                .descriptionSubject {
+                                    font-size: 30px;
+                                    line-height: 42px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(even) {
+                        .imageTag {
+                            text-align: center;
+                            margin: 30px auto 70px;
+                            .bgUnderImg {
+                                display: none;
+                            }
+                            .bgImage {
+                                width: 92%;
+                                height: 252px;
+                            }
+                            .linkDesc {
+                                display: none;
+                            }
+                        }
+                        .description {
+                            .descCont {
+                                .descriptionSubject {
+                                    font-size: 30px;
+                                    line-height: 42px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    &:not(:last-child) {
+                        margin: 0 0 100px 0;
                     }
                 }
             }

@@ -3,6 +3,7 @@
 // color
 $colorPrimary: #FFFBFB;
 $colorSecondary: #FFC806;
+// $colorSecondary: #41c9e8;
 $colorSecondaryBorder: #b48e05;
 $colorTextBtn: #2D0000;
 $colorTextGorge: #333333;
@@ -78,7 +79,7 @@ $marginConrainer575px: 0 40px;
             border-radius: $borderRadius;
             top: -30px;
             position: absolute;
-            padding: 30px 0 0 0;
+            // padding: 30px 0 0 0;
         }
         .bgImage {
             background: $background;

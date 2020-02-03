@@ -165,8 +165,7 @@ body {
           height: 30%;
           border-radius: 16px 0px 0px 0px;
           top: -30px;
-          position: absolute;
-          padding: 30px 0 0 0; }
+          position: absolute; }
         body .wrapper main .offer:nth-child(odd) .imageTag .bgImage {
           background: url(../img/gorge.png) no-repeat;
           background-size: cover;
@@ -241,8 +240,7 @@ body {
             height: 30%;
             border-radius: 0px 16px 0px 0px;
             top: -30px;
-            position: absolute;
-            padding: 30px 0 0 0; }
+            position: absolute; }
           body .wrapper main .offer:nth-child(even) .imageTag .bgImage {
             background: url(../img/desc.png) no-repeat;
             background-size: cover;

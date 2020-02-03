@@ -21,7 +21,7 @@
     body .wrapper main .offer:nth-child(odd) .imageTag {
       margin: 30px 0 70px 30px; }
     body .wrapper main .offer:nth-child(even) .imageTag {
-      margin: 30px 30px 70px; }
+      margin: 30px 30px 70px 0; }
   body .wrapper footer {
     padding: 0 100px; }
     body .wrapper footer .footerContainer {
@@ -29,7 +29,8 @@
       body .wrapper footer .footerContainer .logoDark {
         margin: 20px auto; }
       body .wrapper footer .footerContainer ul {
-        flex-direction: column; }
+        flex-direction: column;
+        padding: 0; }
         body .wrapper footer .footerContainer ul li {
           width: 100%;
           margin: 10px auto; }
@@ -67,8 +68,8 @@
           color: #FFC806; }
       body .wrapper .headerContainer header .menu {
         position: absolute;
-        top: 108px;
-        right: 100px; }
+        top: 78px;
+        right: 70px; }
         body .wrapper .headerContainer header .menu a {
           display: block; }
     body .wrapper .headerContainer .content {
@@ -80,6 +81,8 @@
           font-size: 55px;
           line-height: 76px;
           width: 100%; }
+        body .wrapper .headerContainer .content .title p {
+          margin: 50px auto; }
       body .wrapper .headerContainer .content button {
         float: none;
         margin: 40px 0; }
@@ -90,8 +93,62 @@
           text-align: start; }
       body .wrapper .headerContainer .content .test .social {
         margin: 10px auto; }
+      body .wrapper .headerContainer .content .test .cards div:not(:last-child) {
+        margin: 0 16px 16px 32px; }
   body .wrapper main {
-    padding: 70px 70px 100px; }
-    body .wrapper main .offer:nth-child(odd) .description {
-      text-align: center;
-      width: 100%; } }
+    padding: 70px; }
+    body .wrapper main .offer {
+      margin: 0 0 100px 0; }
+      body .wrapper main .offer:nth-child(odd) .description {
+        text-align: center;
+        width: 100%;
+        margin: 0; }
+        body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionSubject {
+          margin: 0 auto; }
+        body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionText {
+          margin: 40px auto; }
+      body .wrapper main .offer:nth-child(even) .description {
+        text-align: center;
+        width: 100%;
+        margin: 0; }
+        body .wrapper main .offer:nth-child(even) .description .descCont .descriptionSubject {
+          margin: 0 auto; }
+        body .wrapper main .offer:nth-child(even) .description .descCont .descriptionText {
+          margin: 40px auto; }
+  body .wrapper footer {
+    padding: 0 70px; }
+    body .wrapper footer .footerContainer ul li {
+      text-align: center; } }
+
+@media all and (max-width: 647px) {
+  body .wrapper main .offer:nth-child(odd) .imageTag {
+    width: 385px;
+    margin: 30px auto 70px;
+    text-align: center; }
+    body .wrapper main .offer:nth-child(odd) .imageTag .bgUnderImg {
+      display: none; }
+    body .wrapper main .offer:nth-child(odd) .imageTag .bgImage {
+      width: 92%;
+      height: 252px; }
+    body .wrapper main .offer:nth-child(odd) .imageTag .linkDesc {
+      display: none; }
+  body .wrapper main .offer:nth-child(odd) .description .descCont .descriptionSubject {
+    font-size: 30px;
+    line-height: 42px;
+    width: 100%; }
+  body .wrapper main .offer:nth-child(even) .imageTag {
+    text-align: center;
+    margin: 30px auto 70px; }
+    body .wrapper main .offer:nth-child(even) .imageTag .bgUnderImg {
+      display: none; }
+    body .wrapper main .offer:nth-child(even) .imageTag .bgImage {
+      width: 92%;
+      height: 252px; }
+    body .wrapper main .offer:nth-child(even) .imageTag .linkDesc {
+      display: none; }
+  body .wrapper main .offer:nth-child(even) .description .descCont .descriptionSubject {
+    font-size: 30px;
+    line-height: 42px;
+    width: 100%; }
+  body .wrapper main .offer:not(:last-child) {
+    margin: 0 0 100px 0; } }
