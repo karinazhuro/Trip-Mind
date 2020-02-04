@@ -68,15 +68,15 @@ body {
                     }
                 }
                 button {
-                    width: 302px;
-                    height: 75px;
+                    // width: 302px;
+                    // height: 75px;
                     border-radius: 75px;
                     background-color: $colorSecondary;
                     color: $colorTextBtn;
                     border: none;
                     font: 600 20px $fontMontserrat;
                     cursor: pointer;
-                    padding: 0;
+                    padding: 25px 61px;
                     float: left;
                     &:hover {
                         border: 3px solid $colorSecondaryBorder;
@@ -139,10 +139,10 @@ body {
                         color: $colorPrimary;
                         div {
                             @include cardsBox;
+                            margin: 0 0 16px 16px;
                             &:not(:last-child) {
                                 margin: 0 16px 16px 16px;
                             }
-                            margin: 0 0 16px 16px;
                         }
                     }
                 }

@@ -79,7 +79,6 @@ $marginConrainer575px: 0 40px;
             border-radius: $borderRadius;
             top: -30px;
             position: absolute;
-            // padding: 30px 0 0 0;
         }
         .bgImage {
             background: $background;
@@ -136,8 +135,8 @@ $marginConrainer575px: 0 40px;
             }
         }
         button {
-            width: 309px;
-            height: 75px;
+            // width: 309px;
+            // height: 75px;
             border: 2px solid $colorSecondary;
             background-color: #fff;
             color: $colorSecondary;
@@ -148,114 +147,9 @@ $marginConrainer575px: 0 40px;
             font-size: 20px;
             cursor: pointer;
             margin: 30px 0;
-            padding: 0;
+            padding: 24px 74px;
             &:hover {
                 border: 3px solid $colorSecondaryBorder;
-            }
-        }
-    }
-}
-
-@mixin offerMaxWidth767px($paddingBgImage, $paddingBgImage) {
-    .imageTag {
-        height: 400px;
-        .bgUnderImg {
-            width: 85%;
-            height: 30%;
-        }
-        .bgImage {
-            padding: $paddingBgImage;
-        }
-        .bgLinkDesc {
-            width: 40%;
-            height: 20%;
-            p {
-                padding-top: 12px;
-                padding-left: 20px;
-                font-size: 14px;
-                line-height: 27px;
-            }
-            .arrowYeyllow {
-                right: 14px;
-                top: 42px;
-            }
-        }
-    }
-}
-
-@mixin offerMaxWidth691px() {
-    .imageTag {
-        margin: 0 auto 25px;
-    }
-    .description {
-        .descCont {
-            .descriptionSubject {
-                font-size: 35px;
-                line-height: 44px;
-            }
-            .descriptionText {
-                font-size: 17px;
-                line-height: 17px;
-                margin: 25px 0;
-            }
-        }
-        .button {
-            button {
-                width: 270px;
-                height: 62px;
-                font-size: 18px;
-                margin: 15px 0;
-            }
-        }
-    }
-}
-
-@mixin offerMaxWidth575px() {
-    .imageTag {
-        height: 244px;
-        .bgUnderImg {
-            display: none;
-        }
-        .bgImage {
-            width: 45%;
-            padding: 0;
-        }
-        .bgLinkDesc {
-            right: 450px;
-            width: 25%;
-            height: 19%;
-            border-radius: 6px;
-            p {
-                padding-top: 5px;
-                padding-left: 11px;
-                font-size: 12px;
-                line-height: 18px;
-                font-weight: 600;
-            }
-            .arrowYeyllow {
-                right: 12px;
-                top: 24px;
-            }
-        }
-    }
-    .description {
-        margin: 0 0 0 70px;
-        .descCont {
-            .descriptionSubject {
-                font-size: 28px;
-                line-height: 33px;
-            }
-            .descriptionText {
-                font-size: 15px;
-                margin: 17px 0;
-            }
-        }
-        .button {
-            button {
-                width: 200px;
-                height: 48px;
-                font-size: 16px;
-                margin: 10px 0;
             }
         }
     }

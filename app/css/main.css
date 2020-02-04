@@ -59,15 +59,13 @@ body {
           max-width: 558px;
           margin: 50px 0; }
       body .wrapper .headerContainer .content button {
-        width: 302px;
-        height: 75px;
         border-radius: 75px;
         background-color: #FFC806;
         color: #2D0000;
         border: none;
         font: 600 20px "Montserrat", "Open Sans", "Roboto", "Raleway";
         cursor: pointer;
-        padding: 0;
+        padding: 25px 61px;
         float: left; }
         body .wrapper .headerContainer .content button:hover {
           border: 3px solid #b48e05; }
@@ -214,8 +212,6 @@ body {
           color: #B5B5B5;
           margin: 40px 0; }
         body .wrapper main .offer:nth-child(odd) .description button {
-          width: 309px;
-          height: 75px;
           border: 2px solid #FFC806;
           background-color: #fff;
           color: #FFC806;
@@ -226,7 +222,7 @@ body {
           font-size: 20px;
           cursor: pointer;
           margin: 30px 0;
-          padding: 0; }
+          padding: 24px 74px; }
           body .wrapper main .offer:nth-child(odd) .description button:hover {
             border: 3px solid #b48e05; }
       body .wrapper main .offer:nth-child(even) {
@@ -291,8 +287,6 @@ body {
             color: #B5B5B5;
             margin: 40px 0; }
           body .wrapper main .offer:nth-child(even) .description button {
-            width: 309px;
-            height: 75px;
             border: 2px solid #FFC806;
             background-color: #fff;
             color: #FFC806;
@@ -303,7 +297,7 @@ body {
             font-size: 20px;
             cursor: pointer;
             margin: 30px 0;
-            padding: 0; }
+            padding: 24px 74px; }
             body .wrapper main .offer:nth-child(even) .description button:hover {
               border: 3px solid #b48e05; }
         body .wrapper main .offer:nth-child(even) .description {
